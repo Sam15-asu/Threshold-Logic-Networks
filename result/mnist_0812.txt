@@ -1,0 +1,242 @@
+2025-12-08 20:28:03 MST
+----------------------------------------------------------------------------
+device: cuda
+{'experiment_id': None, 'dataset': 'mnist', 'tau': 15.0, 'seed': 0, 'batch_size': 128, 'learning_rate': 0.02, 'training_bit_count': 32, 'implementation': 'cuda', 'num_iterations': 14000, 'eval_freq': 1000, 'valid_set_size': 0.0, 'extensive_eval': False, 'connections': 'unique', 'architecture': 'threshold_connected', 'num_neurons': 2000, 'num_layers': 1, 'num_active': 6, 'number_kernels': 16, 'grad_factor': 1.0}
+total_num_neurons=3000
+total_num_weights=4596665
+CustomModel(
+  (model): Sequential(
+    (0): Conv(
+      (gatebank): WeightedThresholdGate()
+    )
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (2): Conv(
+      (gatebank): WeightedThresholdGate()
+    )
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (4): Conv(
+      (gatebank): WeightedThresholdGate()
+    )
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Flatten(start_dim=1, end_dim=-1)
+    (7): ThresholdLayer(in_dim=1296, out_dim=2000, num_active_connections=6, bias=True)
+    (8): CustomSigmoid(scale=1.0)
+    (9): ThresholdLayer(in_dim=2000, out_dim=1000, num_active_connections=6, bias=True)
+    (10): CustomSigmoid2(scale=1.0)
+    (11): GroupSum(k=10, tau=15.0)
+  )
+)
+Iteration 1000/14000: Loss = 0.495107
+Batches per epoch:         79
+Current Learning Rate: 2.00e-02
+Best Accuracy: 93.67%
+Iteration 2000/14000: Loss = 0.110858
+Batches per epoch:         79
+Current Learning Rate: 2.00e-02
+Best Accuracy: 95.61%
+Iteration 3000/14000: Loss = 0.099477
+Batches per epoch:         79
+Current Learning Rate: 2.00e-02
+Iteration 4000/14000: Loss = 0.095219
+Batches per epoch:         79
+Current Learning Rate: 2.00e-02
+Iteration 5000/14000: Loss = 0.096463
+Batches per epoch:         79
+Current Learning Rate: 2.00e-02
+Iteration 6000/14000: Loss = 0.096122
+Batches per epoch:         79
+Current Learning Rate: 2.00e-02
+Iteration 7000/14000: Loss = 0.098454
+Batches per epoch:         79
+Current Learning Rate: 2.00e-02
+Iteration 8000/14000: Loss = 0.098551
+Batches per epoch:         79
+Current Learning Rate: 2.00e-02
+Iteration 9000/14000: Loss = 0.102381
+Batches per epoch:         79
+Current Learning Rate: 2.00e-02
+Iteration 10000/14000: Loss = 0.104958
+Batches per epoch:         79
+Current Learning Rate: 2.00e-03
+Best Accuracy: 95.69%
+Iteration 11000/14000: Loss = 0.083951
+Batches per epoch:         79
+Current Learning Rate: 2.00e-03
+Iteration 12000/14000: Loss = 0.075711
+Batches per epoch:         79
+Current Learning Rate: 2.00e-03
+Iteration 13000/14000: Loss = 0.072021
+Batches per epoch:         79
+Current Learning Rate: 2.00e-03
+Iteration 14000/14000: Loss = 0.070487
+Batches per epoch:         79
+Current Learning Rate: 2.00e-03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Processed 10000 samples out of 10000 available test samples.
+Test Accuracy: 95.52%
+                          weight_min  weight_max  ...  bias_max  num_bias_elements
+parameter                                         ...                             
+model.0.gatebank.w         -4.714966    2.720338  ...  3.809299                 16
+model.2.gatebank.w         -5.605488    6.442828  ...  3.333603                 48
+model.4.gatebank.w         -7.714291    7.189991  ...  3.812856                144
+model.7.effective_weight  -20.740020   18.787575  ...  2.539128               2000
+model.9.effective_weight  -29.672157    6.568187  ...  3.465092               1000
+
+[5 rows x 6 columns]

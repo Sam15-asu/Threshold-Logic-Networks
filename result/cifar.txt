@@ -1,0 +1,158 @@
+----------------------------------------------------------------------------
+device: cuda
+{'experiment_id': None, 'dataset': 'cifar10', 'tau': 33.0, 'seed': 0, 'batch_size': 128, 'learning_rate': 0.02, 'training_bit_count': 32, 'implementation': 'cuda', 'num_iterations': 14000, 'eval_freq': 1000, 'valid_set_size': 0.0, 'extensive_eval': False, 'connections': 'unique', 'architecture': 'threshold_connected', 'num_neurons': 8000, 'num_layers': 1, 'num_active': 6, 'number_kernels': 32, 'grad_factor': 1.0}
+x_bin (train)  shape: (50000, 6, 32, 32)
+x_test_bin     shape: (10000, 6, 32, 32)
+train channels = 6  expected = 6
+test  channels = 6  expected = 6
+values in {0,1}? min/max train: 0.0 1.0
+train batch shape: (128, 6, 32, 32) labels: (128,)
+test  batch shape: (128, 6, 32, 32) labels: (128,)
+total_num_neurons=8000
+total_num_weights=32789568
+CustomModel(
+  (model): Sequential(
+    (0): Conv(
+      (gatebank): WeightedThresholdGate()
+    )
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (2): Conv(
+      (gatebank): WeightedThresholdGate()
+    )
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (4): Conv(
+      (gatebank): WeightedThresholdGate()
+    )
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv(
+      (gatebank): WeightedThresholdGate()
+    )
+    (7): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (8): Flatten(start_dim=1, end_dim=-1)
+    (9): ThresholdLayer(in_dim=4096, out_dim=8000, num_active_connections=6, bias=True)
+    (10): CustomSigmoid2()
+    (11): GroupSum(k=10, tau=33.0)
+  )
+)
+Trainable parameters by layer:
+
+Layer: 'model.0.gatebank'
+  w: shape (32, 6), count 192
+  theta: shape (32,), count 32
+  s_raw: shape (32,), count 32
+
+Layer: 'model.2.gatebank'
+  w: shape (128, 6), count 768
+  theta: shape (128,), count 128
+  s_raw: shape (128,), count 128
+
+Layer: 'model.4.gatebank'
+  w: shape (512, 6), count 3072
+  theta: shape (512,), count 512
+  s_raw: shape (512,), count 512
+
+Layer: 'model.6.gatebank'
+  w: shape (1024, 6), count 6144
+  theta: shape (1024,), count 1024
+  s_raw: shape (1024,), count 1024
+
+Layer: 'model.9'
+  weight: shape (8000, 4096), count 32768000
+  bias: shape (8000,), count 8000
+Iteration 1000/14000: Loss = 1.865657
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.29909686702291677, 'test_acc_eval_mode': 0.29944620253164556, 'test_acc_train_mode': 0.44551028481012656}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-02
+Best Accuracy: 29.94%
+IS THE BEST UNTIL NOW.
+Iteration 2000/14000: Loss = 1.355145
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.46388666876746565, 'test_acc_eval_mode': 0.447685917721519, 'test_acc_train_mode': 0.529568829113924}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-02
+Best Accuracy: 44.77%
+IS THE BEST UNTIL NOW.
+Iteration 3000/14000: Loss = 1.238903
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.5018222506546304, 'test_acc_eval_mode': 0.47616693037974683, 'test_acc_train_mode': 0.5362935126582279}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-02
+Best Accuracy: 47.62%
+IS THE BEST UNTIL NOW.
+Iteration 4000/14000: Loss = 1.209802
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.48717631075693213, 'test_acc_eval_mode': 0.46172863924050633, 'test_acc_train_mode': 0.540743670886076}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-02
+Iteration 5000/14000: Loss = 1.210550
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.4956002238461429, 'test_acc_eval_mode': 0.4681566455696203, 'test_acc_train_mode': 0.5348101265822784}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-02
+Iteration 6000/14000: Loss = 1.239080
+Loss increased by 0.028530 (threshold: 0.01). Adjusting learning rate.
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.47388906658762864, 'test_acc_eval_mode': 0.45391613924050633, 'test_acc_train_mode': 0.5136471518987342}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-02
+Iteration 7000/14000: Loss = 1.268887
+Loss increased by 0.029807 (threshold: 0.01). Adjusting learning rate.
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.4650095908538155, 'test_acc_eval_mode': 0.45263053797468356, 'test_acc_train_mode': 0.5236352848101266}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-02
+Iteration 8000/14000: Loss = 1.300168
+Loss increased by 0.031281 (threshold: 0.01). Adjusting learning rate.
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.46458599741196693, 'test_acc_eval_mode': 0.4525316455696203, 'test_acc_train_mode': 0.5205696202531646}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-02
+Iteration 9000/14000: Loss = 1.339686
+Loss increased by 0.039518 (threshold: 0.01). Adjusting learning rate.
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.45883951406649615, 'test_acc_eval_mode': 0.447685917721519, 'test_acc_train_mode': 0.5187895569620253}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-02
+Iteration 10000/14000: Loss = 1.368269
+Loss increased by 0.028583 (threshold: 0.01). Adjusting learning rate.
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.4483855498568786, 'test_acc_eval_mode': 0.4366099683544304, 'test_acc_train_mode': 0.5068235759493671}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-03
+Iteration 11000/14000: Loss = 1.321000
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.4474584399281865, 'test_acc_eval_mode': 0.43670886075949367, 'test_acc_train_mode': 0.5215585443037974}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-03
+Iteration 12000/14000: Loss = 1.279710
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.4497642263274668, 'test_acc_eval_mode': 0.4420490506329114, 'test_acc_train_mode': 0.5344145569620253}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-03
+Iteration 13000/14000: Loss = 1.258058
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.44954843350383633, 'test_acc_eval_mode': 0.44125791139240506, 'test_acc_train_mode': 0.53125}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-03
+Iteration 14000/14000: Loss = 1.246541
+Batches per epoch:         79
+{'train_acc_eval_mode': 0.4551310741992863, 'test_acc_eval_mode': 0.4477848101265823, 'test_acc_train_mode': 0.5321400316455697}
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Current Learning Rate: 2.00e-03
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Processed 10000 samples out of 10000 available test samples.
+Test Accuracy: 44.79%
