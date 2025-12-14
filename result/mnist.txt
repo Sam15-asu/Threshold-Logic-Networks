@@ -1,8 +1,8 @@
 ----------------------------------------------------------------------------
-2025-12-13 20:53:27.179825
+2025-12-14 07:48:26.539337
 device: cuda
 torch: 2.7.1+cu118 | cuda available: True | built-with CUDA: 11.8
-GPU: NVIDIA TITAN Xp
+GPU: NVIDIA A40
 {'experiment_id': None, 'dataset': 'mnist', 'tau': 17.0, 'seed': 0, 'batch_size': 128, 'learning_rate': 0.01, 'training_bit_count': 32, 'implementation': 'cuda', 'num_iterations': 20000, 'eval_freq': 1000, 'valid_set_size': 0.0, 'extensive_eval': False, 'connections': 'unique', 'architecture': 'threshold_connected', 'num_neurons': 2000, 'num_layers': 1, 'num_active': 6, 'grad_factor': 2.0}
 total_num_neurons=3000
 total_num_weights=6707001
@@ -24,86 +24,85 @@ Iteration 1000/20000: Loss = 0.559456
 {'train_acc_eval_mode': 0.9303218482905983, 'test_acc_eval_mode': 0.9294871794871795}
 Current Learning Rate: 1.00e-02
 Best Accuracy: 92.95%
-Iteration 2000/20000: Loss = 0.256297
+Iteration 2000/20000: Loss = 0.256298
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9367321047008547, 'test_acc_eval_mode': 0.9345953525641025}
+{'train_acc_eval_mode': 0.9369991987179487, 'test_acc_eval_mode': 0.9344951923076923}
 Current Learning Rate: 1.00e-02
-Best Accuracy: 93.46%
-Iteration 3000/20000: Loss = 0.234516
+Best Accuracy: 93.45%
+Iteration 3000/20000: Loss = 0.234512
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9413728632478633, 'test_acc_eval_mode': 0.9395032051282052}
+{'train_acc_eval_mode': 0.9417234241452992, 'test_acc_eval_mode': 0.9409054487179487}
 Current Learning Rate: 1.00e-02
-Best Accuracy: 93.95%
-Iteration 4000/20000: Loss = 0.223941
+Best Accuracy: 94.09%
+Iteration 4000/20000: Loss = 0.223970
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9402210202991453, 'test_acc_eval_mode': 0.9362980769230769}
+{'train_acc_eval_mode': 0.9397702991452992, 'test_acc_eval_mode': 0.9380008012820513}
 Current Learning Rate: 1.00e-02
-Iteration 5000/20000: Loss = 0.220245
+Iteration 5000/20000: Loss = 0.220255
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9411725427350427, 'test_acc_eval_mode': 0.9389022435897436}
+{'train_acc_eval_mode': 0.9415064102564102, 'test_acc_eval_mode': 0.9393028846153846}
 Current Learning Rate: 1.00e-02
-Iteration 6000/20000: Loss = 0.217119
+Iteration 6000/20000: Loss = 0.217008
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9411558493589743, 'test_acc_eval_mode': 0.9381009615384616}
+{'train_acc_eval_mode': 0.9405381944444444, 'test_acc_eval_mode': 0.9373998397435898}
 Current Learning Rate: 1.00e-02
-Iteration 7000/20000: Loss = 0.216527
+Iteration 7000/20000: Loss = 0.216478
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.941940438034188, 'test_acc_eval_mode': 0.9396033653846154}
+{'train_acc_eval_mode': 0.9402043269230769, 'test_acc_eval_mode': 0.9368990384615384}
 Current Learning Rate: 1.00e-03
-Best Accuracy: 93.96%
-Iteration 8000/20000: Loss = 0.206354
+Iteration 8000/20000: Loss = 0.205781
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9410890758547008, 'test_acc_eval_mode': 0.938301282051282}
+{'train_acc_eval_mode': 0.9410223023504274, 'test_acc_eval_mode': 0.9398036858974359}
 Current Learning Rate: 1.00e-03
-Iteration 9000/20000: Loss = 0.200974
+Iteration 9000/20000: Loss = 0.200409
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9413895566239316, 'test_acc_eval_mode': 0.9392027243589743}
+{'train_acc_eval_mode': 0.9414897168803419, 'test_acc_eval_mode': 0.9398036858974359}
 Current Learning Rate: 1.00e-03
-Iteration 10000/20000: Loss = 0.201210
+Iteration 10000/20000: Loss = 0.200567
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9412059294871795, 'test_acc_eval_mode': 0.9386017628205128}
+{'train_acc_eval_mode': 0.9408052884615384, 'test_acc_eval_mode': 0.9393028846153846}
 Current Learning Rate: 1.00e-03
-Iteration 11000/20000: Loss = 0.197829
+Iteration 11000/20000: Loss = 0.197376
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9403378739316239, 'test_acc_eval_mode': 0.9377003205128205}
+{'train_acc_eval_mode': 0.940254407051282, 'test_acc_eval_mode': 0.9375}
 Current Learning Rate: 1.00e-03
-Iteration 12000/20000: Loss = 0.197853
+Iteration 12000/20000: Loss = 0.197331
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9401208600427351, 'test_acc_eval_mode': 0.9373998397435898}
+{'train_acc_eval_mode': 0.9391025641025641, 'test_acc_eval_mode': 0.9378004807692307}
 Current Learning Rate: 1.00e-03
-Iteration 13000/20000: Loss = 0.197738
+Iteration 13000/20000: Loss = 0.196977
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9399205395299145, 'test_acc_eval_mode': 0.938301282051282}
+{'train_acc_eval_mode': 0.9401041666666666, 'test_acc_eval_mode': 0.9375}
 Current Learning Rate: 1.00e-04
-Iteration 14000/20000: Loss = 0.195877
+Iteration 14000/20000: Loss = 0.195226
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9405882745726496, 'test_acc_eval_mode': 0.938301282051282}
+{'train_acc_eval_mode': 0.9401041666666666, 'test_acc_eval_mode': 0.9378004807692307}
 Current Learning Rate: 1.00e-04
-Iteration 15000/20000: Loss = 0.195366
+Iteration 15000/20000: Loss = 0.194702
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9403712606837606, 'test_acc_eval_mode': 0.9378004807692307}
+{'train_acc_eval_mode': 0.9401542467948718, 'test_acc_eval_mode': 0.9376001602564102}
 Current Learning Rate: 1.00e-04
-Iteration 16000/20000: Loss = 0.194719
+Iteration 16000/20000: Loss = 0.194050
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9402711004273504, 'test_acc_eval_mode': 0.9379006410256411}
+{'train_acc_eval_mode': 0.9401041666666666, 'test_acc_eval_mode': 0.9375}
 Current Learning Rate: 1.00e-04
-Iteration 17000/20000: Loss = 0.193600
+Iteration 17000/20000: Loss = 0.192938
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9402210202991453, 'test_acc_eval_mode': 0.9373998397435898}
+{'train_acc_eval_mode': 0.9402377136752137, 'test_acc_eval_mode': 0.9375}
 Current Learning Rate: 1.00e-04
-Iteration 18000/20000: Loss = 0.195109
+Iteration 18000/20000: Loss = 0.194432
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9402043269230769, 'test_acc_eval_mode': 0.9375}
+{'train_acc_eval_mode': 0.9398537660256411, 'test_acc_eval_mode': 0.9371995192307693}
 Current Learning Rate: 1.00e-04
-Iteration 19000/20000: Loss = 0.194409
+Iteration 19000/20000: Loss = 0.193729
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9400373931623932, 'test_acc_eval_mode': 0.9375}
+{'train_acc_eval_mode': 0.9398203792735043, 'test_acc_eval_mode': 0.9365985576923077}
 Current Learning Rate: 1.00e-05
-Iteration 20000/20000: Loss = 0.193110
+Iteration 20000/20000: Loss = 0.192453
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-{'train_acc_eval_mode': 0.9399706196581197, 'test_acc_eval_mode': 0.9376001602564102}
+{'train_acc_eval_mode': 0.9395866720085471, 'test_acc_eval_mode': 0.936698717948718}
 Current Learning Rate: 1.00e-05
-[minimize_truth_tables] Wrote 586 unique non-constant functions to out/minimized_expressions_mnist.txt
+[minimize_truth_tables] Wrote 588 unique non-constant functions to out/minimized_expressions_mnist.txt
 
 
-Test Accuracy: 93.76%
+Test Accuracy: 93.67%
