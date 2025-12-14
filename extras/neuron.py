@@ -2,6 +2,7 @@
 import os
 import re
 import sys
+from pathlib import Path
 
 """
 Purpose
@@ -44,10 +45,17 @@ def main():
         sys.exit(1)
     dataset = sys.argv[1]
 
+
     # input + output paths
-    infile_dir = r"/home/sampad/lab/difflogic_thx2/out"
+    # Absolute path to this file
+    THIS_FILE       = Path(__file__).resolve()
+    EXPERIMENTS_DIR = THIS_FILE.parent.parent
+    infile_dir      = EXPERIMENTS_DIR / "out"
+    output_dir = EXPERIMENTS_DIR / "out"
+
+    # If you need it as a string:
+    infile_dir = str(infile_dir)
     infile     = os.path.join(infile_dir, f"minimized_expressions_{dataset}.txt")
-    output_dir = r"/home/sampad/lab/difflogic_thx2/out"
     os.makedirs(output_dir, exist_ok=True)
     outfile    = os.path.join(output_dir, f"{dataset}_6.v")
 

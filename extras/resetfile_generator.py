@@ -2,6 +2,7 @@
 import os
 import re
 import sys
+from pathlib import Path
 
 def extract_expr(line):
     """Return the 3rd slash-delimited field (the Boolean expression)."""
@@ -42,8 +43,9 @@ def main():
         sys.exit(1)
 
     dataset = sys.argv[1]
-    base     = "/home/sampad/lab/difflogic_thx2/out"
-    base2    = "/home/sampad/lab/difflogic_thx2/reset_files"
+    THIS_FILE       = Path(__file__).resolve()
+    EXPERIMENTS_DIR = THIS_FILE.parent.parent
+    base      = EXPERIMENTS_DIR / "out"
     infile   = os.path.join(base, f"minimized_expressions_{dataset}.txt")
     outfile  = os.path.join(base, f"all_cmos_tf_rst_{dataset}.v")
 
