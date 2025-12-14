@@ -9,10 +9,10 @@ class ThresholdLayer(nn.Module):
     __constants__ = ['bias']
     """
     The core module for Threshold Layer. Provides a differentiable Threshold gate layer.
-    It includes a trainable scalar `s` (here stored in buffer `p`) that scales the output and is used in the
-    activation function applied after the linear transformation:
-      - In training: sigmoid(s * x)
-      - In evaluation: heaviside(s * x)
+    This layer is responsible for the linear tranformation before the thresholding activation.
+    The layer maintains a fixed binary mask that determines which connections are active.
+    The effective weight matrix is the element-wise product of the trainable weight matrix
+    and the fixed binary mask.
     """
     def __init__(
             self,
@@ -65,7 +65,6 @@ class ThresholdLayer(nn.Module):
         self.reset_parameters()
 
         
-
     @staticmethod
     def create_mask(out_dim, in_dim, num_active):
         """
