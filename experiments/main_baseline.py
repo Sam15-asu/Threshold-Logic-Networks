@@ -2,14 +2,11 @@ import argparse
 import random
 
 import numpy as np
-import pandas as pd
 import torch
 import torchvision
 from torchvision import datasets, transforms
 from tqdm import tqdm
-import matplotlib.pyplot as plt
 import os
-import torch.nn.utils.prune as prune
 from pipeline import run_full_logic_pipeline
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
@@ -36,6 +33,9 @@ BITS_TO_TORCH_FLOATING_POINT_TYPE = {
 }
     
 class CustomModel(torch.nn.Module):
+    """
+    A wrapper around the model to enable verbose output during forward passes.
+    """
     def __init__(self, model):
         super(CustomModel, self).__init__()
         self.model = model
@@ -50,6 +50,10 @@ class CustomModel(torch.nn.Module):
 
     
 def load_dataset(args):
+    """ 
+    Load the specified dataset, prepares(binarizes) the data and return DataLoaders for training, validation, 
+    and testing for further analysis.
+    """
     pin_memory = torch.cuda.is_available()
     validation_loader = None
     transform = transforms.Compose([transforms.ToTensor(), transforms.Lambda(lambda x: torch.flatten(x))])
@@ -128,6 +132,22 @@ def load_dataset(args):
 
 
 def load_n(loader, n):
+    """
+    Yield exactly `n` batches from a DataLoader-like iterable.
+
+    This is a small helper to take the first `n` batches from potentially
+    infinite or long-running loaders (e.g. for a fixed number of training
+    iterations independent of dataset size).
+
+    Parameters
+    ----------
+    loader : Any iterable that yields batches (e.g. a PyTorch DataLoader).
+    n : Number of batches to yield in total across all iterations.
+
+    Yields
+    ------
+    batch: The next batch produced by `loader`, up to `n` batches in total.
+    """
     i = 0
     while i < n:
         for x in loader:
@@ -138,6 +158,9 @@ def load_n(loader, n):
 
 
 def input_dim_of_dataset(dataset):
+    """
+    Return the input dimension for the specified dataset.
+    """
     return {
         'mnist': 2352,
         'cifar10': 3 * 32 * 32 * 10,
@@ -146,6 +169,9 @@ def input_dim_of_dataset(dataset):
 
 
 def num_classes_of_dataset(dataset):
+    """
+    Return the number of classes for the specified dataset.
+    """
     return {
         'mnist': 10,
         'cifar10': 10,
@@ -153,6 +179,13 @@ def num_classes_of_dataset(dataset):
     }[dataset]
 
 def get_model(args):
+    """
+    Create and return the model, loss function, optimizer, and scheduler based on the provided arguments.
+    Model architecture is built according to the specified dataset and parameters.
+    Loss function is CrossEntropyLoss.
+    Optimizer is Adam with specified learning rate and betas.
+    Scheduler is ReduceLROnPlateau monitoring validation loss.
+    """
     in_dim = input_dim_of_dataset(args.dataset)
     class_count = num_classes_of_dataset(args.dataset)
 
@@ -161,11 +194,7 @@ def get_model(args):
     k = args.num_neurons
     l = args.num_layers
     m = args.num_active
-
     total_num_neurons = 0
-
- ########################################################################################################################
-
 
     if arch == 'threshold_connected':
         llkw = dict(grad_factor=args.grad_factor)
@@ -175,6 +204,12 @@ def get_model(args):
             logic_layers.append(ThresholdLayer(in_dim=in_dim, out_dim=k, layer_id=1, num_active =m, **llkw))
             logic_layers.append(CustomSigmoid(layer_id = 2))
             logic_layers.append(ThresholdLayer(in_dim=k, out_dim=1000, layer_id=3, num_active =m, **llkw))
+            logic_layers.append(CustomSigmoid2())
+
+        elif (args.dataset == 'fashionMNIST'):
+            logic_layers.append(ThresholdLayer(in_dim=in_dim, out_dim=k, layer_id=1, num_active =m, **llkw))
+            logic_layers.append(CustomSigmoid(layer_id = 2))
+            logic_layers.append(ThresholdLayer(in_dim=k, out_dim=2000, layer_id=3, num_active =m, **llkw))
             logic_layers.append(CustomSigmoid2())
         
         elif (args.dataset == 'cifar10'):
@@ -189,6 +224,11 @@ def get_model(args):
 
 
     def count_parameters(model):
+        """
+        Count the number of trainable parameters in the model.
+        Args: model (torch.nn.Module): The model to count parameters for.
+        Returns: Prints the number of parameters
+        """
         return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
     if arch == 'threshold_connected':
@@ -226,6 +266,16 @@ def get_model(args):
 
 
 def train(model, x, y, loss_fn, optimizer):
+    """
+    Perform a single training step: forward pass, loss computation, backward pass, and optimizer step.
+    Returns the computed loss value.
+    Parameters:
+    - model: The neural network model to train.
+    - x: Input data batch.
+    - y: Target labels for the input data.
+    - loss_fn: Loss function to compute the training loss.
+    - optimizer: Optimizer to update the model parameters.
+    """
     y_out = model(x)
     loss = loss_fn(y_out, y)
     optimizer.zero_grad()
@@ -236,6 +286,15 @@ def train(model, x, y, loss_fn, optimizer):
 
 
 def eval(model, loader, mode):
+    """
+    Evaluate the model on the provided data loader in either training or evaluation mode.
+    Parameters:
+    - model: The neural network model to evaluate.
+    - loader: DataLoader providing the evaluation data.
+    - mode: Boolean indicating whether to set the model to training mode (True) or evaluation mode (False).
+    Returns:
+    - res: The accuracy of the model on the provided data.
+    """
     orig_mode = model.training
     with torch.no_grad():
         model.train(mode=mode)
@@ -251,16 +310,16 @@ def eval(model, loader, mode):
 
 
 if __name__ == '__main__':
-
+    """
+    Main function to set up and run the training and evaluation of the model based on command-line arguments.
+    It handles argument parsing, dataset loading, model creation, training loop, and final evaluation.
+    """
     parser = argparse.ArgumentParser(description='Train logic gate network on the various datasets.')
-
     parser.add_argument('-eid', '--experiment_id', type=int, default=None)
-
     parser.add_argument('--dataset', type=str, choices=[
         'mnist',
         'cifar10',
         'fashionMNIST'
-        
     ], required=True, help='the dataset to use')
     parser.add_argument('--tau', '-t', type=float, default=10, help='the softmax temperature tau')
     parser.add_argument('--seed', '-s', type=int, default=0, help='seed (default: 0)')
@@ -283,7 +342,6 @@ if __name__ == '__main__':
     parser.add_argument('--num_neurons', '-k', type=int)
     parser.add_argument('--num_layers', '-l', type=int)
     parser.add_argument('--num_active', '-m', type=int)
-
     parser.add_argument('--grad-factor', type=float, default=2.)
 
     args = parser.parse_args()
@@ -301,7 +359,7 @@ if __name__ == '__main__':
     model, loss_fn, optim, scheduler = get_model(args)
 
     
-    ####################################################################################################################
+####################################################################################################################
     best_acc = 0 
     cumulative_loss = 0 
     j=0
@@ -323,8 +381,6 @@ if __name__ == '__main__':
         # Accumulate loss and increment iteration counter for averaging
         cumulative_loss+=loss
         j+=1
-
-        #if (i+1) % args.eval_freq == args.eval_freq - 1:
             
         if (i+1) % args.eval_freq == 0:
             # Run a forward pass on a sample input (using the current batch 'x')

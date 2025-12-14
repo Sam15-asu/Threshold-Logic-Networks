@@ -3,7 +3,6 @@ import os
 import csv
 import itertools
 from functools import reduce
-
 import torch
 import numpy as np
 import pandas as pd
@@ -18,6 +17,12 @@ def export_effective_params_to_csv(model_weights_path, dataset_name, weights_dir
     Loads a saved state_dict (.pth), builds effective_weight = weight * mask
     for masked layers, and writes model_effective_params_<dataset>.csv
     with up to 6 nonzero weights per neuron + bias.
+    Args:
+        model_weights_path (str): Path to the .pth file containing the model state_dict.
+        dataset_name (str): Name of the dataset (used for naming the output CSV).
+        weights_dir (str): Directory to save the output CSV file.
+    Returns:
+        str: Path to the generated CSV file.
     """
     os.makedirs(weights_dir, exist_ok=True)
 
@@ -125,6 +130,18 @@ def export_effective_params_to_csv(model_weights_path, dataset_name, weights_dir
 # ──────────────────────────────────────────────────────────────────────────────
 
 def process_input_csv(input_csv, output_csv):
+    """
+    Reads model_effective_params_<dataset>.csv, processes weights and bias:
+      - Moves negative weights into bias
+      - Converts weights to absolute values
+      - Reorders weights in descending order of absolute value
+    Writes processed data to model_effective_params_<dataset>_changed.csv
+    Args:
+        input_csv (str): Path to the input CSV file.
+        output_csv (str): Path to the output CSV file.
+    Returns:
+        str: Path to the processed CSV file.
+    """
     df = pd.read_csv(input_csv)
 
     df["parameter"] = df["parameter"].astype(str)
@@ -224,6 +241,15 @@ def process_input_csv(input_csv, output_csv):
 # ──────────────────────────────────────────────────────────────────────────────
 
 def generate_truth_tables(input_csv, output_truth_csv):
+    """
+    Reads model_effective_params_<dataset>_changed.csv and writes
+    truth_tables_generated_<dataset>.csv with truth tables for each 6-weight neuron.
+    Args:
+        input_csv (str): Path to the processed CSV file.
+        output_truth_csv (str): Path to the output truth table CSV file.
+    Returns:
+        str: Path to the generated truth table CSV file.
+    """
     def generate_truth_table_dict_normal(w1, w2, w3, w4, w5, w6, bias):
         truth = {}
         for combo in itertools.product([0, 1], repeat=6):
@@ -299,6 +325,15 @@ def _combine(a, b):
     return tuple(out) if diff == 1 else None
 
 def quine_mccluskey(truth, dont_care=None, var_names=None):
+    """
+    Minimizes a boolean function using the Quine–McCluskey algorithm.
+    Args:
+        truth (list of int): Truth table as a list of 0s and 1s.
+        dont_care (list of int, optional): List of indices to treat as don't care conditions.
+        var_names (list of str, optional): Variable names for the output expression.
+    Returns:
+        str: Minimized boolean expression in SOP form.
+    """
     if dont_care is None:
         dont_care = []
     n = len(truth)

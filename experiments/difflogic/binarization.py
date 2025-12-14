@@ -1,8 +1,12 @@
 import torch
 
-"""implements thermometer binarization and its variants
-   standard thermometer uses evenly spaced thresholds between min and max of data"""
 class Thermometer:
+    """
+    Base Thermometer class for thermometer encoding.
+    Methods:
+    - fit(x): Fit the thermometer thresholds based on the data x.
+    - binarize(x): Binarize the input x using the fitted thresholds.
+    """
     def __init__(self, num_bits=1, feature_wise=True):
         
         assert num_bits > 0
@@ -13,17 +17,32 @@ class Thermometer:
         self.thresholds = None
 
     def get_thresholds(self, x):
+        """
+        Get thresholds for thermometer encoding.
+        Args:   x: Input data to compute thresholds from.
+        Returns: Computed thresholds.
+        """
         min_value = x.min(dim=0)[0] if self.feature_wise else x.min()
         max_value = x.max(dim=0)[0] if self.feature_wise else x.max()
         return min_value.unsqueeze(-1) + torch.arange(1, self.num_bits+1).unsqueeze(0) * ((max_value - min_value) / (self.num_bits + 1)).unsqueeze(-1)
 
     def fit(self, x):
+        """
+        Fit the thermometer thresholds based on the data x.
+        Args:   x: Input data to fit thresholds.
+        Returns: self
+        """
         if type(x) is not torch.Tensor:
             x = torch.tensor(x)
         self.thresholds = self.get_thresholds(x)
         return self
     
     def binarize(self, x):
+        """
+        Binarize the input x using the fitted thresholds.
+        Args:   x: Input data to binarize.
+        Returns: Binarized output.
+        """
         if self.thresholds is None:
             raise 'need to fit before calling apply'
         if type(x) is not torch.Tensor:
@@ -32,6 +51,11 @@ class Thermometer:
         return (x > self.thresholds).float()
 
 class GaussianThermometer(Thermometer):
+    """
+    A specialized thermometer that uses Gaussian quantiles as thresholds.
+    This thermometer computes thresholds based on the mean and standard deviation
+    of the input data, scaled by the inverse CDF of a standard normal distribution.
+    """
     def __init__(self, num_bits=1, feature_wise=True):
         super().__init__(num_bits, feature_wise)
 
@@ -43,11 +67,12 @@ class GaussianThermometer(Thermometer):
         return thresholds
     
     
-"""specialized thermometer that uses data percentiles as thresholds
-   distributive thermometer 
-   takes the sorted data and picks thresholds at regular intervals
-"""
 class DistributiveThermometer(Thermometer):
+    """
+    A specialized thermometer that uses data distribution quantiles as thresholds.
+    This thermometer computes thresholds based on the sorted values of the input data,
+    selecting quantiles that divide the data into equal parts.
+    """
     def __init__(self, num_bits=1, feature_wise=True):
         super().__init__(num_bits, feature_wise)
 
