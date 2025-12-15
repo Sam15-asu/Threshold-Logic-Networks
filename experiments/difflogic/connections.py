@@ -22,7 +22,7 @@ class WeightedThresholdGate(nn.Module):
     def __init__(self,
                  in_dim: int,
                  out_dim: int,
-                 fan_in: int = 6,
+                 fan_in: int = 8,
                  weight_init: str = "xavier_uniform",   # "kaiming_uniform" | "xavier_uniform" | "normal_small"
                  theta_init: str = "mean_abs_w",               # "zero" | "mean_abs_w" | "median_abs_w"
                  s_init: float = 1.0,
@@ -125,7 +125,7 @@ class WeightedThresholdGate(nn.Module):
 
 class Conv(nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size=3, stride=1, padding=1,
-                 *, fan_in=6, theta_init="mean_abs_w", s_init=1, **kwargs):
+                 *, fan_in=8, theta_init="mean_abs_w", s_init=1, **kwargs):
         super().__init__(**kwargs)
         self.kernel_size = kernel_size
         self.in_channels = in_channels

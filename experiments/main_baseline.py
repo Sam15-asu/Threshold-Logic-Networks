@@ -10,9 +10,6 @@ print(now_phx.strftime("%Y-%m-%d %H:%M:%S %Z"))
 import numpy as np
 import pandas as pd
 import torch
-import itertools
-#torch.set_default_dtype(torch.float16)
-#torch.set_default_tensor_type(torch.cuda.HalfTensor)
 import torchvision
 from torchvision import datasets, transforms
 from tqdm import tqdm
@@ -24,14 +21,9 @@ os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 import torch.nn.utils.prune as prune
 import openml
 from sklearn.model_selection import train_test_split
-#from mpl_toolkits.mplot3d import Axes3D
-
-from results_json import ResultsJSON
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 import mnist_dataset
-import uci_datasets
-from difflogic import LogicLayer
 from difflogic.threshold import ThresholdLayer, CustomSigmoid, CustomSigmoid2, GroupSum
 import difflogic.binarization as bin
 from difflogic.connections import Conv
@@ -181,11 +173,6 @@ def load_dataset(args):
         x_bin = thermometer.binarize(x_all)     # → [N, 1, 28, 28]
         # 1) Drop the singleton 1‑channel dim
         x_bin = x_bin.squeeze(-1)              # now shape [N, 28, 28, 2]
-        #x_bin = x_bin.permute(0, 3, 1, 2)   # → (B, 2, 28, 28)
-
-        # 2) Move the bit‑plane axis into the channel axis
-        #    Permute (batch, H, W, bits) → (batch, bits, H, W)
-        #x_bin = x_bin.permute(0, 3, 1, 2)      # now shape [N, 2, 28, 28]
 
         # same for test
         test_loader_big = torch.utils.data.DataLoader(dataset=test_dataset,batch_size=len(test_dataset),shuffle=False)
@@ -193,7 +180,6 @@ def load_dataset(args):
         x_test_all, y_test_all = next(iter(test_loader_big))
         x_test_bin = thermometer.binarize(x_test_all)  # → (Ntest, 1, 28, 28, 2)
         x_test_bin = x_test_bin.squeeze(-1)             # → (Ntest, 28, 28, 2)
-        #x_test_bin = x_test_bin.permute(0, 3, 1, 2)        # → (Ntest, 2, 28, 28)
     
         # 5. Wrap back into TensorDatasets
         train_dataset_bin = torch.utils.data.TensorDataset(x_bin, y_all)
@@ -224,10 +210,6 @@ def load_n(loader, n):
 def input_dim_of_dataset(dataset):
     return {
         'mnist': 1568,
-        'mnist20x20': 400,
-        'cifar-10-real-input': 3 * 32 * 32,
-        'cifar-10-3-thresholds': 3 * 32 * 32 * 3,
-        'cifar-10-10-thresholds': 3 * 32 * 32 * 10,
         'cifar10': 3 * 32 * 32 * 10,
         'fashionMNIST': 5488
     }[dataset]
@@ -236,10 +218,6 @@ def input_dim_of_dataset(dataset):
 def num_classes_of_dataset(dataset):
     return {
         'mnist': 10,
-        'mnist20x20': 10,
-        'cifar-10-real-input': 10,
-        'cifar-10-3-thresholds': 10,
-        'cifar-10-10-thresholds': 10,
         'cifar10': 10,
         'fashionMNIST': 10
     }[dataset]
@@ -262,43 +240,73 @@ def get_model(args):
     if arch == 'threshold_connected':
         llkw = dict(grad_factor=args.grad_factor)
 
-        #
-        # ─── 1) CONVOLUTIONAL TREE + OR‑POOL STAGES ─────────────────────────────────
-        #
 
-        # Conv‐Tree Block #1: 1→k channels, 5×5 kernel, depth=3, no padding
-        logic_layers.append(Conv(in_channels=1, out_channels=k, kernel_size=5, stride=1, padding=0))
-        logic_layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
+        if args.dataset == 'mnist':
+            #
+            # ─── 1) CONVOLUTIONAL TREE + OR‑POOL STAGES ─────────────────────────────────
+            #
 
-        # Conv‐Tree Block #2: k→2k channels, 3×3, depth=3, padding=1
-        logic_layers.append(Conv(in_channels=k, out_channels=3*k, kernel_size=3, stride=1, padding=1))
-        logic_layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
+            # Conv‐Tree Block #1: 1→k channels, 5×5 kernel, depth=3, no padding
+            logic_layers.append(Conv(in_channels=1, out_channels=k, kernel_size=5, stride=1, padding=0))
+            logic_layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
 
-        # Conv‐Tree Block #3: 2k→4k channels, 3×3, depth=3, padding=1
-        logic_layers.append(Conv(in_channels=3*k, out_channels=9*k, kernel_size=3, stride=1, padding=1))
-        logic_layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
+            # Conv‐Tree Block #2: k→2k channels, 3×3, depth=3, padding=1
+            logic_layers.append(Conv(in_channels=k, out_channels=3*k, kernel_size=3, stride=1, padding=1))
+            logic_layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
 
-        # Conv‐Tree Block #3: 2k→4k channels, 3×3, depth=3, padding=1
-        #logic_layers.append(Conv(in_channels=16*k, out_channels=32*k, kernel_size=3, stride=1, padding=1))
-        #logic_layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
+            # Conv‐Tree Block #3: 2k→4k channels, 3×3, depth=3, padding=1
+            logic_layers.append(Conv(in_channels=3*k, out_channels=9*k, kernel_size=3, stride=1, padding=1))
+            logic_layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
 
 
-        logic_layers.append(torch.nn.Flatten())
+            logic_layers.append(torch.nn.Flatten())
 
-        logic_layers.append(ThresholdLayer(in_dim=1296, out_dim=n, num_active =m, **llkw))
-        logic_layers.append(CustomSigmoid())
-        logic_layers.append(ThresholdLayer(in_dim=n, out_dim=1000, num_active =m, **llkw))
-        logic_layers.append(CustomSigmoid2())
+            #
+            # ─── 2) MLP LAYERS ─────────────────────────────────
+            #
+
+            logic_layers.append(ThresholdLayer(in_dim=1296, out_dim=n, num_active =m, **llkw))
+            logic_layers.append(CustomSigmoid())
+            logic_layers.append(ThresholdLayer(in_dim=n, out_dim=1000, num_active =m, **llkw))
+            logic_layers.append(CustomSigmoid2())
+
+        elif args.dataset == 'cifar10':
+            #
+            # ─── 1) CONVOLUTIONAL TREE + OR‑POOL STAGES ─────────────────────────────────
+            #
+
+            # Conv‐Tree Block #1: 1→k channels, 3×3 kernel, depth=3, padding=1
+            logic_layers.append(Conv(in_channels=2, out_channels=k, kernel_size=3, stride=1, padding=1))
+            logic_layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
+
+            # Conv‐Tree Block #2: k→2k channels, 3×3, depth=3, padding=1
+            logic_layers.append(Conv(in_channels=k, out_channels=4*k, kernel_size=3, stride=1, padding=1))
+            logic_layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
+
+            # Conv‐Tree Block #3: 2k→4k channels, 3×3, depth=3, padding=1
+            logic_layers.append(Conv(in_channels=4*k, out_channels=16*k, kernel_size=3, stride=1, padding=1))
+            logic_layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
+
+            # Conv‐Tree Block #3: 2k→4k channels, 3×3, depth=3, padding=1
+            logic_layers.append(Conv(in_channels=16*k, out_channels=32*k, kernel_size=3, stride=1, padding=1))
+            logic_layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
+
+
+            logic_layers.append(torch.nn.Flatten())
+
+            #
+            # ─── 2) MLP LAYERS ─────────────────────────────────
+            #
+
+            logic_layers.append(ThresholdLayer(in_dim=4096, out_dim=n, num_active =m, **llkw))
+            logic_layers.append(CustomSigmoid2())
         
         model = torch.nn.Sequential(*logic_layers, GroupSum(class_count, args.tau))
         model = CustomModel(model)
 
-    ####################################################################################################################
-
     else:
         raise NotImplementedError(arch)
 
-    ####################################################################################################################
 
     def count_parameters(model):
         return sum(p.numel() for p in model.parameters() if p.requires_grad)
@@ -309,26 +317,17 @@ def get_model(args):
         threshold_layers = [layer for layer in logic_layers if isinstance(layer, ThresholdLayer)]
         total_num_neurons = sum(layer.num_neurons for layer in threshold_layers)
         print(f'total_num_neurons={total_num_neurons}')
-        #total_num_weights = sum(layer.num_weights for layer in threshold_layers)
         total_num_weights = count_parameters(model)
-        #print(f'total_num_weights={total_num_weights}')
         print(f'total_num_weights={total_num_weights}')
-        if args.experiment_id is not None:
-            results.store_results({
-                'total_num_neurons': total_num_neurons,
-                'total_num_weights': total_num_weights,
-            })
 
-    """def print_trainable_parameters(model):
-        #print("Trainable parameters by layer:")
+    def print_trainable_parameters(model):
         for module_name, module in model.named_modules():
-            # Retrieve parameters that belong only to this module (not its children)
             params = list(module.named_parameters(recurse=False))
-            if params:  # if the module has any parameters registered
+            if params: 
                 print(f"\nLayer: '{module_name or 'root'}'")
-                #for param_name, param in params:
-                    #if param.requires_grad:
-                        #print(f"  {param_name}: shape {tuple(param.shape)}, count {param.numel()}")"""
+                for param_name, param in params:
+                    if param.requires_grad:
+                        print(f"  {param_name}: shape {tuple(param.shape)}, count {param.numel()}")
                     
             
     model = model.to(device)
@@ -336,11 +335,7 @@ def get_model(args):
     print(model)
     #print_trainable_parameters(model)
 
-    if args.experiment_id is not None:
-        results.store_results({'model_str': str(model)})
-
     loss_fn = torch.nn.CrossEntropyLoss()
-    #loss_fn = torch.nn.BCEWithLogitsLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate, betas=(0.75, 0.90))
 
     scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=5, threshold = 0.001, min_lr=1e-6)
@@ -359,11 +354,6 @@ def train(model, x, y, loss_fn, optimizer, device):
     loss = loss_fn(y_out, y)
     loss.backward()
 
-    #  gradient sanity check
-    for n, p in model.named_parameters():
-        if p.requires_grad and p.grad is None:
-            print("NO GRAD:", n)
-
     optimizer.step()
     return float(loss.detach())
 
@@ -372,7 +362,6 @@ def eval(model, loader, mode):
     orig_mode = model.training
     with torch.no_grad():
         model.train(mode=mode)
-        #print(model.CustomSigmoid.self.s)
         res = np.mean(
             [
                 (model(x.to(BITS_TO_TORCH_FLOATING_POINT_TYPE[args.training_bit_count]).to(device)).argmax(-1) == y.to(device)).to(torch.float32).mean().item()
@@ -383,19 +372,13 @@ def eval(model, loader, mode):
     return res.item()
 
 
-if __name__ == '__main__':
-
-    ####################################################################################################################
-    
+if __name__ == '__main__':   
     parser = argparse.ArgumentParser(description='Train logic gate network on the various datasets.')
 
     parser.add_argument('-eid', '--experiment_id', type=int, default=None)
 
     parser.add_argument('--dataset', type=str, choices=[
         'mnist',
-        'cifar-10-real-input',
-        'cifar-10-3-thresholds',
-        'cifar-10-10-thresholds',
         'cifar10',
         'fashionMNIST'
     ], required=True, help='the dataset to use')
@@ -434,11 +417,6 @@ if __name__ == '__main__':
         f'iteration count ({args.num_iterations}) has to be divisible by evaluation frequency ({args.eval_freq})'
     )
 
-    if args.experiment_id is not None:
-        assert 520_000 <= args.experiment_id < 530_000, args.experiment_id
-        results = ResultsJSON(eid=args.experiment_id, path='./results/')
-        results.store_args(args)
-
     torch.manual_seed(args.seed)
     random.seed(args.seed)
     np.random.seed(args.seed)
@@ -446,8 +424,7 @@ if __name__ == '__main__':
     train_loader, validation_loader, test_loader = load_dataset(args)
     model, loss_fn, optim, scheduler = get_model(args)
 
-    ####################################################################################################################
-
+    # ─── Training loop ───────────────────────────────────────────────────────────────
     best_acc = 0 
     cumulative_loss = 0 
     j=0
@@ -516,10 +493,8 @@ if __name__ == '__main__':
                 'test_acc_train_mode': test_accuracy_train_mode,
             }
 
-            if args.experiment_id is not None:
-                results.store_results(r)
-            #print(r)
-            #print("-----------------------------------------------------------------------------------------------------------------------------------------------------------")
+            print(r)
+            print("-----------------------------------------------------------------------------------------------------------------------------------------------------------")
 
 
             if valid_accuracy_eval_mode == -1:
@@ -531,22 +506,10 @@ if __name__ == '__main__':
                 if test_accuracy_eval_mode > best_acc:
                     best_acc = test_accuracy_eval_mode
                     print(f"Best Accuracy: {(best_acc * 100):.2f}%", flush=True)
-                    if args.experiment_id is not None:
-                        results.store_final_results(r)
-                        print("Best Training Accuracy result saved")
-                    #else:
-                        #print('IS THE BEST UNTIL NOW.')
                         
             elif valid_accuracy_eval_mode > best_acc:
                 best_acc = valid_accuracy_eval_mode
-                if args.experiment_id is not None:
-                    results.store_final_results(r)
-                #else:
-                    #print('IS THE BEST UNTIL NOW.')
-                    
-            if args.experiment_id is not None:
-                results.save()
-
+                
 
     # ─── Final evaluation on the test set ─────────────────────────────────────────────
     correct, total = 0, 0
@@ -604,8 +567,8 @@ import pandas as pd
 import torch
 
 # ===================== Layer mapping helper =====================
-LAYER_MAP = {0: 1, 2: 3, 4: 5, 6: 7, 8: 9}
-
+#LAYER_MAP = {0: 1, 2: 3, 4: 5, 6: 7, 8: 9}
+LAYER_MAP = {0: 1, 2: 3, 4: 5, 6: 7, 8: 9, 7: 11, 9: 13}
 def get_layer_tag(param: str):
     """
     Parse 'model.<idx>.(gatebank(.w)?| (effective_)?weight )' and map to your layer tag.
@@ -851,7 +814,7 @@ def run_csv_pipeline(dataset_name, ckpt_path, weights_dir="weights", out_dir="ou
               .agg(bias_min='min', bias_max='max', num_bias_elements='count')
         )
         stats = w_stats.join(b_stats, how='outer').fillna({'num_weight_elements':0,'num_bias_elements':0})
-        print(stats.head())
+        #print(stats.head())
 
     # 2) process → generate
     processed_csv   = os.path.join(weights_dir, f"model_effective_params_{dataset_name}_changed.csv")

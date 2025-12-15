@@ -142,17 +142,5 @@ Batches per epoch:         79
 Current Learning Rate: 2.00e-03
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 Processed 10000 samples out of 10000 available test samples.
 Test Accuracy: 44.79%
