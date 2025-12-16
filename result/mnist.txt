@@ -1,4 +1,4 @@
-2025-12-15 09:30:05 MST
+2025-12-15 23:22:09 MST
 ----------------------------------------------------------------------------
 device: cuda
 {'experiment_id': None, 'dataset': 'mnist', 'tau': 15.0, 'seed': 0, 'batch_size': 128, 'learning_rate': 0.01, 'training_bit_count': 32, 'implementation': 'cuda', 'num_iterations': 15000, 'eval_freq': 1000, 'valid_set_size': 0.0, 'extensive_eval': False, 'connections': 'unique', 'architecture': 'threshold_connected', 'num_neurons': 2000, 'num_layers': 1, 'num_active': 6, 'number_kernels': 16, 'grad_factor': 1.0}
@@ -108,6 +108,7 @@ Batches per epoch:         79
 {'train_acc_eval_mode': 0.9651630242496158, 'test_acc_eval_mode': 0.9648931962025317, 'test_acc_train_mode': 0.9801226265822784}
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Current Learning Rate: 1.00e-03
+[minimize_truth_tables] Wrote 884 unique non-constant functions to out/minimized_expressions_mnist.txt
 
 
 Processed 10000 samples out of 10000 available test samples.
