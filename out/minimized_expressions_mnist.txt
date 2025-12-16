@@ -1,0 +1,799 @@
+row0_1 / neuron0 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&e&f|a&b&c&e&g|a&b&c&f&g&h|a&b&d&e&f|a&b&d&e&g&h|a&b&d&f&g&h|a&b&e&f&g&h / (Func: 0) / non_zero_indices: 22, 24, 9, 6, 8, 10, 2, 11 / negative index: 22, 24
+row1_1 / neuron1 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g&h|a&b&d&e|a&b&d&f&g|a&b&d&f&h|a&b&d&g&h|a&b&e&f&g&h|a&c&d&e&f|a&c&d&e&g|a&c&d&e&h|a&c&d&f&g&h / (Func: 1) / non_zero_indices: 17, 13, 24, 2, 10, 14, 11, 6 / negative index: 24, 10
+row2_1 / neuron2 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&d&e|a&b&d&f|a&b&e&f|a&c&d&e|a&c&d&f|a&c&e&f|a&d&e&f&g / (Func: 2) / non_zero_indices: 0, 11, 9, 12, 19, 21, 6, 2 / negative index: 0, 9, 6, 2
+row3_1 / neuron3 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g|a&b&e&f|a&c&d&e|a&c&d&f|a&c&e&f|a&d&e&f&g|b&c&d&e|b&c&d&f|b&c&e&f&g&h / (Func: 3) / non_zero_indices: 2, 10, 9, 21, 3, 5, 6, 18 / negative index: 10, 21, 5, 18
+row4_1 / neuron4 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&e&f|a&b&c&e&g|a&b&d&e&f&g&h / (Func: 4) / non_zero_indices: 16, 2, 15, 4, 3, 19, 6, 14 / negative index: 16, 15
+row5_1 / neuron5 / a&b&c&d&e|a&b&c&d&f&g|a&b&c&e&f&g&h / (Func: 5) / non_zero_indices: 14, 16, 11, 21, 24, 23, 4, 10 / negative index: 14, 4
+row6_1 / neuron6 / a&b|a&c&d|a&c&e|a&c&f|a&c&g|a&d&e|a&d&f|a&d&g|a&e&f|a&e&g|a&f&g&h|b&c&d|b&c&e|b&c&f|b&c&g|b&d&e|b&d&f|b&d&g|b&e&f|c&d&e|c&d&f&g|c&d&f&h|c&e&f&g|d&e&f&g / (Func: 6) / non_zero_indices: 22, 24, 15, 16, 18, 6, 11, 12 / negative index: 18, 6, 11
+row7_1 / neuron7 / a&b&c|a&b&d|a&b&e|a&b&f&g&h|a&c&d|a&c&e|a&d&e&f|b&c&d|b&c&e&f|b&c&e&g / (Func: 7) / non_zero_indices: 15, 11, 7, 4, 0, 3, 19, 1 / negative index: 15, 0
+row8_1 / neuron8 / a&b&c&d|a&b&c&e|a&b&c&f&g&h|a&b&d&e&f|a&b&d&e&g|a&b&d&e&h|a&c&d&e&f / (Func: 8) / non_zero_indices: 0, 17, 21, 9, 10, 24, 11, 22 / negative index: 0, 10, 11, 22
+row9_1 / neuron9 / a&b&c&d|a&b&c&e|a&b&d&e&f|a&c&d&e&f / (Func: 9) / non_zero_indices: 23, 14, 24, 12, 9, 8, 4, 15 / negative index: 23, 24, 4, 15
+row10_1 / neuron10 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&e&f&g|a&b&e&f&h|a&c&d&e|a&c&d&f&g&h|b&c&d&e|b&c&d&f&g&h / (Func: 10) / non_zero_indices: 8, 9, 19, 15, 13, 20, 17, 21 / negative index: 15, 20, 17, 21
+row11_1 / neuron11 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e&f|a&b&d&e&g|a&b&d&e&h|a&b&d&f&g|a&b&d&f&h|a&b&d&g&h|a&b&e&f&g|a&b&e&f&h|a&b&e&g&h|a&c&d&e&f|a&c&d&e&g|a&c&d&e&h|a&c&d&f&g|a&c&d&f&h|a&c&d&g&h|a&c&e&f&g|b&c&d&e&f|b&c&d&e&g|b&c&d&f&g|b&c&e&f&g&h / (Func: 11) / non_zero_indices: 10, 21, 5, 23, 11, 6, 7, 18 / negative index: 5, 23, 7
+row12_1 / neuron12 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&e&h|a&b&f&g|a&b&f&h|a&c&d&e|a&c&d&f&g|a&c&d&f&h|a&c&d&g&h|a&c&e&f&g|a&c&e&f&h|a&d&e&f&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h|b&c&d&f&g|b&c&d&f&h|b&c&e&f&g&h / (Func: 12) / non_zero_indices: 14, 17, 12, 21, 13, 11, 2, 1 / negative index: 21, 11, 2, 1
+row13_1 / neuron13 / a&b|a&c&d|a&c&e&f|a&c&e&g|a&c&e&h|a&c&f&g|a&c&f&h|a&d&e&f|a&d&e&g|a&d&f&g / (Func: 13) / non_zero_indices: 13, 18, 23, 21, 1, 22, 0, 11 / negative index: 1, 0, 11
+row14_1 / neuron14 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f|a&c&g|a&c&h|a&d&e|a&d&f&g|a&d&f&h|a&d&g&h|a&e&f&g&h|b&c&d|b&c&e&f|b&c&e&g|b&c&e&h|b&c&f&g|b&c&f&h|b&c&g&h|b&d&e&f|b&d&e&g|b&d&e&h|b&d&f&g|c&d&e&f|c&d&e&g|c&d&e&h|c&d&f&g&h / (Func: 14) / non_zero_indices: 18, 14, 9, 5, 23, 4, 13, 22 / negative index: 5, 4, 22
+row15_1 / neuron15 / a&b&c&d&e&f|a&b&c&d&e&g|a&b&c&d&e&h|a&b&c&d&f&g|a&b&c&d&f&h|a&b&c&d&g&h|a&b&c&e&f&g|a&b&c&e&f&h|a&b&c&e&g&h|a&b&c&f&g&h|a&b&d&e&f&g|a&b&d&e&f&h|a&b&d&e&g&h|a&b&d&f&g&h|a&b&e&f&g&h|a&c&d&e&f&g|a&c&d&e&f&h|a&c&d&e&g&h|a&c&d&f&g&h|a&c&e&f&g&h|a&d&e&f&g&h|b&c&d&e&f&g|b&c&d&e&f&h|b&c&d&e&g&h|b&c&d&f&g&h / (Func: 15) / non_zero_indices: 12, 17, 10, 0, 24, 21, 14, 7 / negative index: 10, 0, 24
+row0_3 / neuron16 / a&b|a&c&d|a&c&e|a&c&f&g|a&c&f&h|a&d&e|a&d&f&g|b&c&d&e|b&c&d&f|b&c&d&g|b&c&e&f&g|b&c&e&f&h|b&d&e&f&g|b&d&e&f&h / (Func: 16) / non_zero_indices: 108, 107, 74, 10, 13, 101, 76, 91 / negative index: 107, 13, 76
+row1_3 / neuron17 / a&b|a&c|a&d&e|a&d&f|b&c&d|b&c&e&f|b&c&e&g|b&c&e&h|b&c&f&g / (Func: 17) / non_zero_indices: 89, 53, 7, 124, 123, 82, 127, 91 / negative index: 53, 127, 91
+row2_3 / neuron18 / a&b&c&d|a&b&c&e&f|a&b&c&e&g|a&b&c&e&h|a&b&c&f&g|a&b&d&e&f|a&b&d&e&g|a&b&d&e&h|a&b&d&f&g&h|a&c&d&e&f|a&c&d&e&g|a&c&d&e&h|a&c&d&f&g&h|b&c&d&e&f|b&c&d&e&g&h / (Func: 18) / non_zero_indices: 135, 138, 45, 23, 123, 70, 133, 130 / negative index: 135, 45, 133
+row3_3 / neuron19 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g|a&b&e&f|a&b&e&g|a&b&f&g|a&c&d&e&f&g|b&c&d&e&f&g&h / (Func: 19) / non_zero_indices: 12, 52, 36, 139, 142, 124, 3, 76 / negative index: 142, 124, 3, 76
+row4_3 / neuron20 / a&b|a&c&d&e|a&c&d&f|a&c&d&g|a&c&d&h|a&c&e&f&g&h|a&d&e&f&g&h|b&c&d&e&f&g&h / (Func: 20) / non_zero_indices: 84, 34, 69, 95, 78, 129, 47, 70 / negative index: 78, 129, 70
+row5_3 / neuron21 / a&b|a&c|a&d|a&e|a&f&g&h|b&c|b&d|b&e&f|b&e&g|b&e&h|c&d|c&e&f|d&e&f&g&h / (Func: 21) / non_zero_indices: 93, 38, 65, 126, 48, 6, 117, 134 / negative index: 117, 134
+row6_3 / neuron22 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e|b&f&g|b&f&h|c&d|c&e|c&f&g|c&f&h|d&e&f|d&e&g|d&e&h|d&f&g&h|e&f&g&h / (Func: 22) / non_zero_indices: 14, 143, 60, 98, 77, 67, 81, 132 / negative index: 60
+row7_3 / neuron23 / a&b&c&d|a&b&c&e&f|a&b&c&e&g|a&b&c&e&h|a&b&c&f&g|a&b&c&f&h|a&b&c&g&h|a&b&d&e&f|a&b&d&e&g|a&b&d&e&h|a&b&d&f&g|a&b&d&f&h|a&b&d&g&h|a&b&e&f&g&h|a&c&d&e&f&g|a&c&d&e&f&h|a&c&d&e&g&h|a&c&d&f&g&h|a&c&e&f&g&h|b&c&d&e&f&g|b&c&d&e&f&h|b&c&d&e&g&h|b&c&d&f&g&h|b&c&e&f&g&h / (Func: 23) / non_zero_indices: 55, 67, 52, 98, 14, 82, 23, 119 / negative index: 52, 98, 82
+row8_3 / neuron24 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f|a&c&g|a&c&h|a&d&e|a&d&f|a&d&g|a&d&h|a&e&f&g|a&e&f&h|a&e&g&h|a&f&g&h|b&c&d&e&f&g|b&c&d&e&f&h|b&c&d&e&g&h|b&c&d&f&g&h / (Func: 24) / non_zero_indices: 88, 28, 25, 115, 18, 67, 42, 90 / negative index: 28, 67, 42
+row9_3 / neuron25 / a|b|c|d&e|d&f|d&g|d&h|e&f&g / (Func: 25) / non_zero_indices: 42, 139, 47, 4, 102, 98, 30, 67 / negative index: 30, 67
+row10_3 / neuron26 / a&b|a&c&d|a&c&e|a&c&f&g&h|a&d&e|a&d&f&g&h|b&c&d|b&c&e&f&g|b&c&e&f&h|b&d&e&f&g&h / (Func: 26) / non_zero_indices: 5, 12, 70, 72, 26, 47, 85, 107 / negative index: 70, 26, 107
+row11_3 / neuron27 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&d&h|a&b&c&e&f|a&b&c&e&g|a&b&d&e&f&g|a&c&d&e&f&g&h / (Func: 27) / non_zero_indices: 90, 32, 46, 120, 135, 134, 19, 7 / negative index: 32, 135, 19
+row12_3 / neuron28 / a&b&c&d|a&b&c&e&f|a&b&c&e&g|a&b&c&f&g&h|a&b&d&e&f&g|a&b&d&e&f&h|a&b&d&e&g&h / (Func: 28) / non_zero_indices: 10, 13, 99, 124, 5, 129, 43, 123 / negative index: 99, 5, 43, 123
+row13_3 / neuron29 / a&b&c&d|a&b&c&e|a&b&c&f&g|a&b&c&f&h|a&b&c&g&h|a&b&d&e|a&b&d&f&g|a&b&d&f&h|a&b&e&f&g|a&c&d&e&f|a&c&d&e&g|a&c&d&e&h|a&c&d&f&g|a&c&d&f&h|a&c&e&f&g&h|a&d&e&f&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h|b&c&d&f&g|b&c&d&f&h|b&c&e&f&g&h|b&d&e&f&g&h|c&d&e&f&g&h / (Func: 29) / non_zero_indices: 92, 140, 132, 40, 33, 110, 91, 64 / negative index: 140, 132, 33
+row14_3 / neuron30 / a&b|a&c&d&e|a&c&d&f|a&c&d&g|a&c&e&f|a&c&e&g|a&c&f&g&h|a&d&e&f&g|a&d&e&f&h|b&c&d&e&f|b&c&d&e&g|b&c&d&f&g|b&c&e&f&g / (Func: 30) / non_zero_indices: 11, 136, 117, 67, 24, 28, 124, 73 / negative index: 24, 28, 73
+row15_3 / neuron31 / a&b&c&d&e&f|a&b&c&d&e&g|a&b&c&d&e&h / (Func: 31) / non_zero_indices: 6, 70, 25, 19, 39, 110, 57, 2 / negative index: 25, 39, 110, 57
+row16_3 / neuron32 / a&b&c|a&b&d&e|a&b&d&f|a&b&e&f&g / (Func: 32) / non_zero_indices: 51, 53, 101, 65, 112, 31, 142, 1 / negative index: 51, 65, 142
+row17_3 / neuron33 / a&b&c&d|a&b&c&e|a&b&c&f&g|a&b&d&e|a&b&d&f&g|a&b&e&f&g|a&c&d&e|a&c&d&f&g|a&c&e&f&g&h|b&c&d&e&f|b&c&d&e&g / (Func: 33) / non_zero_indices: 120, 90, 123, 49, 110, 8, 104, 102 / negative index: 110, 8, 104
+row18_3 / neuron34 / a&b&c|a&b&d|a&b&e&f&g&h|a&c&d&e&f&g&h / (Func: 34) / non_zero_indices: 41, 85, 110, 60, 92, 31, 65, 112 / negative index: 60, 65, 112
+row19_3 / neuron35 / a&b&c|a&b&d|a&b&e|a&b&f&g|a&c&d|a&c&e&f|a&c&e&g&h|a&d&e&f|b&c&d&e&f|b&c&d&e&g / (Func: 35) / non_zero_indices: 43, 134, 57, 117, 133, 18, 109, 88 / negative index: 57
+row20_3 / neuron36 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f&g|a&b&e&f&h|a&b&e&g&h|a&b&f&g&h|a&c&d&e|a&c&d&f&g|a&c&d&f&h|a&c&d&g&h|a&c&e&f&g|a&c&e&f&h|a&c&e&g&h|a&d&e&f&g|b&c&d&e&f&g|b&c&d&e&f&h|b&c&d&e&g&h|b&c&d&f&g&h|b&c&e&f&g&h / (Func: 36) / non_zero_indices: 52, 122, 127, 88, 42, 25, 115, 51 / negative index: 52, 25, 115, 51
+row21_3 / neuron37 / a&b&c&d|a&b&c&e|a&b&c&f&g&h|a&b&d&e|a&c&d&e&f|a&c&d&e&g|a&c&d&e&h|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h / (Func: 37) / non_zero_indices: 102, 8, 113, 103, 70, 79, 126, 94 / negative index: 79
+row22_3 / neuron38 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&d&h|a&b&c&e&f&g|a&b&c&e&f&h|a&b&c&e&g&h|a&b&d&e&f&g|a&b&d&e&f&h|a&b&d&e&g&h|a&c&d&e&f&g&h|b&c&d&e&f&g&h / (Func: 38) / non_zero_indices: 39, 12, 135, 105, 10, 43, 137, 48 / negative index: 39, 43, 48
+row23_3 / neuron39 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e&f|a&b&d&e&g|a&b&d&e&h|a&b&d&f&g|a&b&d&f&h|a&b&e&f&g&h|a&c&d&e&f|a&c&d&e&g&h|a&c&d&f&g&h / (Func: 39) / non_zero_indices: 94, 139, 79, 66, 100, 8, 38, 59 / negative index: 139, 79, 38
+row24_3 / neuron40 / a&b&c&d|a&b&c&e&f|a&b&c&e&g|a&b&d&e&f|a&b&d&e&g|a&c&d&e&f / (Func: 40) / non_zero_indices: 76, 40, 95, 67, 70, 87, 136, 117 / negative index: 76, 87, 136
+row25_3 / neuron41 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g&h|a&b&e&f|a&c&d&e|a&c&d&f&g|a&c&d&f&h / (Func: 41) / non_zero_indices: 47, 6, 115, 143, 132, 51, 103, 123 / negative index: 47, 143
+row26_3 / neuron42 / a&b|a&c|a&d|a&e / (Func: 42) / non_zero_indices: 89, 142, 139, 54, 82, 25, 79, 65 / negative index: 54, 82, 79, 65
+row27_3 / neuron43 / a|b|c&d|c&e|c&f|c&g|c&h|d&e|d&f|d&g&h|e&f|e&g&h|f&g&h / (Func: 43) / non_zero_indices: 39, 46, 20, 138, 37, 32, 143, 52 / negative index: 52
+row28_3 / neuron44 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f&g|a&c&f&h|a&c&g&h|a&d&e&f|a&d&e&g|a&d&f&g&h|b&c&d|b&c&e&f|b&c&e&g|b&c&e&h|b&c&f&g|b&d&e&f&g|b&d&e&f&h|b&d&e&g&h|c&d&e&f&g&h / (Func: 44) / non_zero_indices: 88, 20, 59, 25, 114, 60, 101, 23 / negative index: 59, 25, 114, 60
+row29_3 / neuron45 / a&b|a&c&d|a&c&e|a&c&f|a&c&g|a&c&h|a&d&e&f|a&d&e&g&h|a&d&f&g&h|a&e&f&g&h|b&c&d|b&c&e|b&c&f|b&c&g|b&d&e&f|b&d&e&g&h / (Func: 45) / non_zero_indices: 83, 50, 70, 22, 62, 34, 103, 48 / negative index: 83, 34
+row30_3 / neuron46 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e&f&g|a&b&d&e&f&h|a&b&d&e&g&h|a&b&d&f&g&h / (Func: 46) / non_zero_indices: 8, 53, 9, 127, 126, 138, 10, 133 / negative index: 53, 9, 127, 126, 10
+row31_3 / neuron47 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&e&h|a&c&d&e|a&c&d&f&g|a&c&e&f&g|b&c&d&e&f|b&c&d&e&g / (Func: 47) / non_zero_indices: 85, 35, 46, 115, 136, 9, 110, 19 / negative index: 115, 136, 19
+row32_3 / neuron48 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f&g|a&c&f&h|a&c&g&h|a&d&e&f|a&d&e&g|a&d&f&g|a&e&f&g|b&c&d&e|b&c&d&f|b&c&d&g|b&c&d&h|b&c&e&f|b&c&e&g|b&c&e&h|b&c&f&g|b&d&e&f|b&d&e&g|b&d&f&g|b&e&f&g|c&d&e&f&g / (Func: 48) / non_zero_indices: 44, 45, 138, 65, 19, 42, 129, 142 / negative index: 138, 65
+row33_3 / neuron49 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d&e|a&c&d&f&g|a&c&e&f&g|b&c&d&e&f|b&c&d&e&g / (Func: 49) / non_zero_indices: 1, 48, 83, 4, 78, 102, 67, 20 / negative index: 48, 78, 102, 67, 20
+row34_3 / neuron50 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&d&e&f&g|a&b&d&e&f&h|a&b&d&e&g&h|a&b&d&f&g&h|a&c&d&e&f&g|b&c&d&e&f&g&h / (Func: 50) / non_zero_indices: 136, 42, 34, 127, 35, 104, 121, 77 / negative index: 136, 127, 121, 77
+row35_3 / neuron51 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g&h|a&b&d&e|a&b&d&f&g|a&b&e&f&g&h|a&c&d&e&f|a&c&d&e&g|a&c&d&e&h|b&c&d&e&f&g / (Func: 51) / non_zero_indices: 90, 20, 13, 37, 102, 73, 108, 62 / negative index: 20, 37, 62
+row36_3 / neuron52 / a&b&c|a&b&d&e&f&g / (Func: 52) / non_zero_indices: 50, 11, 1, 100, 103, 96, 90, 9 / negative index: 1, 103, 96, 90
+row37_3 / neuron53 / a|b|c&d|c&e|c&f|c&g / (Func: 53) / non_zero_indices: 71, 122, 19, 132, 10, 49, 6, 120 / negative index: 10, 49, 6, 120
+row38_3 / neuron54 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f&g|a&d&e&f|b&c&d|b&c&e&f|b&c&e&g&h / (Func: 54) / non_zero_indices: 98, 124, 93, 127, 61, 132, 34, 39 / negative index: 93, 127, 34, 39
+row39_3 / neuron55 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f|a&c&g&h|a&d&e|a&d&f&g|a&d&f&h|a&e&f&g|a&e&f&h|b&c&d|b&c&e|b&c&f&g&h|b&d&e|b&d&f&g&h|b&e&f&g&h|c&d&e&f|c&d&e&g / (Func: 55) / non_zero_indices: 21, 115, 138, 30, 22, 29, 81, 55 / negative index: 30, 29
+row40_3 / neuron56 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g&h|a&b&c&e&f|a&b&d&e&f&g|a&b&d&e&f&h|a&c&d&e&f&g / (Func: 56) / non_zero_indices: 53, 24, 139, 35, 61, 55, 133, 84 / negative index: 53, 24, 61
+row41_3 / neuron57 / a&b&c&d|a&b&c&e&f|a&b&c&e&g|a&b&c&f&g&h|a&b&d&e&f&g|a&c&d&e&f&g / (Func: 57) / non_zero_indices: 80, 91, 25, 7, 20, 116, 42, 30 / negative index: 80, 116, 42, 30
+row42_3 / neuron58 / a&b&c|a&b&d|a&b&e|a&b&f&g|a&c&d&e|a&c&d&f|a&c&d&g|a&c&e&f|a&c&e&g|a&d&e&f&g|b&c&d&e|b&c&d&f|b&c&d&g|b&c&e&f&g|b&d&e&f&g / (Func: 58) / non_zero_indices: 119, 7, 76, 27, 50, 51, 133, 10 / negative index: 27, 50, 51, 10
+row43_3 / neuron59 / a&b&c&d|a&b&c&e&f|a&b&c&e&g|a&b&c&e&h|a&b&c&f&g|a&b&c&f&h|a&b&c&g&h|a&b&d&e&f|a&b&d&e&g|a&b&d&e&h|a&b&d&f&g|a&b&d&f&h|a&b&d&g&h|a&b&e&f&g|a&b&e&f&h|a&b&e&g&h|a&c&d&e&f|a&c&d&e&g|a&c&d&f&g|a&c&e&f&g&h|a&d&e&f&g&h|b&c&d&e&f&g|b&c&d&e&f&h / (Func: 59) / non_zero_indices: 30, 87, 105, 112, 132, 63, 75, 40 / negative index: 30, 40
+row44_3 / neuron60 / a&b&c|a&b&d&e|a&b&d&f&g|a&b&d&f&h|a&c&d&e|a&c&d&f&g&h|b&c&d&e&f&g&h / (Func: 60) / non_zero_indices: 14, 15, 5, 88, 50, 28, 26, 63 / negative index: 50, 28, 26
+row45_3 / neuron61 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g&h|a&c&d&e&f / (Func: 61) / non_zero_indices: 80, 95, 65, 126, 1, 71, 102, 117 / negative index: 80, 65, 102
+row46_3 / neuron62 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e&f|a&b&d&e&g|a&b&d&f&g|a&c&d&e&f&g|b&c&d&e&f&g&h / (Func: 62) / non_zero_indices: 143, 92, 108, 128, 33, 104, 37, 96 / negative index: 108, 33, 96
+row47_3 / neuron63 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&f&g&h|a&c&d&e|a&c&d&f|a&c&d&g|a&c&d&h|a&c&e&f|a&c&e&g|a&c&f&g&h|a&d&e&f|a&d&e&g&h|a&d&f&g&h|b&c&d&e|b&c&d&f|b&c&d&g|b&c&d&h|b&c&e&f|b&c&e&g&h|b&c&f&g&h|b&d&e&f|b&d&e&g&h|b&d&f&g&h|c&d&e&f&g|c&d&e&f&h|c&d&e&g&h|c&d&f&g&h / (Func: 63) / non_zero_indices: 9, 64, 5, 34, 119, 43, 81, 77 / negative index: 9, 64, 81
+row0_5 / neuron64 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&d&e&f|a&b&d&e&g|a&b&d&e&h|a&b&d&f&g|a&b&d&f&h|a&b&d&g&h|a&b&e&f&g|a&c&d&e&f|a&c&d&e&g|a&c&d&f&g|a&c&e&f&g|a&d&e&f&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&f&g|b&c&e&f&g&h|b&d&e&f&g&h / (Func: 64) / non_zero_indices: 153, 385, 234, 182, 8, 295, 200, 378 / negative index: 153, 182, 200, 378
+row1_5 / neuron65 / a&b&c|a&b&d|a&b&e|a&b&f&g|a&c&d&e|a&c&d&f&g|b&c&d&e&f&g|b&c&d&e&f&h / (Func: 65) / non_zero_indices: 391, 214, 232, 89, 220, 77, 86, 241 / negative index: 232, 89, 77, 86
+row2_5 / neuron66 / a&b&c|a&b&d|a&b&e|a&b&f&g|a&b&f&h|a&c&d&e|a&c&d&f&g|a&c&d&f&h|a&c&e&f&g|a&c&e&f&h|a&d&e&f&g|a&d&e&f&h / (Func: 66) / non_zero_indices: 73, 347, 390, 122, 323, 136, 18, 201 / negative index: 122, 136, 18, 201
+row3_5 / neuron67 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&e&h|a&b&f&g|a&c&d&e&f&g|b&c&d&e&f&g / (Func: 67) / non_zero_indices: 413, 320, 164, 338, 382, 299, 60, 121 / negative index: 164, 338, 299, 60
+row4_5 / neuron68 / a&b|a&c&d|a&c&e|a&c&f|a&c&g|a&d&e&f&g|b&c&d&e|b&c&d&f|b&c&d&g|b&c&e&f&g|b&c&e&f&h|b&c&e&g&h / (Func: 68) / non_zero_indices: 179, 403, 262, 59, 132, 248, 108, 198 / negative index: 403, 59, 248, 108, 198
+row5_5 / neuron69 / a&b&c|a&b&d|a&b&e&f|a&b&e&g|a&b&f&g|a&c&d&e|a&c&d&f|a&c&d&g|a&c&d&h|a&c&e&f|a&c&e&g|a&c&f&g|a&d&e&f|b&c&d&e|b&c&d&f|b&c&d&g|b&c&e&f|b&c&e&g|b&c&f&g&h|b&d&e&f|c&d&e&f&g / (Func: 69) / non_zero_indices: 396, 360, 224, 385, 232, 355, 267, 398 / negative index: 396, 360, 398
+row6_5 / neuron70 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&d&h|a&b&c&e&f|a&b&c&e&g|a&b&d&e&f|a&b&d&e&g&h|a&c&d&e&f&g|a&c&d&e&f&h|a&c&d&e&g&h|b&c&d&e&f&g|b&c&d&e&f&h|b&c&d&e&g&h / (Func: 70) / non_zero_indices: 379, 189, 411, 228, 139, 25, 81, 162 / negative index: 228, 139, 25, 81
+row7_5 / neuron71 / a&b|a&c&d|a&c&e|a&c&f|a&c&g|a&c&h|a&d&e|a&d&f&g|a&d&f&h|a&e&f&g&h|b&c&d&e&f&g&h / (Func: 71) / non_zero_indices: 324, 126, 40, 17, 209, 79, 75, 281 / negative index: 17, 209, 79, 75, 281
+row8_5 / neuron72 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&d&e|a&b&d&f|a&b&d&g&h|a&b&e&f&g|a&c&d&e|a&c&d&f|a&c&e&f&g&h|b&c&d&e|b&c&d&f&g|b&c&d&f&h / (Func: 72) / non_zero_indices: 96, 189, 274, 24, 400, 126, 300, 106 / negative index: 189, 400, 126, 300
+row9_5 / neuron73 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e|a&d&e|b&c&d&e / (Func: 73) / non_zero_indices: 373, 59, 417, 402, 397, 351, 380, 219 / negative index: 59, 397, 380
+row10_5 / neuron74 / a&b&c|a&b&d|a&b&e&f|a&b&e&g|a&b&e&h|a&b&f&g&h|a&c&d&e|a&c&d&f|a&c&d&g|a&c&e&f|a&c&e&g&h|b&c&d&e|b&c&d&f&g|b&c&d&f&h|b&c&e&f&g / (Func: 74) / non_zero_indices: 377, 283, 396, 162, 166, 401, 197, 29 / negative index: 377, 162, 197, 29
+row11_5 / neuron75 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e&f|a&c&e&g|a&d&e&f|a&d&e&g|b&c&d&e / (Func: 75) / non_zero_indices: 224, 196, 157, 208, 56, 275, 219, 422 / negative index: 208, 56, 275
+row12_5 / neuron76 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&c&d&e|a&c&d&f|a&c&d&g|a&c&e&f|a&c&e&g|a&d&e&f&g&h|b&c&d&e|b&c&d&f&g / (Func: 76) / non_zero_indices: 149, 176, 184, 79, 398, 61, 225, 257 / negative index: 79, 61, 225
+row13_5 / neuron77 / a&b&c&d|a&b&c&e&f|a&b&c&e&g|a&b&c&e&h|a&b&c&f&g|a&b&c&f&h|a&b&c&g&h|a&b&d&e&f|a&b&d&e&g|a&b&d&e&h|a&b&d&f&g|a&b&d&f&h|a&b&e&f&g&h / (Func: 77) / non_zero_indices: 34, 361, 126, 312, 430, 162, 7, 3 / negative index: 361, 126, 312, 162
+row14_5 / neuron78 / a&b&c&d&e&f|a&b&c&d&e&g|a&b&c&d&e&h|a&b&c&d&f&g|a&b&c&d&f&h|a&b&c&d&g&h|a&b&c&e&f&g|a&b&d&e&f&g|a&c&d&e&f&g / (Func: 78) / non_zero_indices: 376, 48, 394, 377, 67, 230, 225, 130 / negative index: 48, 394, 377
+row15_5 / neuron79 / a&b|a&c|a&d|a&e|a&f&g|b&c&d|b&c&e|b&c&f|b&c&g|b&d&e|b&d&f&g|b&e&f&g|c&d&e&f|c&d&e&g / (Func: 79) / non_zero_indices: 255, 231, 368, 403, 361, 261, 80, 8 / negative index: 403, 261
+row16_5 / neuron80 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g&h|a&b&f&g&h|a&c&d&e|a&c&d&f|a&c&d&g&h|a&c&e&f|a&c&e&g&h|a&c&f&g&h|a&d&e&f&g&h|b&c&d&e&f|b&c&d&e&g&h|b&c&d&f&g&h / (Func: 80) / non_zero_indices: 189, 70, 234, 76, 230, 413, 353, 268 / negative index: 189, 234, 353
+row17_5 / neuron81 / a|b&c|b&d|b&e|b&f&g&h / (Func: 81) / non_zero_indices: 199, 422, 5, 0, 18, 297, 60, 234 / negative index: 5, 297
+row18_5 / neuron82 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&e&f|a&b&c&e&g|a&b&c&f&g|a&b&d&e&f|a&b&d&e&g|a&b&d&f&g&h|a&c&d&e&f&g|a&c&d&e&f&h / (Func: 82) / non_zero_indices: 280, 223, 265, 302, 260, 248, 188, 310 / negative index: 280, 302, 248, 310
+row19_5 / neuron83 / a&b|a&c|a&d&e|a&d&f|a&d&g|a&e&f|b&c|b&d&e|b&d&f|b&e&f|c&d&e&f / (Func: 83) / non_zero_indices: 1, 0, 36, 47, 306, 135, 37, 387 / negative index: 36, 306, 387
+row20_5 / neuron84 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f&g|a&b&e&f&h|a&c&d&e&f|a&c&d&e&g|a&c&d&e&h|a&c&d&f&g|a&c&d&f&h|a&c&d&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h|b&c&d&f&g|b&c&d&f&h / (Func: 84) / non_zero_indices: 392, 230, 293, 113, 77, 429, 316, 33 / negative index: 113, 429, 316
+row21_5 / neuron85 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&e&h|a&b&f&g|a&b&f&h|a&c&d&e|a&c&d&f|a&c&d&g|a&c&d&h|a&c&e&f|a&c&e&g|a&c&e&h|a&c&f&g|a&d&e&f|a&d&e&g|a&d&e&h|a&d&f&g&h|a&e&f&g&h|b&c&d&e&f&g|b&c&d&e&f&h / (Func: 85) / non_zero_indices: 29, 262, 23, 220, 6, 393, 166, 415 / negative index: 23, 220, 393, 166
+row22_5 / neuron86 / a|b|c&d|c&e|c&f|c&g|d&e&f&g / (Func: 86) / non_zero_indices: 218, 234, 253, 404, 177, 198, 261, 340 / negative index: 261, 340
+row23_5 / neuron87 / a&b&c|a&b&d|a&b&e|a&c&d&e|a&c&d&f&g|a&c&d&f&h|a&c&e&f&g|a&c&e&f&h|a&d&e&f&g&h / (Func: 87) / non_zero_indices: 108, 415, 352, 232, 299, 228, 269, 381 / negative index: 415, 299, 381
+row24_5 / neuron88 / a&b&c&d|a&b&c&e&f|a&b&c&e&g|a&b&d&e&f|a&c&d&e&f|b&c&d&e&f&g / (Func: 88) / non_zero_indices: 0, 112, 212, 157, 418, 17, 16, 181 / negative index: 0, 212, 181
+row25_5 / neuron89 / a&b&c|a&b&d|a&b&e|a&b&f&g|a&c&d&e|a&c&d&f|a&c&d&g|a&c&e&f|a&c&e&g|a&d&e&f|a&d&e&g / (Func: 89) / non_zero_indices: 116, 370, 411, 241, 260, 379, 50, 78 / negative index: 370, 411, 260
+row26_5 / neuron90 / a|b&c&d&e|b&c&d&f|b&c&d&g&h / (Func: 90) / non_zero_indices: 28, 240, 291, 97, 365, 87, 142, 347 / negative index: 365, 87, 347
+row27_5 / neuron91 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f&g|a&b&e&f&h|a&b&e&g&h|a&b&f&g&h|a&c&d&e&f|a&c&d&e&g|a&c&d&e&h|a&c&d&f&g|a&c&d&f&h|a&c&d&g&h|a&c&e&f&g|a&c&e&f&h|a&c&e&g&h|a&d&e&f&g&h|b&c&d&e&f&g|b&c&d&e&f&h|b&c&d&e&g&h|b&c&d&f&g&h|b&c&e&f&g&h / (Func: 91) / non_zero_indices: 256, 128, 262, 242, 375, 178, 59, 254 / negative index: 128, 242, 375, 254
+row28_5 / neuron92 / a|b&c&d&e|b&c&d&f|b&c&d&g|b&c&e&f|b&c&e&g&h|b&c&f&g&h|b&d&e&f&g|b&d&e&f&h / (Func: 92) / non_zero_indices: 64, 48, 384, 286, 405, 2, 410, 149 / negative index: 384, 2, 149
+row29_5 / neuron93 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&d&e|a&b&d&f|a&c&d&e|a&c&d&f|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h / (Func: 93) / non_zero_indices: 261, 37, 83, 80, 404, 139, 330, 372 / negative index: 261, 80, 404, 139
+row30_5 / neuron94 / a|b&c|b&d&e|b&d&f|b&d&g / (Func: 94) / non_zero_indices: 414, 149, 108, 211, 54, 68, 339, 19 / negative index: 54, 68, 339
+row31_5 / neuron95 / a&b|a&c&d|a&c&e|a&c&f|a&c&g|a&d&e|a&d&f&g|b&c&d|b&c&e&f|b&d&e&f&g / (Func: 95) / non_zero_indices: 328, 124, 372, 50, 382, 429, 260, 236 / negative index: 50, 429, 236
+row32_5 / neuron96 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&d&e|a&b&d&f|a&b&d&g|a&b&e&f|a&b&e&g|a&b&f&g|a&c&d&e&f|a&c&d&e&g|a&c&d&e&h|a&c&d&f&g|a&c&d&f&h|a&c&d&g&h|a&c&e&f&g|a&c&e&f&h|a&c&e&g&h|a&c&f&g&h|a&d&e&f&g|a&d&e&f&h|a&d&e&g&h|a&d&f&g&h|a&e&f&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h|b&c&d&f&g|b&c&d&f&h|b&c&d&g&h|b&c&e&f&g|b&c&e&f&h|b&c&e&g&h|b&c&f&g&h|b&d&e&f&g|b&d&e&f&h|c&d&e&f&g&h / (Func: 96) / non_zero_indices: 20, 98, 246, 6, 7, 147, 237, 380 / negative index: 98, 246, 147
+row33_5 / neuron97 / a&b&c|a&b&d|a&b&e|a&b&f&g|a&b&f&h|a&c&d|a&c&e&f|a&c&e&g|a&c&e&h|a&c&f&g|b&c&d&e|b&c&d&f|b&c&d&g|b&c&e&f&g|b&c&e&f&h / (Func: 97) / non_zero_indices: 380, 76, 125, 63, 163, 288, 279, 168 / negative index: 380, 63, 168
+row34_5 / neuron98 / a|b&c / (Func: 98) / non_zero_indices: 280, 79, 73, 254, 297, 242, 413, 36 / negative index: 297
+row35_5 / neuron99 / a&b|a&c|a&d|a&e|a&f|a&g&h|b&c|b&d&e|b&d&f|b&d&g|b&e&f&g / (Func: 99) / non_zero_indices: 101, 291, 315, 242, 395, 353, 130, 218 / negative index: 315, 353, 218
+row36_5 / neuron100 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&f&g&h|a&c&d&e|a&c&d&f&g|a&c&d&f&h|a&c&d&g&h|a&c&e&f&g|a&c&e&f&h|a&d&e&f&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h|b&c&d&f&g|b&c&d&f&h|b&c&e&f&g|b&d&e&f&g&h / (Func: 100) / non_zero_indices: 233, 285, 360, 90, 416, 95, 194, 263 / negative index: 360, 90, 416, 95, 194
+row37_5 / neuron101 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f&g&h|c&d&e&f / (Func: 101) / non_zero_indices: 327, 108, 132, 342, 346, 182, 129, 335 / negative index: 346, 182, 129, 335
+row38_5 / neuron102 / a&b&c&d|a&b&c&e|a&b&d&e&f|a&b&d&e&g&h|a&c&d&e&f|b&c&d&e&f&g|b&c&d&e&f&h / (Func: 102) / non_zero_indices: 292, 16, 92, 420, 184, 299, 182, 14 / negative index: 16, 92, 420
+row39_5 / neuron103 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&d&e&f|a&b&d&e&g|a&b&d&f&g|a&b&e&f&g|a&c&d&e&f|a&c&d&e&g|a&c&d&f&g|a&c&e&f&g / (Func: 103) / non_zero_indices: 225, 4, 375, 122, 348, 299, 185, 163 / negative index: 225, 348, 299, 185
+row40_5 / neuron104 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e|a&c&f&g|a&c&f&h|a&d&e|b&c&d&e&f / (Func: 104) / non_zero_indices: 152, 220, 244, 37, 196, 248, 83, 55 / negative index: 244, 37, 196, 83, 55
+row41_5 / neuron105 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&e&f|a&b&d&e&f&g|a&c&d&e&f&g|b&c&d&e&f&g / (Func: 105) / non_zero_indices: 22, 399, 353, 204, 280, 386, 263, 95 / negative index: 22, 399, 204, 95
+row42_5 / neuron106 / a&b|a&c|a&d|a&e&f|a&e&g|a&f&g|b&c&d&e&f|b&c&d&e&g|b&c&d&f&g / (Func: 106) / non_zero_indices: 112, 142, 53, 289, 310, 348, 86, 8 / negative index: 310, 348, 86
+row43_5 / neuron107 / a|b&c&d|b&c&e&f|b&c&e&g|b&c&e&h|b&c&f&g|b&c&f&h|b&d&e&f|b&d&e&g|b&d&e&h|b&d&f&g / (Func: 107) / non_zero_indices: 56, 188, 310, 375, 80, 110, 382, 139 / negative index: 375, 80, 110, 382, 139
+row44_5 / neuron108 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f|a&c&g|a&c&h|a&d&e|a&d&f|a&d&g|b&c&d|b&c&e&f|b&c&e&g|b&c&e&h|b&c&f&g|b&c&f&h|b&c&g&h|b&d&e&f|b&d&e&g|b&d&e&h|b&d&f&g|c&d&e&f|c&d&e&g|c&d&f&g&h / (Func: 108) / non_zero_indices: 10, 159, 70, 285, 83, 201, 363, 96 / negative index: 201, 96
+row45_5 / neuron109 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&f&g&h|a&c&d&e|a&c&d&f|a&c&d&g|a&c&e&f&g|a&c&e&f&h|a&c&e&g&h|a&d&e&f&g&h|b&c&d&e|b&c&d&f|b&c&d&g&h|b&c&e&f&g / (Func: 109) / non_zero_indices: 271, 360, 200, 402, 404, 183, 326, 31 / negative index: 360, 402
+row46_5 / neuron110 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f|a&c&g|a&d&e|a&d&f|a&d&g|a&e&f|a&e&g|a&f&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&f&g&h|b&c&e&f&g&h|b&d&e&f&g&h / (Func: 110) / non_zero_indices: 270, 404, 245, 351, 338, 92, 83, 75 / negative index: 245, 92, 83, 75
+row47_5 / neuron111 / a&b|a&c&d|a&c&e|a&c&f|a&c&g|a&d&e|a&d&f&g|a&d&f&h|a&e&f&g|a&e&f&h|b&c&d|b&c&e|b&c&f|b&c&g&h|b&d&e|b&d&f&g|b&d&f&h|b&e&f&g|b&e&f&h / (Func: 111) / non_zero_indices: 330, 287, 205, 192, 367, 306, 80, 408 / negative index: 192
+row48_5 / neuron112 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&d&h|a&b&c&e&f|a&b&c&e&g|a&b&c&e&h|a&b&c&f&g|a&b&c&f&h|a&b&d&e&f&g|a&b&d&e&f&h|a&b&d&e&g&h|a&b&d&f&g&h|a&b&e&f&g&h|a&c&d&e&f&g|a&c&d&e&f&h|a&c&d&e&g&h|a&c&d&f&g&h|a&c&e&f&g&h / (Func: 112) / non_zero_indices: 332, 134, 139, 189, 186, 258, 236, 355 / negative index: 332, 189, 186, 236
+row49_5 / neuron113 / a&b&c|a&b&d|a&b&e&f|a&b&e&g&h|a&b&f&g&h|a&c&d|a&c&e&f&g|a&c&e&f&h|a&c&e&g&h|a&d&e&f&g|a&d&e&f&h|a&d&e&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h|b&c&d&f&g / (Func: 113) / non_zero_indices: 409, 170, 39, 29, 400, 406, 424, 229 / negative index: 170, 29, 406, 424
+row50_5 / neuron114 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f&g|a&c&f&h|a&c&g&h|a&d&e|a&d&f&g|a&d&f&h|a&e&f&g&h|b&c&d|b&c&e|b&d&e&f|b&d&e&g|b&d&e&h|c&d&e&f&g|c&d&e&f&h|c&d&e&g&h / (Func: 114) / non_zero_indices: 261, 361, 145, 419, 204, 189, 152, 138 / negative index: 145, 189
+row51_5 / neuron115 / a&b&c|a&b&d|a&b&e|a&b&f&g|a&b&f&h|a&c&d|a&c&e&f|a&c&e&g|a&c&e&h|a&c&f&g|a&c&f&h|a&d&e&f|a&d&e&g|a&d&e&h|a&d&f&g|a&e&f&g&h / (Func: 115) / non_zero_indices: 65, 254, 415, 126, 83, 144, 282, 169 / negative index: 415, 126, 144, 282
+row52_5 / neuron116 / a&b&c&d|a&b&c&e|a&b&c&f&g|a&b&c&f&h|a&b&c&g&h|a&b&d&e&f|a&b&d&e&g|a&b&d&f&g&h|a&b&e&f&g&h|a&c&d&e&f|a&c&d&e&g|a&c&d&f&g&h|a&c&e&f&g&h|b&c&d&e&f|b&c&d&e&g&h / (Func: 116) / non_zero_indices: 417, 116, 123, 120, 148, 311, 286, 374 / negative index: 116, 311, 374
+row53_5 / neuron117 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e&f|a&c&e&g|a&c&e&h|a&c&f&g|a&c&f&h|a&c&g&h|a&d&e&f|a&d&e&g|a&d&e&h|a&d&f&g|a&d&f&h|a&d&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h|b&c&d&f&g|b&c&d&f&h|b&c&d&g&h / (Func: 117) / non_zero_indices: 310, 198, 183, 159, 238, 371, 83, 120 / negative index: 159
+row54_5 / neuron118 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&d&h|a&b&c&e&f|a&b&c&e&g|a&b&c&e&h|a&b&c&f&g&h|a&b&d&e&f&g|a&b&d&e&f&h|a&c&d&e&f&g&h / (Func: 118) / non_zero_indices: 365, 343, 305, 276, 424, 397, 93, 84 / negative index: 365, 305, 276, 93, 84
+row55_5 / neuron119 / a|b&c|b&d|b&e|b&f|b&g&h|c&d&e|c&d&f|c&d&g&h|c&e&f&g|c&e&f&h|c&e&g&h|d&e&f&g&h / (Func: 119) / non_zero_indices: 358, 268, 89, 23, 129, 62, 17, 273 / negative index: 129, 17, 273
+row56_5 / neuron120 / a&b|a&c|a&d|a&e|a&f|a&g|a&h|b&c|b&d&e|b&d&f|b&d&g|b&d&h|b&e&f|b&e&g|b&f&g&h / (Func: 120) / non_zero_indices: 292, 121, 417, 76, 102, 242, 338, 153 / negative index: 417, 242, 338
+row57_5 / neuron121 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g&h|a&b&e&f&g|a&b&e&f&h|a&b&e&g&h|a&c&d&e&f&g&h / (Func: 121) / non_zero_indices: 304, 2, 153, 372, 324, 185, 322, 376 / negative index: 2, 372, 324, 322
+row58_5 / neuron122 / a&b|a&c|a&d|a&e|a&f&g&h|b&c&d&e|b&c&d&f|b&c&d&g|b&c&e&f|b&c&e&g / (Func: 122) / non_zero_indices: 410, 167, 235, 72, 288, 246, 349, 49 / negative index: 72, 288, 349, 49
+row59_5 / neuron123 / a&b&c|a&b&d|a&b&e&f|a&b&e&g&h|a&b&f&g&h|a&c&d&e|a&c&d&f|a&c&d&g|a&c&e&f&g|a&c&e&f&h|a&d&e&f&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h|b&c&d&f&g / (Func: 123) / non_zero_indices: 171, 360, 334, 139, 89, 6, 137, 380 / negative index: 360, 139, 137, 380
+row60_5 / neuron124 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&c&d&e|a&c&d&f|a&c&d&g|a&c&e&f&g|b&c&d&e&f&g / (Func: 124) / non_zero_indices: 403, 125, 131, 426, 213, 72, 14, 155 / negative index: 403, 213, 72, 155
+row61_5 / neuron125 / a&b&c|a&b&d|a&b&e|a&b&f&g|a&b&f&h|a&c&d|a&c&e|a&c&f&g|a&c&f&h|a&d&e|a&d&f&g&h|b&c&d&e|b&c&d&f|b&c&d&g&h|b&c&e&f&g|b&c&e&f&h|b&d&e&f&g&h / (Func: 125) / non_zero_indices: 281, 106, 267, 386, 212, 295, 238, 19 / negative index: 281, 212, 238
+row62_5 / neuron126 / a&b|a&c&d|a&c&e|a&c&f|a&c&g|a&d&e|a&d&f&g|a&e&f&g|b&c&d&e|b&c&d&f|b&c&d&g|b&c&e&f|b&c&e&g|b&d&e&f&g / (Func: 126) / non_zero_indices: 292, 392, 210, 27, 99, 347, 38, 398 / negative index: 99, 347, 398
+row63_5 / neuron127 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&d&e&f|a&b&d&e&g|a&b&d&e&h|a&b&d&f&g|a&b&d&f&h|a&b&d&g&h|a&b&e&f&g|a&c&d&e&f|a&c&d&e&g|a&c&d&f&g|a&c&e&f&g&h|b&c&d&e&f&g / (Func: 127) / non_zero_indices: 158, 150, 40, 389, 392, 50, 229, 109 / negative index: 150, 389, 392, 229, 109
+row64_5 / neuron128 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g|a&b&e&f|a&b&e&g&h|a&b&f&g&h|a&c&d&e|a&c&d&f|a&c&e&f|a&d&e&f|b&c&d&e|b&c&d&f|b&c&e&f&g|b&c&e&f&h|b&d&e&f&g / (Func: 128) / non_zero_indices: 146, 311, 358, 351, 30, 344, 249, 162 / negative index: 358, 30, 249
+row65_5 / neuron129 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e|a&b&d&f|a&b&e&f|a&c&d&e|b&c&d&e / (Func: 129) / non_zero_indices: 424, 204, 295, 318, 227, 97, 90, 17 / negative index: 204, 318, 97, 17
+row66_5 / neuron130 / a&b|a&c|a&d|a&e|a&f|a&g&h|b&c&d|b&c&e|b&c&f|b&c&g|b&d&e|b&d&f|b&d&g|b&e&f&g|b&e&f&h|b&e&g&h|c&d&e&f|c&d&e&g|c&d&e&h|c&d&f&g|c&e&f&g / (Func: 130) / non_zero_indices: 100, 26, 127, 177, 130, 74, 375, 357 / negative index: 177, 357
+row67_5 / neuron131 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&d&e|a&b&d&f&g|a&b&d&f&h|a&b&d&g&h|a&b&e&f&g|a&b&e&f&h|a&b&e&g&h|a&b&f&g&h|a&c&d&e&f&g|a&c&d&e&f&h|a&c&d&e&g&h|a&c&d&f&g&h|a&c&e&f&g&h|b&c&d&e&f&g|b&c&d&e&f&h|b&c&d&e&g&h / (Func: 131) / non_zero_indices: 402, 67, 96, 353, 385, 140, 306, 425 / negative index: 402, 96, 385, 425
+row68_5 / neuron132 / a&b|a&c&d|a&c&e|a&c&f|a&c&g&h|a&d&e|a&d&f&g|a&d&f&h|a&d&g&h|a&e&f&g|a&e&f&h / (Func: 132) / non_zero_indices: 279, 302, 321, 146, 340, 145, 17, 329 / negative index: 302, 145, 329
+row69_5 / neuron133 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e|a&d&e&f&g|b&c&d|b&c&e|b&d&e&f&g / (Func: 133) / non_zero_indices: 304, 288, 332, 398, 151, 224, 5, 178 / negative index: 398, 151, 5, 178
+row70_5 / neuron134 / a&b|a&c|a&d|b&c&d|b&c&e|b&c&f|b&c&g&h|b&d&e&f&g|b&d&e&f&h / (Func: 134) / non_zero_indices: 281, 137, 19, 45, 5, 47, 357, 406 / negative index: 45, 357
+row71_5 / neuron135 / a&b|a&c|a&d|a&e&f|b&c&d&e&f|b&c&d&e&g / (Func: 135) / non_zero_indices: 28, 367, 85, 5, 418, 247, 62, 49 / negative index: 367, 5
+row72_5 / neuron136 / a&b|a&c|a&d|a&e&f|a&e&g|a&e&h|a&f&g&h|b&c|b&d&e|b&d&f|b&d&g|b&d&h|b&e&f|b&e&g&h|c&d&e|c&d&f|c&d&g|c&e&f&g|c&e&f&h|d&e&f&g / (Func: 136) / non_zero_indices: 394, 408, 346, 335, 21, 284, 223, 183 / negative index: 408, 183
+row73_5 / neuron137 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g&h|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|a&e&f|b&c&d&e&f / (Func: 137) / non_zero_indices: 291, 421, 75, 247, 264, 162, 345, 120 / negative index: 421, 247
+row74_5 / neuron138 / a&b&c&d|a&b&c&e&f|a&b&c&e&g|a&b&c&f&g|a&b&d&e&f|a&b&d&e&g|a&b&d&f&g|a&b&e&f&g&h|a&c&d&e&f&g / (Func: 138) / non_zero_indices: 294, 429, 331, 155, 387, 167, 166, 276 / negative index: 331, 155, 167, 166
+row75_5 / neuron139 / a&b&c|a&b&d|a&b&e|a&b&f&g&h|a&c&d&e|a&c&d&f&g|a&c&d&f&h|a&c&e&f&g|a&d&e&f&g&h / (Func: 139) / non_zero_indices: 416, 28, 154, 157, 427, 367, 82, 61 / negative index: 416, 427, 61
+row76_5 / neuron140 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g&h|a&b&d&e|a&b&d&f&g|a&c&d&e|b&c&d&e / (Func: 140) / non_zero_indices: 193, 8, 119, 321, 192, 96, 47, 359 / negative index: 119, 192, 96, 359
+row77_5 / neuron141 / a|b|c&d|c&e|c&f|c&g|c&h / (Func: 141) / non_zero_indices: 146, 424, 307, 358, 201, 141, 145, 43 / negative index: 141, 145, 43
+row78_5 / neuron142 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&e&f|a&b&c&e&g&h|a&b&d&e&f|a&c&d&e&f&g / (Func: 142) / non_zero_indices: 34, 322, 225, 285, 395, 283, 357, 266 / negative index: 225, 285, 395, 283
+row79_5 / neuron143 / a|b&c|b&d|b&e|b&f|b&g|b&h|c&d|c&e&f|c&e&g|c&f&g|d&e&f|d&e&g&h / (Func: 143) / non_zero_indices: 190, 63, 330, 15, 147, 129, 232, 48 / negative index: 147
+row80_5 / neuron144 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&e&f|a&b&c&e&g|a&b&c&f&g|a&b&d&e&f|a&b&d&e&g&h|a&b&d&f&g&h|a&c&d&e&f&g / (Func: 144) / non_zero_indices: 202, 104, 340, 257, 373, 65, 20, 51 / negative index: 202, 104, 373
+row81_5 / neuron145 / a&b&c|a&b&d|a&b&e&f|a&b&e&g|a&b&f&g / (Func: 145) / non_zero_indices: 156, 300, 262, 405, 176, 174, 71, 210 / negative index: 156, 176, 210
+row82_5 / neuron146 / a&b|a&c|a&d&e|a&d&f|a&d&g|a&d&h|a&e&f|a&e&g|a&e&h|a&f&g&h|b&c&d|b&c&e|b&c&f|b&c&g&h|b&d&e|b&d&f&g|b&d&f&h|b&e&f&g&h|c&d&e&f&g&h / (Func: 146) / non_zero_indices: 284, 161, 21, 98, 273, 413, 73, 51 / negative index: 161
+row83_5 / neuron147 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&d&e|a&b&d&f|a&b&e&f&g|a&b&e&f&h|a&c&d&e|a&c&d&f|a&c&e&f&g|a&c&e&f&h|a&d&e&f&g|b&c&d&e&f|b&c&d&e&g&h|b&c&d&f&g&h|b&c&e&f&g&h / (Func: 147) / non_zero_indices: 164, 129, 238, 316, 300, 219, 286, 229 / negative index: 164, 300, 219, 229
+row84_5 / neuron148 / a&b|a&c|a&d|a&e|a&f|a&g|b&c&d&e&f&g&h / (Func: 148) / non_zero_indices: 325, 413, 182, 51, 267, 25, 6, 89 / negative index: 182, 267, 25
+row85_5 / neuron149 / a&b|a&c|a&d|a&e|a&f|a&g|a&h|b&c|b&d&e|b&d&f&g|b&d&f&h|b&d&g&h|b&e&f&g&h / (Func: 149) / non_zero_indices: 218, 217, 195, 228, 48, 425, 179, 253 / negative index: 228, 425
+row86_5 / neuron150 / a|b&c|b&d|b&e|b&f&g|b&f&h|b&g&h|c&d&e|c&d&f|c&d&g|c&e&f|c&e&g|c&f&g&h|d&e&f|d&e&g|d&f&g&h / (Func: 150) / non_zero_indices: 79, 195, 65, 60, 240, 50, 177, 244 / negative index: 65, 50
+row87_5 / neuron151 / a|b|c&d|c&e|c&f|c&g&h|d&e&f|d&e&g|d&e&h|d&f&g / (Func: 151) / non_zero_indices: 418, 143, 16, 7, 45, 254, 249, 22 / negative index: 254, 249
+row88_5 / neuron152 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d&e|a&c&d&f|a&c&d&g|a&c&e&f|a&c&e&g|a&d&e&f&g|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 152) / non_zero_indices: 218, 181, 70, 353, 425, 72, 250, 111 / negative index: 70, 72, 250, 111
+row89_5 / neuron153 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g&h|a&c&d|a&c&e&f|a&c&e&g|a&c&e&h|a&c&f&g|a&c&f&h|a&c&g&h|a&d&e&f&g&h|b&c&d&e|b&c&d&f&g|b&c&d&f&h|b&c&d&g&h|b&c&e&f&g|b&c&e&f&h|b&c&e&g&h / (Func: 153) / non_zero_indices: 125, 144, 32, 23, 380, 396, 366, 431 / negative index: 32, 396, 366, 431
+row90_5 / neuron154 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&e&h|a&b&f&g|a&b&f&h|a&b&g&h|a&c&d&e|a&c&d&f|a&c&d&g|a&c&d&h|a&c&e&f|a&c&e&g|a&c&e&h|a&c&f&g|a&c&f&h|a&d&e&f|a&d&e&g|a&d&e&h|a&d&f&g|a&e&f&g|b&c&d&e|b&c&d&f|b&c&d&g|b&c&d&h|b&c&e&f|b&c&e&g|b&c&e&h|b&c&f&g|b&d&e&f|b&d&e&g|b&d&e&h|b&d&f&g&h|b&e&f&g&h|c&d&e&f|c&d&e&g&h|c&d&f&g&h|c&e&f&g&h|d&e&f&g&h / (Func: 154) / non_zero_indices: 196, 268, 428, 404, 229, 17, 199, 54 / negative index: 428, 199, 54
+row91_5 / neuron155 / a|b&c|b&d|b&e|b&f|b&g|b&h|c&d|c&e|c&f&g|c&f&h|c&g&h|d&e&f&g|d&e&f&h / (Func: 155) / non_zero_indices: 164, 64, 181, 317, 40, 390, 12, 76 / negative index: 390, 76
+row92_5 / neuron156 / a&b|a&c&d|a&c&e|a&c&f|a&c&g|a&c&h|a&d&e|a&d&f|a&e&f&g|a&e&f&h|b&c&d&e|b&c&d&f|b&c&e&f&g|b&c&e&f&h|b&d&e&f&g&h / (Func: 156) / non_zero_indices: 13, 173, 39, 382, 367, 18, 182, 388 / negative index: 173, 367, 388
+row93_5 / neuron157 / a&b|a&c&d|a&c&e|a&c&f|a&c&g|a&c&h|a&d&e&f&g|a&d&e&f&h|a&d&e&g&h|b&c&d|b&c&e&f|b&c&e&g&h / (Func: 157) / non_zero_indices: 81, 157, 228, 214, 189, 4, 360, 366 / negative index: 228, 214, 360
+row94_5 / neuron158 / a&b|a&c|a&d|a&e|b&c&d|b&c&e|b&d&e|c&d&e / (Func: 158) / non_zero_indices: 128, 209, 312, 46, 270, 375, 145, 169 / negative index: 312, 375, 169
+row95_5 / neuron159 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e|b&f&g|b&f&h|c&d|c&e&f|c&e&g|c&e&h|c&f&g|d&e&f|d&e&g|d&f&g|e&f&g / (Func: 159) / non_zero_indices: 314, 209, 231, 242, 219, 213, 275, 409 / negative index: nan
+row96_5 / neuron160 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f|a&c&g&h|a&d&e|a&d&f|a&d&g&h|a&e&f|a&e&g&h|a&f&g&h|b&c&d&e&f&g&h / (Func: 160) / non_zero_indices: 280, 190, 267, 32, 294, 256, 126, 137 / negative index: 126, 137
+row97_5 / neuron161 / a&b|a&c|a&d&e|a&d&f|a&d&g|a&e&f|a&e&g&h|a&f&g&h|b&c&d|b&c&e|b&c&f|b&c&g|b&d&e&f|b&d&e&g|b&d&f&g|b&e&f&g&h|c&d&e&f&g|c&d&e&f&h|c&d&e&g&h / (Func: 161) / non_zero_indices: 339, 342, 380, 61, 417, 296, 215, 228 / negative index: 380, 228
+row98_5 / neuron162 / a&b&c|a&b&d|a&b&e|a&b&f&g|a&b&f&h|a&b&g&h|a&c&d&e&f|a&c&d&e&g / (Func: 162) / non_zero_indices: 289, 317, 55, 341, 214, 294, 426, 170 / negative index: 317, 341, 294, 170
+row99_5 / neuron163 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g&h|a&c&d&e|a&c&d&f / (Func: 163) / non_zero_indices: 272, 362, 14, 282, 49, 111, 1, 138 / negative index: 272, 362, 1, 138
+row100_5 / neuron164 / a&b|a&c&d|a&c&e|a&c&f&g|a&c&f&h|a&c&g&h|a&d&e&f|a&d&e&g|a&d&e&h|b&c&d&e|b&c&d&f&g|b&c&d&f&h|b&c&d&g&h|b&c&e&f&g / (Func: 164) / non_zero_indices: 295, 367, 50, 73, 171, 245, 75, 228 / negative index: 50, 171, 245, 75
+row101_5 / neuron165 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&d&h|a&b&c&e&f|a&b&c&e&g|a&b&c&e&h|a&b&c&f&g|a&b&c&f&h|a&b&d&e&f&g|a&b&d&e&f&h|a&b&d&e&g&h / (Func: 165) / non_zero_indices: 105, 68, 54, 285, 372, 397, 225, 403 / negative index: 105
+row102_5 / neuron166 / a|b&c|b&d|b&e|b&f|b&g&h|c&d|c&e|c&f|c&g&h|d&e|d&f|d&g&h|e&f / (Func: 166) / non_zero_indices: 123, 304, 155, 115, 222, 164, 188, 396 / negative index: 164, 396
+row103_5 / neuron167 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&c&d|a&c&e&f|a&c&e&g|a&c&e&h|a&c&f&g|a&d&e&f|a&d&e&g&h|b&c&d&e|b&c&d&f|b&c&d&g|b&c&d&h|b&c&e&f|b&c&e&g|b&c&e&h|b&c&f&g|b&d&e&f|b&d&e&g&h|c&d&e&f&g / (Func: 167) / non_zero_indices: 303, 240, 337, 133, 185, 199, 186, 423 / negative index: 240, 185, 199
+row104_5 / neuron168 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e|a&d&e&f&g&h|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 168) / non_zero_indices: 22, 89, 146, 167, 26, 260, 86, 166 / negative index: 89, 167, 166
+row105_5 / neuron169 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&f&g|a&c&d&e&f|a&c&d&e&g|a&c&d&f&g|a&c&e&f&g|a&d&e&f&g|b&c&d&e&f&g|b&c&d&e&f&h|b&c&d&e&g&h / (Func: 169) / non_zero_indices: 85, 170, 233, 64, 431, 146, 188, 191 / negative index: 170, 431, 188
+row106_5 / neuron170 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g|a&b&e&f|a&b&e&g&h|a&c&d&e|a&c&d&f&g|a&c&e&f&g|b&c&d&e&f|b&c&d&e&g / (Func: 170) / non_zero_indices: 112, 68, 103, 70, 63, 99, 324, 227 / negative index: 68, 324, 227
+row107_5 / neuron171 / a&b&c|a&b&d|a&b&e&f|a&b&e&g&h|a&b&f&g&h|a&c&d&e|a&c&d&f|a&c&d&g|a&c&d&h|a&c&e&f|a&c&e&g&h|a&c&f&g&h|a&d&e&f|a&d&e&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h|b&c&d&f&g|b&c&d&f&h / (Func: 171) / non_zero_indices: 176, 410, 374, 11, 425, 427, 351, 246 / negative index: 374, 425, 351, 246
+row108_5 / neuron172 / a&b&c|a&b&d|a&b&e|a&c&d&e / (Func: 172) / non_zero_indices: 110, 159, 188, 331, 392, 130, 59, 102 / negative index: 159, 392, 130, 59, 102
+row109_5 / neuron173 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g&h|a&b&f&g&h|a&c&d&e|a&c&d&f|a&c&d&g&h|a&c&e&f&g|a&c&e&f&h|a&d&e&f&g|a&d&e&f&h|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h|b&c&d&f&g|b&c&e&f&g&h / (Func: 173) / non_zero_indices: 100, 244, 98, 171, 309, 88, 412, 74 / negative index: 98, 171, 309, 88, 412
+row110_5 / neuron174 / a&b|a&c|a&d&e|a&d&f|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f|c&d&e&f / (Func: 174) / non_zero_indices: 311, 0, 26, 46, 258, 45, 204, 8 / negative index: 0, 45, 8
+row111_5 / neuron175 / a&b&c|a&b&d|a&b&e&f|a&b&e&g&h|a&c&d&e|a&c&d&f|a&c&d&g|a&c&d&h|a&c&e&f&g&h|b&c&d&e&f / (Func: 175) / non_zero_indices: 16, 302, 153, 12, 391, 410, 229, 100 / negative index: 153, 100
+row112_5 / neuron176 / a&b|a&c|b&c&d|b&c&e&f|b&c&e&g|b&c&e&h|b&c&f&g|b&c&f&h|b&c&g&h / (Func: 176) / non_zero_indices: 418, 34, 199, 261, 128, 405, 209, 273 / negative index: 199, 405, 209
+row113_5 / neuron177 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&f&g|a&c&d&e|a&c&d&f|a&c&d&g|a&c&d&h|a&c&e&f|a&c&e&g|a&c&f&g|a&d&e&f|a&d&e&g|a&d&f&g|b&c&d&e|b&c&d&f|b&c&d&g|b&c&e&f&g|b&d&e&f&g|c&d&e&f&g / (Func: 177) / non_zero_indices: 25, 119, 294, 32, 39, 130, 86, 208 / negative index: 119, 39, 86
+row114_5 / neuron178 / a&b|a&c&d|a&c&e|a&c&f|a&c&g|a&d&e|a&d&f&g|a&d&f&h|a&e&f&g|b&c&d|b&c&e|b&c&f&g|b&c&f&h|b&d&e&f|b&d&e&g|b&d&e&h|b&d&f&g|b&e&f&g|c&d&e&f&g&h / (Func: 178) / non_zero_indices: 224, 274, 357, 212, 258, 406, 5, 269 / negative index: 357, 406, 5, 269
+row115_5 / neuron179 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&d&h|a&b&c&e&f|a&b&c&e&g|a&b&d&e&f&g|a&b&d&e&f&h|a&b&d&e&g&h|a&c&d&e&f&g|a&c&d&e&f&h|b&c&d&e&f&g&h / (Func: 179) / non_zero_indices: 270, 112, 350, 23, 194, 13, 359, 285 / negative index: 270, 350, 23, 285
+row116_5 / neuron180 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&e&h|a&b&f&g|a&b&f&h|a&c&d&e|a&c&d&f|a&c&d&g|a&c&d&h|a&c&e&f|a&c&e&g&h|a&c&f&g&h|a&d&e&f|a&d&e&g&h|a&d&f&g&h|a&e&f&g&h|b&c&d&e|b&c&d&f|b&c&d&g|b&c&e&f|b&c&e&g&h|b&c&f&g&h|b&d&e&f&g|b&d&e&f&h|b&d&e&g&h|b&d&f&g&h|c&d&e&f&g|c&d&e&f&h|c&d&e&g&h / (Func: 180) / non_zero_indices: 375, 108, 100, 22, 337, 412, 314, 357 / negative index: 108, 100, 314
+row117_5 / neuron181 / a&b&c&d|a&b&c&e|a&b&c&f&g|a&b&c&f&h|a&b&c&g&h|a&b&d&e&f&g|a&b&d&e&f&h|a&c&d&e&f&g|a&c&d&e&f&h / (Func: 181) / non_zero_indices: 391, 254, 289, 327, 44, 320, 255, 423 / negative index: 254, 327, 44
+row118_5 / neuron182 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|a&e&f&g|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f&g / (Func: 182) / non_zero_indices: 115, 376, 279, 405, 362, 330, 184, 202 / negative index: 362, 330, 184
+row119_5 / neuron183 / a&b|a&c|a&d&e|a&d&f|a&d&g|a&e&f|a&e&g|a&f&g&h|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f&g / (Func: 183) / non_zero_indices: 109, 61, 402, 257, 261, 321, 408, 33 / negative index: 61, 402, 321, 33
+row120_5 / neuron184 / a&b&c&d&e|a&b&c&d&f|a&b&c&d&g|a&b&c&d&h|a&b&c&e&f|a&b&c&e&g|a&b&c&f&g|a&b&d&e&f|a&b&d&e&g&h|a&c&d&e&f&g&h / (Func: 184) / non_zero_indices: 386, 420, 322, 402, 82, 392, 95, 384 / negative index: 386, 402, 392, 384
+row121_5 / neuron185 / a&b|a&c|a&d&e|a&d&f|a&d&g|a&e&f&g|b&c|b&d&e&f|b&d&e&g|b&d&e&h|b&d&f&g|b&d&f&h|b&e&f&g&h / (Func: 185) / non_zero_indices: 157, 218, 412, 129, 17, 429, 46, 177 / negative index: 129, 46, 177
+row122_5 / neuron186 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g&h|a&c&d|a&c&e|a&c&f|a&c&g&h|a&d&e&f|a&d&e&g|a&d&f&g|b&c&d&e|b&c&d&f|b&c&d&g|b&c&e&f|b&d&e&f&g|c&d&e&f&g / (Func: 186) / non_zero_indices: 310, 74, 177, 102, 263, 313, 54, 184 / negative index: 177, 263
+row123_5 / neuron187 / a&b&c&d|a&b&c&e|a&b&c&f&g|a&b&d&e&f|a&c&d&e&f&g|a&c&d&e&f&h / (Func: 187) / non_zero_indices: 73, 198, 412, 160, 155, 99, 226, 77 / negative index: 198, 160, 155, 99
+row124_5 / neuron188 / a&b|a&c|a&d&e|a&d&f|a&d&g|a&e&f|a&e&g|a&f&g|b&c|b&d&e|b&d&f|b&d&g|b&e&f|b&e&g|b&f&g&h|c&d&e&f&g / (Func: 188) / non_zero_indices: 199, 331, 204, 45, 258, 53, 281, 129 / negative index: 45, 281
+row125_5 / neuron189 / a&b|a&c&d|a&c&e|a&c&f|a&c&g|a&c&h|a&d&e|a&d&f|a&d&g|a&d&h|a&e&f|a&e&g|a&e&h|a&f&g&h / (Func: 189) / non_zero_indices: 104, 314, 237, 320, 284, 336, 44, 136 / negative index: 237, 336, 44
+row126_5 / neuron190 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d&e|a&c&d&f|a&c&d&g|a&c&e&f&g|a&c&e&f&h|a&d&e&f&g|b&c&d&e&f|b&c&d&e&g&h / (Func: 190) / non_zero_indices: 192, 303, 49, 113, 235, 327, 206, 71 / negative index: 49, 113, 327, 71
+row127_5 / neuron191 / a&b|a&c|a&d|a&e|b&c|b&d|b&e&f|b&e&g&h|c&d&e|c&d&f|c&d&g|c&e&f / (Func: 191) / non_zero_indices: 186, 70, 286, 87, 414, 10, 326, 19 / negative index: 414, 10, 326
+row128_5 / neuron192 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&c&h|a&b&d&e|a&b&d&f|a&b&d&g&h|a&b&e&f&g|a&b&e&f&h|a&c&d&e|a&c&d&f|a&c&d&g&h|a&c&e&f&g&h|a&d&e&f&g&h|b&c&d&e&f|b&c&d&e&g&h / (Func: 192) / non_zero_indices: 112, 24, 103, 349, 14, 412, 209, 235 / negative index: 24, 349, 14
+row129_5 / neuron193 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d&e|a&c&d&f|a&c&e&f|a&d&e&f|b&c&d&e&f|b&c&d&e&g|b&c&d&e&h|b&c&d&f&g|b&c&e&f&g&h|b&d&e&f&g&h / (Func: 193) / non_zero_indices: 40, 302, 366, 47, 319, 11, 143, 381 / negative index: 47, 319, 381
+row130_5 / neuron194 / a&b|a&c|a&d|a&e|a&f&g|b&c&d|b&c&e|b&c&f|b&c&g|b&c&h|b&d&e|b&d&f|b&d&g|b&e&f|c&d&e|c&d&f|c&e&f&g|d&e&f&g / (Func: 194) / non_zero_indices: 149, 16, 207, 276, 78, 408, 27, 75 / negative index: 207, 408, 27, 75
+row131_5 / neuron195 / a&b&c&d|a&b&c&e|a&b&c&f&g|a&b&c&f&h|a&b&d&e|a&b&d&f&g|a&b&d&f&h|a&b&e&f&g|a&c&d&e&f|a&c&d&e&g&h|b&c&d&e&f|b&c&d&e&g&h / (Func: 195) / non_zero_indices: 147, 273, 403, 363, 326, 134, 162, 387 / negative index: 147, 403, 134, 162, 387
+row132_5 / neuron196 / a|b&c&d|b&c&e|b&c&f|b&c&g|b&c&h|b&d&e&f|b&d&e&g&h / (Func: 196) / non_zero_indices: 151, 290, 317, 185, 203, 258, 309, 82 / negative index: 185, 203, 82
+row133_5 / neuron197 / a&b&c|a&b&d|a&b&e|a&b&f&g|a&c&d|a&c&e&f|a&c&e&g|a&c&f&g|a&d&e&f|a&d&e&g|a&d&f&g / (Func: 197) / non_zero_indices: 124, 113, 381, 275, 78, 216, 164, 415 / negative index: 113, 78, 216, 415
+row134_5 / neuron198 / a&b|a&c|a&d&e|a&d&f&g|a&d&f&h|a&e&f&g&h|b&c&d&e|b&c&d&f|b&c&d&g|b&c&d&h|b&c&e&f|b&c&e&g&h / (Func: 198) / non_zero_indices: 326, 121, 38, 271, 200, 116, 151, 354 / negative index: 38, 271, 151
+row135_5 / neuron199 / a&b&c|a&b&d&e|a&b&d&f|a&b&d&g|a&b&d&h|a&b&e&f|a&b&e&g|a&b&f&g|a&c&d&e|a&c&d&f|a&c&d&g|a&c&d&h|a&c&e&f|a&c&e&g|a&c&f&g&h|a&d&e&f&g&h|b&c&d&e&f|b&c&d&e&g|b&c&d&f&g&h / (Func: 199) / non_zero_indices: 40, 213, 25, 409, 223, 37, 262, 363 / negative index: 213, 37
+row136_5 / neuron200 / a&b&c&d|a&b&c&e|a&b&c&f&g|a&b&c&f&h|a&b&c&g&h|a&b&d&e&f&g|a&b&d&e&f&h|a&b&d&e&g&h|a&c&d&e&f&g&h / (Func: 200) / non_zero_indices: 419, 171, 417, 168, 126, 275, 241, 176 / negative index: 419, 126, 176
+row137_5 / neuron201 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&c&g|a&b&d&e|a&b&d&f|a&b&d&g|a&b&e&f|a&b&e&g|a&b&f&g|a&c&d&e|a&c&d&f&g|a&c&e&f&g|a&d&e&f&g|b&c&d&e&f|b&c&d&e&g|b&c&d&f&g|b&c&e&f&g|b&d&e&f&g|c&d&e&f&g / (Func: 201) / non_zero_indices: 103, 200, 380, 290, 429, 281, 123, 421 / negative index: 380, 290, 281
+row138_5 / neuron202 / a&b|a&c|a&d|a&e|a&f&g&h|b&c|b&d&e|b&d&f|b&e&f&g|b&e&f&h|c&d&e&f&g|c&d&e&f&h / (Func: 202) / non_zero_indices: 206, 324, 174, 195, 220, 305, 287, 90 / negative index: 195, 287
+row139_5 / neuron203 / a&b|a&c|a&d&e|a&d&f|a&d&g|a&d&h|a&e&f|a&e&g|a&e&h|a&f&g&h|b&c&d&e|b&c&d&f|b&c&d&g&h|b&c&e&f|b&c&e&g&h|b&d&e&f&g&h / (Func: 203) / non_zero_indices: 365, 227, 179, 426, 19, 294, 6, 255 / negative index: 19, 294, 255
+row140_5 / neuron204 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e&f|a&b&d&e&g&h|a&b&d&f&g&h|a&c&d&e&f|b&c&d&e&f / (Func: 204) / non_zero_indices: 414, 397, 6, 429, 250, 133, 341, 111 / negative index: 414, 397, 111
+row141_5 / neuron205 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f|a&c&g&h|a&d&e|a&d&f|a&d&g&h|a&e&f|a&e&g&h|a&f&g&h|b&c&d&e&f|b&c&d&e&g&h|b&c&d&f&g&h|b&c&e&f&g&h / (Func: 205) / non_zero_indices: 203, 326, 119, 381, 224, 322, 227, 216 / negative index: 119, 381, 227
+row142_5 / neuron206 / a&b&c|a&b&d|a&b&e|a&b&f|a&b&g|a&b&h|a&c&d|a&c&e|a&c&f|a&c&g&h|a&d&e&f|a&d&e&g|a&d&e&h|a&d&f&g&h|a&e&f&g&h|b&c&d&e|b&c&d&f&g|b&c&d&f&h|b&c&d&g&h|b&c&e&f&g|b&c&e&f&h|b&c&e&g&h|b&c&f&g&h|b&d&e&f&g&h|c&d&e&f&g&h / (Func: 206) / non_zero_indices: 259, 385, 241, 348, 69, 193, 325, 127 / negative index: 69, 193, 325, 127
+row143_5 / neuron207 / a&b&c&d&e|a&b&c&d&f&g|a&b&c&e&f&g|a&b&d&e&f&g / (Func: 207) / non_zero_indices: 292, 64, 93, 139, 170, 377, 127, 94 / negative index: 292, 93, 170, 377
+row0_11 / neuron208 / a&b|a&c|a&d&e / (Func: 208) / non_zero_indices: 542, 110, 1293, 794, 1166, 516, ,  / negative index: 542, 794, 1166
+row1_11 / neuron209 / a&b|a&c|a&d&e&f|b&c&d|b&c&e|b&c&f / (Func: 209) / non_zero_indices: 641, 1028, 187, 840, 668, 505, ,  / negative index: 641, 840, 668
+row2_11 / neuron210 / a&b|a&c&d&e|a&c&d&f / (Func: 210) / non_zero_indices: 218, 1242, 185, 633, 1152, 445, ,  / negative index: 218, 185, 633
+row3_11 / neuron211 / a&b&c&d|a&b&c&e|a&b&d&e / (Func: 211) / non_zero_indices: 383, 173, 23, 1194, 244, 673, ,  / negative index: 383, 173, 23, 244, 673
+row4_11 / neuron212 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e&f / (Func: 212) / non_zero_indices: 1157, 282, 1007, 406, 922, 697, ,  / negative index: 1157, 282, 1007, 406
+row5_11 / neuron213 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d / (Func: 213) / non_zero_indices: 1194, 89, 414, 654, 469, 995, ,  / negative index: 1194, 89, 654, 469, 995
+row6_11 / neuron214 / a&b|a&c|a&d&e / (Func: 208) / non_zero_indices: 658, 693, 1157, 372, 845, 1089, ,  / negative index: 658, 1157, 1089
+row7_11 / neuron215 / a|b&c|b&d&e&f / (Func: 214) / non_zero_indices: 110, 72, 1123, 12, 688, 376, ,  / negative index: 72, 1123, 688
+row8_11 / neuron216 / a|b / (Func: 215) / non_zero_indices: 223, 475, 91, 749, 127, 1233, ,  / negative index: 91, 749
+row9_11 / neuron217 / a&b|a&c&d|a&c&e|a&c&f|a&d&e&f|b&c&d&e|b&c&d&f / (Func: 216) / non_zero_indices: 1076, 565, 464, 999, 930, 482, ,  / negative index: 565, 464, 930, 482
+row10_11 / neuron218 / a|b|c&d&e|c&d&f / (Func: 217) / non_zero_indices: 1055, 217, 1011, 624, 805, 879, ,  / negative index: 1011, 879
+row11_11 / neuron219 / a&b&c|a&b&d|a&c&d|b&c&d&e&f / (Func: 218) / non_zero_indices: 1065, 478, 204, 809, 900, 835, ,  / negative index: 1065, 204, 809
+row12_11 / neuron220 / a&b|a&c&d|a&c&e / (Func: 219) / non_zero_indices: 818, 1111, 269, 235, 1015, 180, ,  / negative index: 818, 269, 235, 1015
+row13_11 / neuron221 / a&b|a&c&d|a&c&e|a&d&e&f|b&c&d&e|b&c&d&f / (Func: 220) / non_zero_indices: 898, 527, 727, 871, 734, 1018, ,  / negative index: 898, 527, 871, 1018
+row14_11 / neuron222 / a&b|a&c|a&d / (Func: 221) / non_zero_indices: 575, 426, 1095, 699, 835, 553, ,  / negative index: 575, 699, 553
+row15_11 / neuron223 / a|b&c|b&d|c&d&e|c&d&f / (Func: 222) / non_zero_indices: 407, 667, 1255, 580, 475, 1188, ,  / negative index: 667, 1255, 475
+row16_11 / neuron224 / a|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 223) / non_zero_indices: 1124, 67, 249, 178, 804, 874, ,  / negative index: 67, 178, 874
+row17_11 / neuron225 / a&b|a&c&d&e&f / (Func: 224) / non_zero_indices: 1084, 345, 951, 811, 461, 658, ,  / negative index: 1084, 345, 811, 461, 658
+row18_11 / neuron226 / a&b&c&d|a&b&c&e|a&b&d&e / (Func: 211) / non_zero_indices: 559, 72, 169, 1021, 937, 637, ,  / negative index: 559, 72, 169, 937
+row19_11 / neuron227 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 225) / non_zero_indices: 1155, 855, 47, 656, 1272, 719, ,  / negative index: 1155, 1272, 719
+row20_11 / neuron228 / a&b&c|a&b&d&e|a&c&d&e|b&c&d&e&f / (Func: 226) / non_zero_indices: 405, 424, 639, 487, 9, 199, ,  / negative index: 405, 639, 9, 199
+row21_11 / neuron229 / a&b&c|a&b&d|a&b&e&f|a&c&d&e|a&c&d&f / (Func: 227) / non_zero_indices: 75, 1256, 739, 679, 417, 91, ,  / negative index: 75, 1256, 91
+row22_11 / neuron230 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e&f / (Func: 212) / non_zero_indices: 676, 545, 268, 547, 1063, 1268, ,  / negative index: 676, 545, 547, 1063, 1268
+row23_11 / neuron231 / a&b|a&c|a&d&e / (Func: 208) / non_zero_indices: 858, 921, 256, 241, 1216, 519, ,  / negative index: 858, 921, 1216
+row24_11 / neuron232 / a&b|a&c&d|a&c&e / (Func: 219) / non_zero_indices: 708, 278, 143, 641, 748, 529, ,  / negative index: 708, 143, 641
+row25_11 / neuron233 / a|b&c|b&d|b&e|b&f|c&d&e|c&d&f / (Func: 228) / non_zero_indices: 1182, 976, 979, 217, 475, 915, ,  / negative index: 976, 979, 217, 475
+row26_11 / neuron234 / a&b&c / (Func: 229) / non_zero_indices: 568, 1122, 124, 153, 418, 799, ,  / negative index: 568, 1122, 124, 418
+row27_11 / neuron235 / a|b|c&d|c&e|c&f|d&e&f / (Func: 230) / non_zero_indices: 596, 85, 1071, 155, 1089, 388, ,  / negative index: 155, 1089, 388
+row28_11 / neuron236 / a|b|c / (Func: 231) / non_zero_indices: 887, 53, 502, 178, 229, 507, ,  / negative index: 502, 229
+row29_11 / neuron237 / a&b|a&c|a&d|a&e|b&c / (Func: 232) / non_zero_indices: 1283, 756, 944, 481, 821, 1045, ,  / negative index: 1283, 481, 821, 1045
+row30_11 / neuron238 / a|b&c|b&d|b&e|b&f|c&d&e|c&d&f / (Func: 228) / non_zero_indices: 222, 87, 1209, 1148, 961, 258, ,  / negative index: 1209, 1148
+row31_11 / neuron239 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d&e|a&c&d&f / (Func: 233) / non_zero_indices: 271, 193, 310, 56, 721, 550, ,  / negative index: 271, 193
+row32_11 / neuron240 / a&b&c&d|a&b&c&e&f|a&b&d&e&f / (Func: 234) / non_zero_indices: 781, 1224, 897, 1211, 1213, 599, ,  / negative index: 781, 1224, 1211, 599
+row33_11 / neuron241 / a&b|a&c|a&d&e&f|b&c&d / (Func: 235) / non_zero_indices: 187, 463, 978, 1051, 1078, 511, ,  / negative index: 187, 978, 511
+row34_11 / neuron242 / a&b|a&c|a&d&e|a&d&f|a&e&f|b&c&d&e&f / (Func: 236) / non_zero_indices: 1108, 241, 1058, 744, 509, 703, ,  / negative index: 1108, 1058
+row35_11 / neuron243 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e&f / (Func: 212) / non_zero_indices: 658, 501, 710, 760, 626, 495, ,  / negative index: 658, 501, 710
+row36_11 / neuron244 / a&b&c|a&b&d|a&b&e / (Func: 237) / non_zero_indices: 524, 151, 632, 418, 184, 272, ,  / negative index: 524, 151, 632, 418
+row37_11 / neuron245 / one / non_zero_indices: 1284, 72, 625, 783, 47, 878, ,  / negative index: 72
+row38_11 / neuron246 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e&f|b&c&d&e&f / (Func: 238) / non_zero_indices: 1291, 1156, 782, 886, 703, 937, ,  / negative index: 1291, 782, 886
+row39_11 / neuron247 / a&b|a&c|a&d|a&e&f|b&c&d&e / (Func: 239) / non_zero_indices: 626, 23, 761, 285, 408, 1070, ,  / negative index: 626, 285, 408
+row40_11 / neuron248 / a|b&c|b&d / (Func: 240) / non_zero_indices: 231, 517, 1262, 772, 58, 732, ,  / negative index: 517, 1262, 772
+row41_11 / neuron249 / a&b / (Func: 241) / non_zero_indices: 1238, 503, 1261, 874, 1167, 76, ,  / negative index: 1238, 503, 76
+row42_11 / neuron250 / a|b|c|d&e|d&f / (Func: 242) / non_zero_indices: 596, 218, 446, 473, 1278, 675, ,  / negative index: 473, 1278, 675
+row43_11 / neuron251 / zero / non_zero_indices: 105, 440, 243, 985, 986, 1156, ,  / negative index: 105, 440, 243, 985, 986
+row44_11 / neuron252 / a&b|a&c|a&d|a&e|b&c&d|b&c&e|b&c&f|b&d&e&f|c&d&e&f / (Func: 243) / non_zero_indices: 427, 410, 118, 172, 301, 253, ,  / negative index: 427, 410, 301, 253
+row45_11 / neuron253 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e / (Func: 244) / non_zero_indices: 1106, 419, 578, 808, 646, 26, ,  / negative index: 1106, 578, 646
+row46_11 / neuron254 / a&b&c|a&b&d&e|a&b&d&f|a&b&e&f / (Func: 245) / non_zero_indices: 1241, 941, 249, 40, 286, 931, ,  / negative index: 1241, 941, 249, 286
+row47_11 / neuron255 / a&b|a&c|a&d|a&e|a&f|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 246) / non_zero_indices: 658, 693, 448, 557, 1059, 727, ,  / negative index: 658, 448, 727
+row48_11 / neuron256 / a&b|a&c&d|a&c&e|a&c&f|b&c&d|b&c&e|b&c&f / (Func: 247) / non_zero_indices: 1134, 378, 1257, 1109, 499, 139, ,  / negative index: 378, 1257, 1109
+row49_11 / neuron257 / a&b|a&c / (Func: 248) / non_zero_indices: 857, 472, 1291, 122, 88, 49, ,  / negative index: 857, 472
+row50_11 / neuron258 / a&b / (Func: 241) / non_zero_indices: 307, 308, 462, 1110, 1075, 1038, ,  / negative index: 307, 308, 1075, 1038
+row51_11 / neuron259 / a&b|a&c|a&d|a&e|b&c|b&d&e / (Func: 249) / non_zero_indices: 1294, 1116, 1187, 700, 189, 1127, ,  / negative index: 1116, 700, 1127
+row52_11 / neuron260 / a&b|a&c|a&d&e&f|b&c&d&e&f / (Func: 250) / non_zero_indices: 886, 867, 84, 727, 550, 801, ,  / negative index: 886, 867, 801
+row53_11 / neuron261 / a&b|a&c|a&d|a&e&f|b&c|b&d&e / (Func: 251) / non_zero_indices: 374, 513, 33, 1147, 1093, 269, ,  / negative index: 374, 1093
+row54_11 / neuron262 / a|b&c|b&d|b&e&f|c&d&e|c&d&f|c&e&f / (Func: 252) / non_zero_indices: 864, 1060, 566, 937, 21, 137, ,  / negative index: 566, 21
+row55_11 / neuron263 / a|b|c|d / (Func: 253) / non_zero_indices: 64, 342, 794, 1143, 153, 143, ,  / negative index: 1143
+row56_11 / neuron264 / a|b&c|b&d|b&e&f|c&d / (Func: 254) / non_zero_indices: 1209, 1234, 911, 181, 958, 469, ,  / negative index: 1209, 181, 958, 469
+row57_11 / neuron265 / a|b&c / (Func: 98) / non_zero_indices: 1272, 793, 47, 92, 145, 988, ,  / negative index: 793, 47, 92
+row58_11 / neuron266 / a|b&c|b&d|b&e|c&d&e / (Func: 255) / non_zero_indices: 1137, 664, 98, 760, 1078, 22, ,  / negative index: 664, 98
+row59_11 / neuron267 / a&b&c|a&b&d&e|a&b&d&f|a&c&d&e / (Func: 256) / non_zero_indices: 1019, 735, 866, 1199, 444, 1092, ,  / negative index: 1019, 866, 1199
+row60_11 / neuron268 / a|b|c&d|c&e|c&f|d&e&f / (Func: 230) / non_zero_indices: 708, 90, 901, 1146, 1183, 72, ,  / negative index: 1146, 1183
+row61_11 / neuron269 / a&b&c|a&b&d&e|a&c&d&e&f / (Func: 257) / non_zero_indices: 356, 746, 192, 39, 257, 454, ,  / negative index: 356, 192, 257
+row62_11 / neuron270 / a&b|a&c|a&d|b&c|b&d / (Func: 258) / non_zero_indices: 542, 1003, 383, 219, 602, 787, ,  / negative index: 383, 219
+row63_11 / neuron271 / zero / non_zero_indices: 875, 444, 823, 1009, 18, 647, ,  / negative index: 875, 444, 823, 18, 647
+row64_11 / neuron272 / a&b&c / (Func: 229) / non_zero_indices: 820, 970, 601, 1175, 915, 649, ,  / negative index: 820, 970, 601, 649
+row65_11 / neuron273 / a|b&c|b&d|b&e|b&f|c&d|c&e / (Func: 259) / non_zero_indices: 1015, 1133, 857, 577, 334, 856, ,  / negative index: 577, 856
+row66_11 / neuron274 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e|c&d&e / (Func: 260) / non_zero_indices: 709, 362, 1239, 172, 1115, 114, ,  / negative index: 362, 1239, 1115
+row67_11 / neuron275 / a&b|a&c&d|a&c&e|a&d&e|b&c&d / (Func: 261) / non_zero_indices: 1259, 18, 186, 1062, 121, 585, ,  / negative index: 1259, 186
+row68_11 / neuron276 / a&b|a&c|a&d|b&c&d|b&c&e&f / (Func: 262) / non_zero_indices: 290, 969, 372, 518, 160, 671, ,  / negative index: 372, 160
+row69_11 / neuron277 / a|b&c&d|b&c&e|b&d&e|c&d&e / (Func: 263) / non_zero_indices: 1150, 221, 82, 1258, 1091, 554, ,  / negative index: 1150, 1091, 554
+row70_11 / neuron278 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e|c&d|c&e|d&e&f / (Func: 264) / non_zero_indices: 1288, 32, 909, 309, 329, 1279, ,  / negative index: 309, 329
+row71_11 / neuron279 / a|b|c / (Func: 231) / non_zero_indices: 272, 800, 1203, 323, 173, 387, ,  / negative index: 1203, 323
+row72_11 / neuron280 / a&b|a&c|a&d|a&e|b&c&d / (Func: 265) / non_zero_indices: 1049, 503, 1122, 94, 23, 1023, ,  / negative index: 1049, 94
+row73_11 / neuron281 / a&b&c|a&b&d|a&b&e&f / (Func: 266) / non_zero_indices: 597, 526, 340, 571, 918, 1009, ,  / negative index: 597, 526, 918
+row74_11 / neuron282 / a&b&c|a&b&d&e / (Func: 267) / non_zero_indices: 67, 189, 670, 71, 998, 1141, ,  / negative index: 67, 189, 670, 71, 1141
+row75_11 / neuron283 / a&b&c&d / (Func: 268) / non_zero_indices: 621, 630, 671, 361, 403, 1079, ,  / negative index: 621, 630, 361, 403, 1079
+row76_11 / neuron284 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e|a&c&d&e&f / (Func: 269) / non_zero_indices: 336, 89, 1179, 168, 270, 249, ,  / negative index: 336, 89, 168, 270
+row77_11 / neuron285 / a&b&c|a&b&d&e|a&b&d&f|a&b&e&f / (Func: 245) / non_zero_indices: 576, 670, 566, 708, 124, 46, ,  / negative index: 576, 566, 708, 46
+row78_11 / neuron286 / a&b&c|a&b&d|a&b&e|a&c&d&e|a&c&d&f|a&c&e&f|b&c&d&e / (Func: 270) / non_zero_indices: 401, 671, 11, 25, 797, 868, ,  / negative index: 671, 11, 25, 797, 868
+row79_11 / neuron287 / zero / non_zero_indices: 953, 198, 852, 237, 181, 1159, ,  / negative index: 953, 198, 852, 237, 181, 1159
+row80_11 / neuron288 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e|b&c&d&e / (Func: 271) / non_zero_indices: 1087, 1086, 402, 1218, 708, 1179, ,  / negative index: 1086, 402, 708, 1179
+row81_11 / neuron289 / a&b&c&d / (Func: 268) / non_zero_indices: 998, 75, 1083, 977, 608, 918, ,  / negative index: 998, 75, 1083, 977, 608
+row82_11 / neuron290 / one / non_zero_indices: 571, 716, 40, 995, 77, 96, ,  / negative index: 995, 77, 96
+row83_11 / neuron291 / a&b&c|a&b&d|a&b&e|a&c&d&e|b&c&d&e / (Func: 272) / non_zero_indices: 255, 866, 828, 1184, 458, 145, ,  / negative index: 255, 866, 145
+row84_11 / neuron292 / a&b|a&c&d&e|a&c&d&f / (Func: 210) / non_zero_indices: 644, 241, 829, 390, 917, 88, ,  / negative index: 644, 241
+row85_11 / neuron293 / a&b&c|a&b&d&e|a&c&d&e / (Func: 273) / non_zero_indices: 1067, 1160, 1145, 566, 79, 70, ,  / negative index: 1067, 1160, 1145, 70
+row86_11 / neuron294 / a|b&c&d|b&c&e|b&d&e&f / (Func: 274) / non_zero_indices: 285, 957, 603, 309, 632, 684, ,  / negative index: 957, 603, 632, 684
+row87_11 / neuron295 / a&b|a&c|a&d&e|b&c|b&d&e|c&d&e&f / (Func: 275) / non_zero_indices: 623, 224, 112, 41, 461, 143, ,  / negative index: 224, 41, 461
+row88_11 / neuron296 / a&b|a&c|b&c / (Func: 276) / non_zero_indices: 533, 271, 159, 386, 1282, 1094, ,  / negative index: 533, 159, 1094
+row89_11 / neuron297 / a&b|a&c&d|a&c&e|a&d&e&f / (Func: 277) / non_zero_indices: 312, 529, 1006, 871, 550, 462, ,  / negative index: 312, 1006, 871
+row90_11 / neuron298 / a|b|c&d / (Func: 278) / non_zero_indices: 1289, 1245, 940, 809, 776, 1244, ,  / negative index: 1245
+row91_11 / neuron299 / a|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f / (Func: 279) / non_zero_indices: 1275, 6, 1190, 1237, 329, 92, ,  / negative index: 6, 92
+row92_11 / neuron300 / a&b|a&c&d|a&c&e|b&c&d&e / (Func: 280) / non_zero_indices: 1109, 1053, 570, 877, 217, 1120, ,  / negative index: 1109, 570, 217, 1120
+row93_11 / neuron301 / a / (Func: 281) / non_zero_indices: 232, 624, 375, 1241, 43, 41, ,  / negative index: 232
+row94_11 / neuron302 / a|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 282) / non_zero_indices: 963, 765, 512, 591, 45, 1241, ,  / negative index: 765, 512, 591, 45, 1241
+row95_11 / neuron303 / a&b|a&c|a&d|a&e|a&f|b&c|b&d&e|b&d&f|b&e&f|c&d&e / (Func: 283) / non_zero_indices: 470, 727, 127, 394, 668, 874, ,  / negative index: 470, 127
+row96_11 / neuron304 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|b&c&d|b&c&e|b&c&f|b&d&e&f|c&d&e&f / (Func: 284) / non_zero_indices: 312, 166, 1273, 946, 1133, 69, ,  / negative index: 312, 166, 946
+row97_11 / neuron305 / a&b&c&d|a&b&c&e|a&b&d&e|a&c&d&e / (Func: 285) / non_zero_indices: 467, 30, 1270, 333, 412, 984, ,  / negative index: 467, 30, 1270, 333, 984
+row98_11 / neuron306 / a&b|a&c|a&d / (Func: 221) / non_zero_indices: 343, 1008, 69, 427, 482, 829, ,  / negative index: 1008, 69, 482, 829
+row99_11 / neuron307 / a&b|a&c|a&d|a&e|b&c&d&e&f / (Func: 286) / non_zero_indices: 395, 523, 1021, 1081, 747, 686, ,  / negative index: 395, 523, 1081, 686
+row100_11 / neuron308 / a|b|c|d&e&f / (Func: 287) / non_zero_indices: 548, 903, 1180, 46, 397, 108, ,  / negative index: 1180
+row101_11 / neuron309 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e|a&d&e|b&c&d&e / (Func: 288) / non_zero_indices: 368, 924, 502, 1008, 1005, 201, ,  / negative index: 368, 924
+row102_11 / neuron310 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e|a&d&e&f|b&c&d&e / (Func: 289) / non_zero_indices: 1083, 315, 1195, 1107, 186, 238, ,  / negative index: 315, 1195, 1107, 186, 238
+row103_11 / neuron311 / a&b|a&c|a&d&e|a&d&f|a&e&f / (Func: 290) / non_zero_indices: 195, 26, 939, 237, 902, 419, ,  / negative index: 195, 26, 237
+row104_11 / neuron312 / a&b|a&c|a&d|a&e|a&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f|c&d&e|c&d&f / (Func: 291) / non_zero_indices: 722, 336, 144, 532, 936, 1081, ,  / negative index: 722, 144, 1081
+row105_11 / neuron313 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e / (Func: 244) / non_zero_indices: 941, 1011, 804, 856, 496, 372, ,  / negative index: 941, 1011
+row106_11 / neuron314 / a|b&c&d|b&c&e&f|b&d&e&f / (Func: 292) / non_zero_indices: 74, 547, 511, 1225, 82, 1055, ,  / negative index: 74, 1055
+row107_11 / neuron315 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e|a&c&d&e&f|b&c&d&e&f / (Func: 293) / non_zero_indices: 828, 1184, 478, 5, 599, 507, ,  / negative index: 828, 1184, 478, 599, 507
+row108_11 / neuron316 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|a&e&f / (Func: 294) / non_zero_indices: 1053, 752, 290, 707, 526, 198, ,  / negative index: 1053, 526, 198
+row109_11 / neuron317 / a&b&c&d|a&b&c&e&f / (Func: 295) / non_zero_indices: 981, 848, 190, 211, 967, 457, ,  / negative index: 981, 848, 190, 211, 967
+row110_11 / neuron318 / a&b|a&c|a&d|a&e|a&f|b&c|b&d&e|b&d&f|b&e&f|c&d&e&f / (Func: 296) / non_zero_indices: 663, 749, 471, 179, 659, 53, ,  / negative index: 663, 53
+row111_11 / neuron319 / a&b / (Func: 241) / non_zero_indices: 1083, 6, 101, 401, 704, 689, ,  / negative index: 1083, 6, 401
+row112_11 / neuron320 / a&b&c|a&b&d&e|a&b&d&f|a&c&d&e&f / (Func: 297) / non_zero_indices: 1068, 1249, 623, 303, 288, 591, ,  / negative index: 1249, 623, 303, 288, 591
+row113_11 / neuron321 / a|b|c&d|c&e|c&f / (Func: 298) / non_zero_indices: 972, 353, 739, 1188, 1015, 832, ,  / negative index: 739, 832
+row114_11 / neuron322 / a&b|a&c|a&d|a&e|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f|c&d&e|c&d&f / (Func: 299) / non_zero_indices: 659, 892, 1182, 701, 1000, 1291, ,  / negative index: 659, 892, 1000
+row115_11 / neuron323 / a&b&c|a&b&d&e&f / (Func: 300) / non_zero_indices: 767, 1087, 476, 988, 127, 535, ,  / negative index: 767, 1087, 476
+row116_11 / neuron324 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e|a&c&f|a&d&e&f|b&c&d|b&c&e|b&c&f|b&d&e&f|c&d&e&f / (Func: 301) / non_zero_indices: 298, 281, 1209, 51, 565, 577, ,  / negative index: 298, 51, 565, 577
+row117_11 / neuron325 / a&b&c|a&b&d|a&b&e&f|a&c&d&e / (Func: 302) / non_zero_indices: 909, 735, 534, 1163, 669, 157, ,  / negative index: 909, 735, 669
+row118_11 / neuron326 / a&b|a&c|b&c / (Func: 276) / non_zero_indices: 563, 531, 655, 910, 177, 97, ,  / negative index: 563, 531, 910, 177, 97
+row119_11 / neuron327 / a&b&c&d&e / (Func: 303) / non_zero_indices: 386, 1259, 339, 983, 545, 56, ,  / negative index: 386, 1259, 339, 983, 545, 56
+row120_11 / neuron328 / a&b|a&c|a&d|a&e|b&c|b&d|b&e&f|c&d&e|c&d&f / (Func: 304) / non_zero_indices: 974, 6, 910, 1255, 957, 776, ,  / negative index: 6, 957, 776
+row121_11 / neuron329 / a&b|a&c|a&d|a&e|a&f|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 246) / non_zero_indices: 933, 30, 1210, 1238, 250, 614, ,  / negative index: 933
+row122_11 / neuron330 / a&b&c|a&b&d&e|a&c&d&e|b&c&d&e / (Func: 305) / non_zero_indices: 982, 173, 848, 1136, 384, 367, ,  / negative index: 982, 173, 848, 384
+row123_11 / neuron331 / a&b|a&c|a&d|a&e|b&c|b&d&e|c&d&e&f / (Func: 306) / non_zero_indices: 1119, 1136, 402, 847, 714, 179, ,  / negative index: 1136, 402
+row124_11 / neuron332 / a&b|a&c|a&d|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e&f|c&d&e&f / (Func: 307) / non_zero_indices: 777, 253, 123, 1156, 353, 838, ,  / negative index: 253, 123, 838
+row125_11 / neuron333 / a&b|a&c|a&d|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|c&d&e&f / (Func: 308) / non_zero_indices: 1275, 1087, 1164, 1003, 938, 335, ,  / negative index: 1275, 1003
+row126_11 / neuron334 / a|b&c|b&d / (Func: 240) / non_zero_indices: 803, 664, 386, 707, 442, 161, ,  / negative index: 664, 386, 442
+row127_11 / neuron335 / a&b|a&c|a&d&e&f / (Func: 309) / non_zero_indices: 1095, 1066, 743, 652, 1264, 373, ,  / negative index: 1095, 652
+row128_11 / neuron336 / a&b|a&c&d|a&c&e&f|a&d&e&f / (Func: 310) / non_zero_indices: 950, 1102, 145, 341, 47, 349, ,  / negative index: 950, 1102, 341, 47
+row129_11 / neuron337 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e / (Func: 311) / non_zero_indices: 236, 226, 130, 164, 234, 292, ,  / negative index: 236, 226, 130, 292
+row130_11 / neuron338 / a&b&c|a&b&d|a&b&e|a&c&d&e|a&c&d&f|a&c&e&f|a&d&e&f|b&c&d&e&f / (Func: 312) / non_zero_indices: 581, 822, 595, 352, 1185, 1054, ,  / negative index: 581, 822, 352
+row131_11 / neuron339 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e&f|c&d / (Func: 313) / non_zero_indices: 1128, 1277, 1057, 258, 1008, 1088, ,  / negative index: 1128, 1057, 1088
+row132_11 / neuron340 / a&b|a&c|a&d|a&e&f|b&c&d|b&c&e&f|b&d&e&f|c&d&e&f / (Func: 314) / non_zero_indices: 900, 173, 198, 132, 827, 1285, ,  / negative index: 173, 198, 827
+row133_11 / neuron341 / a|b|c&d&e|c&d&f|c&e&f / (Func: 315) / non_zero_indices: 226, 527, 2, 379, 534, 403, ,  / negative index: 2, 534
+row134_11 / neuron342 / a|b&c&d|b&c&e|b&c&f|b&d&e|c&d&e&f / (Func: 316) / non_zero_indices: 477, 57, 523, 689, 4, 409, ,  / negative index: 57, 523, 4
+row135_11 / neuron343 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e|a&b&d&f|a&c&d&e|a&c&d&f|b&c&d&e / (Func: 317) / non_zero_indices: 1262, 405, 1221, 475, 22, 313, ,  / negative index: 405, 1221, 475, 22, 313
+row136_11 / neuron344 / a|b|c / (Func: 231) / non_zero_indices: 365, 282, 690, 223, 871, 93, ,  / negative index: 282, 223, 871, 93
+row137_11 / neuron345 / a&b|a&c&d|a&c&e / (Func: 219) / non_zero_indices: 1183, 1217, 300, 1232, 734, 810, ,  / negative index: 1183, 300
+row138_11 / neuron346 / a&b&c&d&e / (Func: 303) / non_zero_indices: 105, 155, 542, 1204, 531, 609, ,  / negative index: 105, 155, 542, 1204, 531
+row139_11 / neuron347 / a&b|a&c|a&d|a&e|a&f|b&c&d|b&c&e|b&c&f|b&d&e&f / (Func: 318) / non_zero_indices: 423, 1238, 262, 248, 851, 1012, ,  / negative index: 1238, 262, 851
+row140_11 / neuron348 / a|b&c|b&d|c&d / (Func: 319) / non_zero_indices: 1128, 761, 1034, 1019, 1069, 129, ,  / negative index: 1128, 1019
+row141_11 / neuron349 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d / (Func: 213) / non_zero_indices: 1236, 221, 264, 870, 985, 535, ,  / negative index: 1236, 221, 985
+row142_11 / neuron350 / a&b&c|a&b&d|a&b&e / (Func: 237) / non_zero_indices: 1070, 873, 1126, 637, 375, 1006, ,  / negative index: 1070, 873, 637, 375
+row143_11 / neuron351 / a|b&c&d|b&c&e&f / (Func: 320) / non_zero_indices: 389, 1140, 195, 788, 433, 838, ,  / negative index: 1140, 788
+row144_11 / neuron352 / a&b&c|a&b&d&e / (Func: 267) / non_zero_indices: 168, 318, 1256, 177, 411, 1189, ,  / negative index: 168, 318, 177, 1189
+row145_11 / neuron353 / a|b&c|b&d|c&d / (Func: 319) / non_zero_indices: 290, 1207, 1128, 29, 943, 472, ,  / negative index: 290, 1128
+row146_11 / neuron354 / a|b / (Func: 215) / non_zero_indices: 346, 430, 500, 340, 1100, 304, ,  / negative index: 430, 340, 1100
+row147_11 / neuron355 / a&b|a&c&d|a&c&e|a&d&e / (Func: 321) / non_zero_indices: 106, 232, 638, 1044, 731, 355, ,  / negative index: 106, 638, 355
+row148_11 / neuron356 / a&b|a&c|a&d|a&e|a&f|b&c|b&d&e|b&d&f|b&e&f / (Func: 322) / non_zero_indices: 1054, 878, 753, 588, 108, 448, ,  / negative index: 108, 448
+row149_11 / neuron357 / a&b&c|a&b&d / (Func: 323) / non_zero_indices: 368, 1073, 1061, 1141, 1200, 244, ,  / negative index: 368, 1073, 1141, 1200, 244
+row150_11 / neuron358 / a&b&c|a&b&d&e|a&b&d&f|a&c&d&e|a&c&d&f / (Func: 324) / non_zero_indices: 1257, 27, 824, 982, 769, 896, ,  / negative index: 1257, 982
+row151_11 / neuron359 / a&b|a&c&d|a&c&e|b&c&d|b&c&e / (Func: 325) / non_zero_indices: 170, 399, 901, 128, 715, 603, ,  / negative index: 399, 901, 128
+row152_11 / neuron360 / a&b&c|a&b&d|a&b&e|a&c&d&e|a&c&d&f|a&c&e&f|b&c&d&e / (Func: 270) / non_zero_indices: 68, 28, 204, 24, 472, 1255, ,  / negative index: 68, 204, 24, 1255
+row153_11 / neuron361 / a|b|c&d|c&e|c&f|d&e / (Func: 326) / non_zero_indices: 1071, 1099, 0, 287, 849, 925, ,  / negative index: 0, 849
+row154_11 / neuron362 / a&b|a&c|b&c / (Func: 276) / non_zero_indices: 957, 982, 321, 538, 943, 1210, ,  / negative index: 957, 321, 538
+row155_11 / neuron363 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f / (Func: 327) / non_zero_indices: 539, 1124, 571, 623, 543, 127, ,  / negative index: 539, 623, 543
+row156_11 / neuron364 / a&b|a&c|a&d&e|b&c|b&d&e / (Func: 328) / non_zero_indices: 964, 154, 136, 689, 328, 1081, ,  / negative index: 154, 689, 328, 1081
+row157_11 / neuron365 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e|b&f|c&d|c&e|c&f|d&e|d&f|e&f / (Func: 329) / non_zero_indices: 52, 619, 1075, 24, 526, 1107, ,  / negative index: 52, 619
+row158_11 / neuron366 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e&f|b&c&d|b&c&e&f / (Func: 330) / non_zero_indices: 402, 37, 540, 21, 475, 877, ,  / negative index: 402, 540, 21
+row159_11 / neuron367 / a|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f|c&d&e|c&d&f|c&e&f|d&e&f / (Func: 331) / non_zero_indices: 1126, 585, 512, 22, 646, 354, ,  / negative index: 585
+row160_11 / neuron368 / a&b|a&c|a&d|a&e&f / (Func: 332) / non_zero_indices: 752, 1165, 1006, 554, 1178, 492, ,  / negative index: 752, 554, 1178, 492
+row161_11 / neuron369 / a&b|a&c&d|a&c&e|a&d&e|b&c&d|b&c&e|b&d&e / (Func: 333) / non_zero_indices: 22, 381, 47, 653, 997, 887, ,  / negative index: 22, 381, 47, 997
+row162_11 / neuron370 / a&b&c|a&b&d&e / (Func: 267) / non_zero_indices: 473, 1145, 680, 100, 177, 516, ,  / negative index: 473, 1145, 680, 177, 516
+row163_11 / neuron371 / a&b|a&c&d|a&c&e|a&d&e / (Func: 321) / non_zero_indices: 230, 106, 859, 463, 1174, 1261, ,  / negative index: 230, 106, 1261
+row164_11 / neuron372 / a|b|c&d|c&e|d&e / (Func: 334) / non_zero_indices: 486, 666, 451, 181, 53, 1179, ,  / negative index: 666, 1179
+row165_11 / neuron373 / a&b|a&c|a&d&e / (Func: 208) / non_zero_indices: 109, 394, 473, 99, 238, 1125, ,  / negative index: 109, 394, 99, 1125
+row166_11 / neuron374 / a&b&c|a&b&d&e|a&b&d&f|a&c&d&e|b&c&d&e / (Func: 335) / non_zero_indices: 218, 584, 229, 47, 805, 1213, ,  / negative index: 218, 584, 47, 1213
+row167_11 / neuron375 / one / non_zero_indices: 304, 732, 1055, 492, 993, 1201, ,  / negative index: 1201
+row168_11 / neuron376 / a&b&c / (Func: 229) / non_zero_indices: 21, 1104, 1083, 707, 1195, 538, ,  / negative index: 21, 1104, 1083, 707
+row169_11 / neuron377 / a|b&c&d&e&f / (Func: 336) / non_zero_indices: 737, 674, 746, 457, 492, 390, ,  / negative index: 674, 746, 457, 492, 390
+row170_11 / neuron378 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e&f|b&c&d&e&f / (Func: 238) / non_zero_indices: 1183, 904, 401, 1093, 1170, 554, ,  / negative index: 1183, 904, 554
+row171_11 / neuron379 / a&b|a&c&d|a&c&e|a&d&e / (Func: 321) / non_zero_indices: 212, 1253, 242, 744, 650, 258, ,  / negative index: 212, 1253, 258
+row172_11 / neuron380 / a&b|a&c|a&d|a&e&f|b&c|b&d&e|c&d&e / (Func: 337) / non_zero_indices: 888, 1041, 136, 1240, 468, 457, ,  / negative index: 1041, 136, 1240
+row173_11 / neuron381 / a&b|a&c&d / (Func: 338) / non_zero_indices: 410, 1212, 265, 1240, 607, 945, ,  / negative index: 410, 1212, 607
+row174_11 / neuron382 / a|b&c|b&d|b&e / (Func: 339) / non_zero_indices: 890, 1066, 222, 187, 808, 245, ,  / negative index: 222, 808, 245
+row175_11 / neuron383 / a|b|c&d|c&e|d&e&f / (Func: 340) / non_zero_indices: 513, 1053, 54, 1181, 262, 828, ,  / negative index: 262
+row176_11 / neuron384 / a|b&c|b&d|b&e&f / (Func: 341) / non_zero_indices: 121, 316, 899, 1226, 1278, 615, ,  / negative index: 316, 1226, 1278, 615
+row177_11 / neuron385 / a|b|c / (Func: 231) / non_zero_indices: 961, 1294, 1172, 1262, 354, 431, ,  / negative index: 1262, 354, 431
+row178_11 / neuron386 / a|b&c|b&d|b&e|b&f|c&d|c&e / (Func: 259) / non_zero_indices: 582, 56, 1155, 383, 925, 550, ,  / negative index: 1155, 383
+row179_11 / neuron387 / a&b|a&c&d&e&f / (Func: 224) / non_zero_indices: 1175, 1151, 670, 188, 874, 290, ,  / negative index: 1175, 670, 188, 290
+row180_11 / neuron388 / a&b|a&c|a&d|a&e|a&f|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 342) / non_zero_indices: 350, 647, 688, 121, 368, 1235, ,  / negative index: 647, 368, 1235
+row181_11 / neuron389 / a|b&c|b&d|b&e|b&f|c&d&e|c&d&f / (Func: 228) / non_zero_indices: 1273, 183, 483, 1204, 809, 1007, ,  / negative index: 183, 809
+row182_11 / neuron390 / a&b|a&c|b&c / (Func: 276) / non_zero_indices: 1155, 481, 876, 1192, 553, 639, ,  / negative index: 481, 1192
+row183_11 / neuron391 / a|b&c|b&d|b&e|c&d&e|c&d&f|c&e&f / (Func: 343) / non_zero_indices: 838, 140, 146, 61, 1262, 405, ,  / negative index: 146, 1262
+row184_11 / neuron392 / a&b|a&c|a&d|b&c&d|b&c&e&f / (Func: 262) / non_zero_indices: 279, 1020, 683, 989, 8, 541, ,  / negative index: 279, 989
+row185_11 / neuron393 / a&b|a&c|a&d|a&e&f|b&c|b&d&e|b&d&f|c&d&e&f / (Func: 344) / non_zero_indices: 957, 337, 890, 1245, 1282, 843, ,  / negative index: 890, 1245, 1282
+row186_11 / neuron394 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|b&c&d / (Func: 345) / non_zero_indices: 898, 866, 215, 789, 170, 838, ,  / negative index: 898, 866, 789, 838
+row187_11 / neuron395 / a|b&c|b&d|b&e&f|c&d&e&f / (Func: 346) / non_zero_indices: 864, 738, 538, 607, 524, 1110, ,  / negative index: 738, 1110
+row188_11 / neuron396 / a|b|c&d&e|c&d&f / (Func: 217) / non_zero_indices: 855, 527, 660, 51, 279, 1138, ,  / negative index: 855, 51, 279
+row189_11 / neuron397 / a&b&c / (Func: 229) / non_zero_indices: 1037, 642, 911, 44, 196, 104, ,  / negative index: 1037, 642, 911, 104
+row190_11 / neuron398 / a&b|a&c|a&d&e|b&c / (Func: 347) / non_zero_indices: 1032, 871, 705, 423, 1273, 359, ,  / negative index: 871, 423, 1273
+row191_11 / neuron399 / a|b&c&d&e / (Func: 348) / non_zero_indices: 749, 720, 1170, 981, 700, 438, ,  / negative index: 720, 981, 700
+row192_11 / neuron400 / a|b|c|d&e|d&f|e&f / (Func: 349) / non_zero_indices: 773, 848, 688, 1282, 95, 973, ,  / negative index: 1282
+row193_11 / neuron401 / a&b|a&c|a&d|a&e|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 350) / non_zero_indices: 192, 637, 1019, 704, 971, 834, ,  / negative index: 637, 704, 971, 834
+row194_11 / neuron402 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|a&e&f / (Func: 294) / non_zero_indices: 184, 1135, 245, 160, 1024, 400, ,  / negative index: 184, 245, 160, 1024
+row195_11 / neuron403 / a&b|a&c|b&c&d|b&c&e / (Func: 351) / non_zero_indices: 837, 233, 44, 1159, 614, 755, ,  / negative index: 837, 44, 614
+row196_11 / neuron404 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e|a&b&d&f / (Func: 352) / non_zero_indices: 551, 983, 1129, 1122, 589, 853, ,  / negative index: 551, 983, 1122
+row197_11 / neuron405 / a|b|c&d|c&e|c&f / (Func: 298) / non_zero_indices: 333, 683, 1181, 74, 309, 560, ,  / negative index: 683, 74
+row198_11 / neuron406 / a&b&c&d|a&b&c&e&f / (Func: 295) / non_zero_indices: 1004, 453, 289, 1165, 263, 698, ,  / negative index: 1004, 453, 1165, 263
+row199_11 / neuron407 / a&b&c&d&e|a&b&c&d&f|a&b&c&e&f / (Func: 353) / non_zero_indices: 730, 867, 602, 811, 313, 993, ,  / negative index: 730, 867, 602, 811
+row200_11 / neuron408 / a&b|a&c|a&d|a&e|b&c&d&e / (Func: 354) / non_zero_indices: 622, 869, 623, 141, 463, 528, ,  / negative index: 622, 141
+row201_11 / neuron409 / a&b&c|a&b&d|a&b&e&f / (Func: 266) / non_zero_indices: 1095, 864, 374, 158, 60, 804, ,  / negative index: 1095, 864, 374
+row202_11 / neuron410 / a|b&c / (Func: 98) / non_zero_indices: 154, 563, 613, 822, 62, 579, ,  / negative index: 154, 563, 62, 579
+row203_11 / neuron411 / a&b&c&d|a&b&c&e|a&b&d&e / (Func: 211) / non_zero_indices: 366, 1150, 1117, 432, 363, 388, ,  / negative index: 366, 1150, 1117, 388
+row204_11 / neuron412 / a|b|c&d|c&e|c&f / (Func: 298) / non_zero_indices: 348, 997, 54, 698, 117, 1132, ,  / negative index: 997, 698, 1132
+row205_11 / neuron413 / a / (Func: 281) / non_zero_indices: 353, 132, 708, 119, 628, 718, ,  / negative index: 353, 119
+row206_11 / neuron414 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|b&c&d|b&c&e|b&c&f|b&d&e|c&d&e&f / (Func: 355) / non_zero_indices: 407, 44, 611, 283, 898, 1190, ,  / negative index: 44, 611, 1190
+row207_11 / neuron415 / a|b|c&d&e|c&d&f / (Func: 217) / non_zero_indices: 630, 1128, 856, 1215, 610, 613, ,  / negative index: 856, 1215, 613
+row208_11 / neuron416 / a|b / (Func: 215) / non_zero_indices: 119, 806, 602, 41, 131, 433, ,  / negative index: 602, 131
+row209_11 / neuron417 / a&b|a&c / (Func: 248) / non_zero_indices: 904, 63, 773, 907, 634, 1168, ,  / negative index: 904, 773, 907
+row210_11 / neuron418 / a&b|a&c|a&d&e|a&d&f|b&c&d|b&c&e / (Func: 356) / non_zero_indices: 559, 48, 1118, 353, 1029, 1057, ,  / negative index: 48, 1118, 353, 1029, 1057
+row211_11 / neuron419 / a&b|a&c|a&d|a&e|b&c&d|b&c&e|b&d&e|c&d&e / (Func: 158) / non_zero_indices: 270, 975, 1026, 981, 539, 637, ,  / negative index: 1026, 981, 539
+row212_11 / neuron420 / a&b&c|a&b&d|a&c&d&e / (Func: 357) / non_zero_indices: 1025, 926, 828, 132, 108, 1050, ,  / negative index: 1025, 926, 132, 1050
+row213_11 / neuron421 / a&b|a&c|a&d&e&f / (Func: 309) / non_zero_indices: 641, 661, 596, 1012, 1085, 127, ,  / negative index: 641, 661, 1012, 127
+row214_11 / neuron422 / a&b|a&c&d|a&c&e|a&d&e|b&c&d&e / (Func: 358) / non_zero_indices: 150, 220, 242, 1062, 151, 777, ,  / negative index: 150
+row215_11 / neuron423 / a / (Func: 281) / non_zero_indices: 7, 353, 1095, 1195, 102, 904, ,  / negative index: 7, 1095, 102
+row216_11 / neuron424 / a&b&c|a&b&d|a&c&d|b&c&d&e / (Func: 359) / non_zero_indices: 833, 147, 1010, 783, 48, 968, ,  / negative index: 833, 147, 1010, 783
+row217_11 / neuron425 / a|b&c|b&d|b&e|c&d|c&e&f|d&e&f / (Func: 360) / non_zero_indices: 1250, 1137, 148, 150, 325, 672, ,  / negative index: 150, 325
+row218_11 / neuron426 / a&b&c|a&b&d / (Func: 323) / non_zero_indices: 1001, 688, 1267, 552, 590, 816, ,  / negative index: 1001, 688, 816
+row219_11 / neuron427 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e&f / (Func: 361) / non_zero_indices: 924, 852, 400, 971, 842, 78, ,  / negative index: 924, 852, 971, 78
+row220_11 / neuron428 / a|b|c&d|c&e|d&e&f / (Func: 340) / non_zero_indices: 593, 908, 914, 1110, 742, 736, ,  / negative index: 593, 736
+row221_11 / neuron429 / a&b / (Func: 241) / non_zero_indices: 233, 583, 382, 1124, 670, 713, ,  / negative index: 233, 583, 1124, 670
+row222_11 / neuron430 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e&f|c&d&e|c&d&f / (Func: 362) / non_zero_indices: 628, 516, 170, 707, 841, 243, ,  / negative index: 628, 243
+row223_11 / neuron431 / a|b&c|b&d|b&e&f / (Func: 341) / non_zero_indices: 1275, 963, 840, 1104, 490, 354, ,  / negative index: 963, 1104, 490
+row224_11 / neuron432 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e|a&d&e&f / (Func: 363) / non_zero_indices: 642, 1003, 939, 544, 361, 175, ,  / negative index: 642, 939, 361
+row225_11 / neuron433 / a|b|c|d&e / (Func: 364) / non_zero_indices: 578, 457, 362, 398, 574, 41, ,  / negative index: 398, 574, 41
+row226_11 / neuron434 / a&b|a&c|a&d|b&c|b&d&e / (Func: 365) / non_zero_indices: 684, 277, 4, 121, 1224, 1047, ,  / negative index: 277, 4, 121, 1047
+row227_11 / neuron435 / a&b|a&c|a&d|a&e&f|b&c|b&d&e&f / (Func: 366) / non_zero_indices: 15, 637, 582, 1063, 601, 1148, ,  / negative index: 15, 582
+row228_11 / neuron436 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|b&c&d|b&c&e|b&d&e / (Func: 367) / non_zero_indices: 950, 87, 230, 696, 166, 334, ,  / negative index: 950, 230, 696, 334
+row229_11 / neuron437 / a&b&c&d / (Func: 268) / non_zero_indices: 792, 512, 916, 240, 1185, 564, ,  / negative index: 792, 512, 916, 240, 1185
+row230_11 / neuron438 / a&b&c|a&b&d&e|a&b&d&f|a&b&e&f / (Func: 245) / non_zero_indices: 84, 1013, 109, 47, 844, 465, ,  / negative index: 84, 1013, 844, 465
+row231_11 / neuron439 / a&b|a&c|a&d|a&e&f|b&c|b&d|b&e&f|c&d / (Func: 368) / non_zero_indices: 1192, 986, 417, 489, 71, 731, ,  / negative index: 1192, 986
+row232_11 / neuron440 / a&b|a&c|a&d|a&e&f|b&c&d|b&c&e / (Func: 369) / non_zero_indices: 392, 585, 359, 1116, 489, 1282, ,  / negative index: 359, 1116, 1282
+row233_11 / neuron441 / a|b&c|b&d|b&e|c&d|c&e / (Func: 370) / non_zero_indices: 747, 260, 702, 229, 534, 15, ,  / negative index: 260, 229, 534, 15
+row234_11 / neuron442 / a|b&c|b&d|c&d / (Func: 319) / non_zero_indices: 1080, 439, 467, 881, 877, 978, ,  / negative index: 439
+row235_11 / neuron443 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e|a&c&f|a&d&e|b&c&d&e / (Func: 371) / non_zero_indices: 95, 1241, 904, 643, 91, 596, ,  / negative index: 95, 1241, 643
+row236_11 / neuron444 / a|b&c&d / (Func: 372) / non_zero_indices: 1244, 570, 1006, 1048, 550, 988, ,  / negative index: 570, 1006, 550
+row237_11 / neuron445 / a|b&c&d|b&c&e|b&c&f|b&d&e / (Func: 373) / non_zero_indices: 103, 1233, 1030, 128, 326, 1190, ,  / negative index: 1233, 128, 326
+row238_11 / neuron446 / a&b|a&c|a&d|b&c|b&d|c&d&e / (Func: 374) / non_zero_indices: 1087, 404, 303, 654, 950, 989, ,  / negative index: 303, 654
+row239_11 / neuron447 / a|b&c&d|b&c&e|b&c&f|b&d&e / (Func: 373) / non_zero_indices: 1233, 819, 414, 433, 907, 590, ,  / negative index: 1233, 907, 590
+row240_11 / neuron448 / a&b&c&d / (Func: 268) / non_zero_indices: 1086, 954, 893, 968, 339, 363, ,  / negative index: 1086, 954, 893, 968, 363
+row241_11 / neuron449 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e|a&c&d&e|b&c&d&e&f / (Func: 375) / non_zero_indices: 15, 1200, 1149, 1113, 966, 327, ,  / negative index: 15, 1149, 966
+row242_11 / neuron450 / a&b&c|a&b&d|a&b&e&f|a&c&d|a&c&e&f|a&d&e&f|b&c&d|b&c&e&f / (Func: 376) / non_zero_indices: 892, 449, 270, 431, 213, 789, ,  / negative index: 892, 449, 431
+row243_11 / neuron451 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e&f|c&d&e|c&d&f|c&e&f / (Func: 377) / non_zero_indices: 1020, 498, 345, 1117, 385, 1046, ,  / negative index: 1020, 345, 1117, 385, 1046
+row244_11 / neuron452 / a&b|a&c|a&d|a&e|b&c|b&d&e|b&d&f / (Func: 378) / non_zero_indices: 1160, 512, 1154, 178, 180, 412, ,  / negative index: 512, 1154, 180, 412
+row245_11 / neuron453 / a / (Func: 281) / non_zero_indices: 781, 802, 432, 1291, 760, 779, ,  / negative index: 781, 779
+row246_11 / neuron454 / a&b&c&d&e&f / (Func: 379) / non_zero_indices: 347, 683, 108, 759, 974, 256, ,  / negative index: 347, 683, 108, 759, 974
+row247_11 / neuron455 / a&b&c&d|a&b&c&e|a&b&c&f / (Func: 380) / non_zero_indices: 224, 564, 1081, 145, 874, 781, ,  / negative index: 224, 564, 1081, 781
+row248_11 / neuron456 / a&b&c|a&b&d|a&b&e / (Func: 237) / non_zero_indices: 86, 727, 0, 517, 822, 1059, ,  / negative index: 86, 727, 0, 822, 1059
+row249_11 / neuron457 / one / non_zero_indices: 1149, 1181, 656, 1014, 178, 314, ,  / negative index: 314
+row250_11 / neuron458 / a&b|a&c|a&d|a&e&f|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 381) / non_zero_indices: 788, 736, 889, 706, 197, 431, ,  / negative index: 788, 706, 431
+row251_11 / neuron459 / zero / non_zero_indices: 1113, 76, 1012, 1028, 1169, 450, ,  / negative index: 1113, 76, 1012, 1028, 1169
+row252_11 / neuron460 / a|b&c|b&d|b&e / (Func: 339) / non_zero_indices: 1209, 207, 1054, 275, 1193, 1241, ,  / negative index: 1209
+row253_11 / neuron461 / a|b|c&d&e / (Func: 382) / non_zero_indices: 732, 1292, 1021, 597, 799, 1064, ,  / negative index: 1021, 597, 799, 1064
+row254_11 / neuron462 / a&b|a&c|a&d|a&e|a&f|b&c|b&d&e|b&d&f|c&d&e|c&d&f / (Func: 383) / non_zero_indices: 713, 848, 721, 665, 91, 787, ,  / negative index: 713
+row255_11 / neuron463 / a&b|a&c|b&c&d&e|b&c&d&f / (Func: 384) / non_zero_indices: 1009, 67, 664, 1022, 1149, 499, ,  / negative index: 67, 664, 1149, 499
+row256_11 / neuron464 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|b&c&d|b&c&e|b&c&f|b&d&e&f / (Func: 385) / non_zero_indices: 924, 1193, 896, 39, 292, 1174, ,  / negative index: 924, 1174
+row257_11 / neuron465 / a&b|a&c|a&d|b&c&d|b&c&e|b&c&f|b&d&e|c&d&e / (Func: 386) / non_zero_indices: 584, 342, 5, 989, 1085, 718, ,  / negative index: 342, 989, 718
+row258_11 / neuron466 / a&b&c|a&b&d|a&b&e&f|a&c&d|b&c&d&e / (Func: 387) / non_zero_indices: 1275, 392, 31, 1185, 1141, 650, ,  / negative index: 1275, 392, 1141
+row259_11 / neuron467 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e&f|a&d&e&f|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 388) / non_zero_indices: 374, 561, 209, 591, 160, 261, ,  / negative index: 374, 209, 591
+row260_11 / neuron468 / a|b|c / (Func: 231) / non_zero_indices: 542, 241, 431, 1104, 1178, 13, ,  / negative index: 241
+row261_11 / neuron469 / a|b&c|b&d&e|c&d&e / (Func: 389) / non_zero_indices: 254, 549, 624, 1234, 761, 81, ,  / negative index: 549, 761, 81
+row262_11 / neuron470 / one / non_zero_indices: 553, 973, 1237, 1041, 1250, 368, ,  / negative index: nan
+row263_11 / neuron471 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e|a&d&e / (Func: 390) / non_zero_indices: 752, 728, 223, 1231, 527, 242, ,  / negative index: 752, 728, 223
+row264_11 / neuron472 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|b&c&d|b&c&e&f|b&d&e&f / (Func: 391) / non_zero_indices: 957, 1179, 1191, 662, 111, 938, ,  / negative index: 957, 1191, 111, 938
+row265_11 / neuron473 / a&b&c|a&b&d|a&c&d&e / (Func: 357) / non_zero_indices: 995, 447, 269, 1061, 134, 7, ,  / negative index: 995, 269, 1061, 7
+row266_11 / neuron474 / a|b|c&d&e|c&d&f|c&e&f|d&e&f / (Func: 392) / non_zero_indices: 1224, 683, 167, 647, 228, 171, ,  / negative index: 167
+row267_11 / neuron475 / a|b&c|b&d|b&e|b&f|c&d|c&e|d&e&f / (Func: 393) / non_zero_indices: 92, 545, 1050, 1130, 869, 564, ,  / negative index: 1050
+row268_11 / neuron476 / a|b|c / (Func: 231) / non_zero_indices: 65, 672, 869, 771, 590, 902, ,  / negative index: 590, 902
+row269_11 / neuron477 / a|b|c|d / (Func: 253) / non_zero_indices: 944, 916, 163, 1037, 858, 78, ,  / negative index: 163, 78
+row270_11 / neuron478 / a&b|a&c|a&d|b&c&d / (Func: 394) / non_zero_indices: 1207, 450, 786, 280, 1136, 1140, ,  / negative index: 1207, 786, 1140
+row271_11 / neuron479 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d&e&f / (Func: 395) / non_zero_indices: 1032, 1125, 22, 283, 782, 543, ,  / negative index: 1032, 1125, 283, 782, 543
+row272_11 / neuron480 / one / non_zero_indices: 649, 338, 757, 1078, 741, 490, ,  / negative index: nan
+row273_11 / neuron481 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f|c&d&e&f / (Func: 396) / non_zero_indices: 51, 114, 591, 58, 830, 1108, ,  / negative index: 51, 591
+row274_11 / neuron482 / a&b&c|a&b&d / (Func: 323) / non_zero_indices: 116, 1043, 335, 292, 750, 387, ,  / negative index: 116, 1043, 292, 750
+row275_11 / neuron483 / a&b&c&d|a&b&c&e|a&b&d&e / (Func: 211) / non_zero_indices: 1126, 367, 411, 973, 1188, 636, ,  / negative index: 1126, 367, 411, 973
+row276_11 / neuron484 / a&b|a&c&d|a&c&e|a&c&f|a&d&e&f|b&c&d&e&f / (Func: 397) / non_zero_indices: 365, 867, 565, 797, 198, 887, ,  / negative index: 365, 565, 797, 887
+row277_11 / neuron485 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e|c&d|c&e / (Func: 398) / non_zero_indices: 240, 663, 1194, 985, 1165, 836, ,  / negative index: 663, 1165
+row278_11 / neuron486 / a|b&c / (Func: 98) / non_zero_indices: 1235, 364, 244, 102, 310, 1111, ,  / negative index: 364, 244, 102
+row279_11 / neuron487 / a|b|c&d|c&e|c&f|d&e / (Func: 326) / non_zero_indices: 970, 318, 1065, 1123, 1251, 3, ,  / negative index: 1123, 1251, 3
+row280_11 / neuron488 / a|b|c / (Func: 231) / non_zero_indices: 682, 762, 567, 1108, 71, 352, ,  / negative index: 762
+row281_11 / neuron489 / a|b&c&d|b&c&e|b&d&e&f / (Func: 274) / non_zero_indices: 678, 761, 354, 474, 787, 254, ,  / negative index: 354, 787, 254
+row282_11 / neuron490 / a&b&c&d|a&b&c&e&f / (Func: 295) / non_zero_indices: 793, 980, 926, 548, 247, 372, ,  / negative index: 793, 980, 926, 548
+row283_11 / neuron491 / a&b&c|a&b&d / (Func: 323) / non_zero_indices: 39, 75, 489, 322, 841, 464, ,  / negative index: 39, 75, 489, 322
+row284_11 / neuron492 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e|a&d&e|b&c&d / (Func: 399) / non_zero_indices: 70, 1276, 769, 286, 217, 799, ,  / negative index: 70, 286, 799
+row285_11 / neuron493 / a&b|a&c|a&d|a&e|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 400) / non_zero_indices: 285, 974, 236, 339, 557, 1110, ,  / negative index: 974, 557
+row286_11 / neuron494 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|a&e&f|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 401) / non_zero_indices: 725, 362, 836, 438, 653, 373, ,  / negative index: 725, 836, 653
+row287_11 / neuron495 / a&b|a&c|a&d&e|a&d&f|a&e&f|b&c|b&d&e|c&d&e / (Func: 402) / non_zero_indices: 561, 1076, 800, 1057, 255, 1031, ,  / negative index: 561, 255
+row288_11 / neuron496 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e&f|a&d&e&f|b&c&d&e / (Func: 403) / non_zero_indices: 407, 224, 669, 666, 212, 688, ,  / negative index: 224, 669, 666, 212
+row289_11 / neuron497 / a&b|a&c&d|a&c&e&f / (Func: 404) / non_zero_indices: 1288, 200, 743, 386, 780, 906, ,  / negative index: 1288, 200, 386, 906
+row290_11 / neuron498 / a&b|a&c|a&d|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f|c&d&e|c&d&f|c&e&f / (Func: 405) / non_zero_indices: 642, 215, 520, 827, 1155, 604, ,  / negative index: 215, 520, 827
+row291_11 / neuron499 / a&b|a&c|a&d|b&c|b&d|c&d&e / (Func: 374) / non_zero_indices: 851, 66, 447, 1267, 394, 256, ,  / negative index: 447, 1267
+row292_11 / neuron500 / a&b|a&c&d / (Func: 338) / non_zero_indices: 257, 870, 853, 912, 1260, 939, ,  / negative index: 257, 870, 1260, 939
+row293_11 / neuron501 / a&b&c|a&b&d|a&b&e&f|a&c&d&e|a&c&d&f|a&c&e&f|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 406) / non_zero_indices: 762, 564, 67, 220, 147, 695, ,  / negative index: 762, 220, 147
+row294_11 / neuron502 / a&b&c / (Func: 229) / non_zero_indices: 426, 803, 1263, 1046, 330, 1243, ,  / negative index: 426, 803, 1243
+row295_11 / neuron503 / a|b&c|b&d|b&e&f|c&d&e|c&d&f|c&e&f / (Func: 252) / non_zero_indices: 1070, 1242, 1248, 991, 1224, 1250, ,  / negative index: 991, 1250
+row296_11 / neuron504 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e&f / (Func: 361) / non_zero_indices: 86, 424, 143, 548, 123, 721, ,  / negative index: 86, 424, 143, 548, 123, 721
+row297_11 / neuron505 / a&b|a&c|a&d|a&e|a&f|b&c|b&d&e&f / (Func: 407) / non_zero_indices: 426, 1052, 959, 340, 606, 215, ,  / negative index: 426, 959, 606
+row298_11 / neuron506 / a|b&c|b&d&e|b&d&f|b&e&f / (Func: 408) / non_zero_indices: 99, 50, 1291, 652, 198, 989, ,  / negative index: 50, 989
+row299_11 / neuron507 / a&b|a&c|a&d|a&e|a&f / (Func: 409) / non_zero_indices: 738, 674, 87, 500, 68, 329, ,  / negative index: 738, 500
+row300_11 / neuron508 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e&f / (Func: 212) / non_zero_indices: 65, 428, 174, 178, 825, 634, ,  / negative index: 65, 428, 174, 825, 634
+row301_11 / neuron509 / a&b&c&d&e|a&b&c&d&f / (Func: 410) / non_zero_indices: 132, 1200, 414, 866, 474, 412, ,  / negative index: 132, 1200, 414, 866, 474, 412
+row302_11 / neuron510 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e|a&d&e|b&c&d / (Func: 411) / non_zero_indices: 213, 564, 1294, 989, 787, 388, ,  / negative index: 564, 1294, 787
+row303_11 / neuron511 / a&b&c|a&b&d|a&b&e&f|a&c&d&e&f / (Func: 412) / non_zero_indices: 1127, 557, 1041, 1011, 714, 1194, ,  / negative index: 1127, 557, 1041, 1011
+row304_11 / neuron512 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e / (Func: 413) / non_zero_indices: 303, 62, 230, 53, 990, 626, ,  / negative index: 303, 53, 626
+row305_11 / neuron513 / a&b|a&c|a&d|b&c|b&d&e|b&d&f / (Func: 414) / non_zero_indices: 886, 303, 1050, 552, 488, 863, ,  / negative index: 303, 552, 488
+row306_11 / neuron514 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e&f|c&d&e|c&d&f / (Func: 362) / non_zero_indices: 1114, 836, 1061, 834, 656, 1016, ,  / negative index: 836, 834
+row307_11 / neuron515 / a&b|a&c&d&e|a&c&d&f / (Func: 210) / non_zero_indices: 56, 579, 329, 423, 293, 1218, ,  / negative index: 56, 579
+row308_11 / neuron516 / a&b&c|a&b&d&e|a&b&d&f / (Func: 415) / non_zero_indices: 102, 765, 827, 966, 571, 649, ,  / negative index: 102, 765, 966, 649
+row309_11 / neuron517 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e&f|a&d&e&f|b&c&d|b&c&e&f|b&d&e&f|c&d&e&f / (Func: 416) / non_zero_indices: 965, 26, 1258, 824, 267, 261, ,  / negative index: 965, 26, 824
+row310_11 / neuron518 / a&b|a&c|a&d|a&e&f|b&c&d|b&c&e|b&d&e / (Func: 417) / non_zero_indices: 102, 9, 184, 695, 870, 1005, ,  / negative index: 102, 184, 1005
+row311_11 / neuron519 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e|a&d&e|b&c&d&e&f / (Func: 418) / non_zero_indices: 279, 143, 283, 1057, 298, 402, ,  / negative index: 279, 283, 298, 402
+row312_11 / neuron520 / a&b&c|a&b&d|a&b&e&f|a&c&d&e / (Func: 302) / non_zero_indices: 406, 1028, 109, 704, 612, 479, ,  / negative index: 406, 1028, 704, 612, 479
+row313_11 / neuron521 / a&b&c / (Func: 229) / non_zero_indices: 1271, 163, 180, 1276, 105, 358, ,  / negative index: 1271, 163, 180, 1276, 105
+row314_11 / neuron522 / a&b|a&c|a&d&e|a&d&f|b&c&d|b&c&e|b&c&f / (Func: 419) / non_zero_indices: 371, 944, 732, 105, 888, 992, ,  / negative index: 944, 105, 888
+row315_11 / neuron523 / a&b|a&c|a&d / (Func: 221) / non_zero_indices: 752, 478, 79, 831, 684, 36, ,  / negative index: 752, 684
+row316_11 / neuron524 / a&b&c&d / (Func: 268) / non_zero_indices: 489, 755, 909, 936, 858, 666, ,  / negative index: 489, 755, 909, 936, 666
+row317_11 / neuron525 / a&b&c|a&b&d|a&b&e|a&c&d / (Func: 420) / non_zero_indices: 199, 169, 1062, 1029, 960, 403, ,  / negative index: 199, 169
+row318_11 / neuron526 / a&b&c|a&b&d&e / (Func: 267) / non_zero_indices: 114, 124, 872, 351, 117, 1005, ,  / negative index: 114, 124, 872
+row319_11 / neuron527 / a&b&c&d / (Func: 268) / non_zero_indices: 1082, 587, 128, 497, 1258, 1282, ,  / negative index: 1082, 587, 128, 497
+row320_11 / neuron528 / a&b|a&c|a&d|a&e&f|b&c|b&d&e|b&d&f|b&e&f|c&d&e&f / (Func: 421) / non_zero_indices: 617, 356, 285, 1187, 1194, 936, ,  / negative index: 617
+row321_11 / neuron529 / a|b&c|b&d&e|b&d&f|b&e&f|c&d&e&f / (Func: 422) / non_zero_indices: 351, 84, 1287, 914, 1041, 1047, ,  / negative index: 351, 1041, 1047
+row322_11 / neuron530 / a&b|a&c|a&d|a&e|a&f|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 246) / non_zero_indices: 522, 1008, 160, 1231, 584, 49, ,  / negative index: 1008, 160, 1231
+row323_11 / neuron531 / a|b|c|d / (Func: 253) / non_zero_indices: 324, 922, 1034, 129, 370, 443, ,  / negative index: 1034, 370, 443
+row324_11 / neuron532 / a&b|a&c|a&d|b&c|b&d / (Func: 258) / non_zero_indices: 485, 1102, 859, 836, 489, 554, ,  / negative index: 485, 836
+row325_11 / neuron533 / a&b&c&d|a&b&c&e / (Func: 423) / non_zero_indices: 581, 866, 661, 1255, 625, 799, ,  / negative index: 581, 866, 1255, 799
+row326_11 / neuron534 / a&b&c / (Func: 229) / non_zero_indices: 1109, 557, 226, 1187, 305, 919, ,  / negative index: 1109, 557, 226, 305
+row327_11 / neuron535 / a&b|a&c|a&d|a&e|a&f|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 342) / non_zero_indices: 330, 397, 973, 1129, 836, 243, ,  / negative index: 330, 973, 836
+row328_11 / neuron536 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e|b&c&d&e / (Func: 271) / non_zero_indices: 661, 434, 1294, 44, 847, 131, ,  / negative index: 434, 44, 847, 131
+row329_11 / neuron537 / a&b|a&c / (Func: 248) / non_zero_indices: 568, 660, 1099, 943, 1255, 721, ,  / negative index: 568, 1099, 943, 1255, 721
+row330_11 / neuron538 / a&b&c&d|a&b&c&e / (Func: 423) / non_zero_indices: 224, 563, 766, 872, 412, 646, ,  / negative index: 224, 563, 766, 412
+row331_11 / neuron539 / a&b&c&d|a&b&c&e|a&b&d&e&f / (Func: 424) / non_zero_indices: 71, 540, 315, 902, 538, 400, ,  / negative index: 71, 540, 315, 902, 538
+row332_11 / neuron540 / a|b&c|b&d|b&e|c&d|c&e&f / (Func: 425) / non_zero_indices: 999, 563, 411, 397, 1009, 1067, ,  / negative index: 563, 397, 1009, 1067
+row333_11 / neuron541 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e&f|a&c&d&e&f / (Func: 426) / non_zero_indices: 1062, 772, 22, 367, 635, 393, ,  / negative index: 1062, 772, 22, 367
+row334_11 / neuron542 / a|b&c|b&d&e|b&d&f|c&d&e / (Func: 427) / non_zero_indices: 1149, 649, 98, 937, 998, 996, ,  / negative index: 1149, 98
+row335_11 / neuron543 / a|b|c&d&e|c&d&f|c&e&f|d&e&f / (Func: 392) / non_zero_indices: 337, 210, 816, 861, 751, 1170, ,  / negative index: 816, 861
+row336_11 / neuron544 / a&b|a&c&d&e|a&c&d&f / (Func: 210) / non_zero_indices: 63, 901, 862, 893, 375, 1076, ,  / negative index: 63, 901
+row337_11 / neuron545 / a&b|a&c|a&d|b&c&d|b&c&e|b&c&f|b&d&e / (Func: 428) / non_zero_indices: 1178, 383, 454, 304, 386, 1049, ,  / negative index: 1178, 383, 386, 1049
+row338_11 / neuron546 / a&b|a&c|a&d&e&f|b&c&d|b&c&e / (Func: 429) / non_zero_indices: 348, 261, 915, 1079, 815, 301, ,  / negative index: 348, 915, 815
+row339_11 / neuron547 / a&b&c|a&b&d|a&b&e&f|a&c&d&e|a&c&d&f|a&c&e&f / (Func: 430) / non_zero_indices: 635, 258, 1060, 1057, 681, 232, ,  / negative index: 635, 258, 681, 232
+row340_11 / neuron548 / a&b&c&d&e|a&b&c&d&f / (Func: 410) / non_zero_indices: 1073, 71, 1113, 328, 1278, 496, ,  / negative index: 1073, 71, 1113, 328, 1278
+row341_11 / neuron549 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f|c&d&e / (Func: 431) / non_zero_indices: 246, 332, 936, 1099, 795, 1240, ,  / negative index: 246, 795
+row342_11 / neuron550 / a|b&c|b&d|c&d&e&f / (Func: 432) / non_zero_indices: 381, 436, 592, 950, 100, 1009, ,  / negative index: 381, 950, 1009
+row343_11 / neuron551 / a&b|a&c|a&d|b&c&d / (Func: 394) / non_zero_indices: 356, 751, 171, 1070, 319, 85, ,  / negative index: 356, 751, 1070, 319
+row344_11 / neuron552 / a&b|a&c|a&d|a&e|b&c|b&d|b&e&f|c&d&e|c&d&f / (Func: 304) / non_zero_indices: 222, 1295, 754, 362, 513, 679, ,  / negative index: 1295, 513
+row345_11 / neuron553 / a&b|a&c|a&d&e|b&c|b&d&e / (Func: 328) / non_zero_indices: 581, 1007, 744, 502, 932, 883, ,  / negative index: 1007, 502, 932, 883
+row346_11 / neuron554 / a&b|a&c|a&d|b&c|b&d / (Func: 258) / non_zero_indices: 134, 246, 912, 412, 1195, 151, ,  / negative index: 246, 151
+row347_11 / neuron555 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|b&c&d&e&f / (Func: 433) / non_zero_indices: 150, 666, 196, 357, 1235, 96, ,  / negative index: 150, 1235, 96
+row348_11 / neuron556 / a|b|c&d|c&e / (Func: 434) / non_zero_indices: 1038, 730, 957, 866, 232, 949, ,  / negative index: 730
+row349_11 / neuron557 / a&b&c&d / (Func: 268) / non_zero_indices: 1109, 87, 1181, 1170, 505, 676, ,  / negative index: 1109, 87, 1181, 1170
+row350_11 / neuron558 / a&b&c|a&b&d&e&f / (Func: 300) / non_zero_indices: 1160, 657, 930, 966, 147, 590, ,  / negative index: 1160, 657, 930, 147
+row351_11 / neuron559 / a&b|a&c|a&d|a&e&f|b&c&d / (Func: 435) / non_zero_indices: 964, 324, 546, 960, 1229, 391, ,  / negative index: 964, 546
+row352_11 / neuron560 / a&b|a&c|a&d|a&e|b&c|b&d&e|c&d&e&f / (Func: 306) / non_zero_indices: 122, 472, 228, 947, 85, 953, ,  / negative index: 472, 228, 85
+row353_11 / neuron561 / a&b|a&c|a&d|a&e|b&c&d|b&c&e|b&d&e / (Func: 436) / non_zero_indices: 92, 223, 141, 601, 550, 249, ,  / negative index: 92, 141
+row354_11 / neuron562 / a|b&c&d|b&c&e|b&c&f|b&d&e|c&d&e&f / (Func: 316) / non_zero_indices: 155, 1266, 1230, 1068, 436, 832, ,  / negative index: 1230, 1068
+row355_11 / neuron563 / a|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 282) / non_zero_indices: 1183, 728, 258, 652, 1269, 1115, ,  / negative index: 728, 258, 1269, 1115
+row356_11 / neuron564 / a|b&c|b&d|b&e&f|c&d / (Func: 254) / non_zero_indices: 144, 708, 383, 439, 676, 1125, ,  / negative index: 144, 383
+row357_11 / neuron565 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|a&e&f|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 401) / non_zero_indices: 485, 1262, 897, 607, 75, 875, ,  / negative index: 485, 897, 75
+row358_11 / neuron566 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|b&c&d&e|b&c&d&f / (Func: 437) / non_zero_indices: 1242, 1119, 16, 3, 803, 953, ,  / negative index: 1242, 1119, 953
+row359_11 / neuron567 / a&b|a&c|a&d|b&c&d / (Func: 394) / non_zero_indices: 702, 629, 818, 134, 15, 853, ,  / negative index: 629, 818, 134, 853
+row360_11 / neuron568 / a / (Func: 281) / non_zero_indices: 334, 657, 568, 938, 533, 1132, ,  / negative index: 657, 568, 533, 1132
+row361_11 / neuron569 / a&b|a&c|a&d&e&f / (Func: 309) / non_zero_indices: 435, 948, 1110, 925, 455, 633, ,  / negative index: 435, 455
+row362_11 / neuron570 / a&b&c|a&b&d&e|a&b&d&f|a&c&d&e&f / (Func: 297) / non_zero_indices: 944, 891, 883, 1019, 903, 733, ,  / negative index: 944, 891, 883, 733
+row363_11 / neuron571 / a&b&c|a&b&d&e / (Func: 267) / non_zero_indices: 233, 575, 542, 306, 894, 1258, ,  / negative index: 233, 575, 306, 894, 1258
+row364_11 / neuron572 / a&b|a&c|a&d|a&e|a&f / (Func: 409) / non_zero_indices: 1040, 294, 1177, 139, 444, 743, ,  / negative index: 1040, 139, 444, 743
+row365_11 / neuron573 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e|c&d / (Func: 438) / non_zero_indices: 133, 1014, 637, 440, 1293, 498, ,  / negative index: 1014, 637, 1293
+row366_11 / neuron574 / a|b&c&d / (Func: 372) / non_zero_indices: 270, 221, 1092, 79, 126, 1185, ,  / negative index: 221, 1092, 79, 126
+row367_11 / neuron575 / a|b&c / (Func: 98) / non_zero_indices: 857, 1154, 1236, 591, 326, 623, ,  / negative index: 857, 326
+row368_11 / neuron576 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d&e|a&c&d&f|a&c&e&f|b&c&d&e&f / (Func: 439) / non_zero_indices: 1234, 297, 262, 997, 1204, 712, ,  / negative index: 1234, 297, 262, 1204, 712
+row369_11 / neuron577 / a|b|c|d|e / (Func: 440) / non_zero_indices: 88, 949, 652, 277, 25, 782, ,  / negative index: 25, 782
+row370_11 / neuron578 / a&b|a&c|a&d|a&e|a&f / (Func: 409) / non_zero_indices: 395, 655, 1293, 1281, 724, 901, ,  / negative index: 395, 1281, 724
+row371_11 / neuron579 / a&b|a&c|a&d&e|a&d&f / (Func: 441) / non_zero_indices: 23, 285, 1270, 608, 168, 361, ,  / negative index: 23, 285, 168
+row372_11 / neuron580 / a&b|a&c|a&d|a&e|b&c&d|b&c&e|b&c&f|b&d&e|c&d&e&f / (Func: 442) / non_zero_indices: 1009, 692, 995, 964, 657, 1019, ,  / negative index: 1009, 657, 1019
+row373_11 / neuron581 / one / non_zero_indices: 951, 584, 829, 923, 834, 244, ,  / negative index: 834
+row374_11 / neuron582 / one / non_zero_indices: 457, 481, 293, 1066, 201, 761, ,  / negative index: 201, 761
+row375_11 / neuron583 / a&b|a&c|a&d|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|c&d&e&f / (Func: 443) / non_zero_indices: 562, 191, 620, 671, 1199, 302, ,  / negative index: 562, 620
+row376_11 / neuron584 / a&b&c&d / (Func: 268) / non_zero_indices: 107, 1017, 1251, 24, 627, 258, ,  / negative index: 107, 1017, 1251, 24, 627, 258
+row377_11 / neuron585 / a&b&c|a&b&d|a&b&e&f|a&c&d&e|a&c&d&f / (Func: 227) / non_zero_indices: 1157, 108, 172, 1018, 430, 771, ,  / negative index: 1157, 108, 430, 771
+row378_11 / neuron586 / a&b&c|a&b&d|a&b&e|a&c&d&e|a&c&d&f|a&c&e&f|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 444) / non_zero_indices: 1098, 516, 240, 1174, 688, 1076, ,  / negative index: 1098, 516, 688, 1076
+row379_11 / neuron587 / a|b&c|b&d|b&e&f / (Func: 341) / non_zero_indices: 1095, 709, 1283, 884, 412, 345, ,  / negative index: 1095, 345
+row380_11 / neuron588 / one / non_zero_indices: 431, 773, 829, 637, 738, 1026, ,  / negative index: 738
+row381_11 / neuron589 / a&b|a&c|a&d&e|a&d&f|b&c&d|b&c&e|b&c&f|b&d&e&f / (Func: 445) / non_zero_indices: 870, 862, 784, 1271, 1141, 404, ,  / negative index: 870, 862
+row382_11 / neuron590 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|c&d&e / (Func: 446) / non_zero_indices: 437, 555, 187, 300, 810, 22, ,  / negative index: 437, 300
+row383_11 / neuron591 / a&b|a&c&d / (Func: 338) / non_zero_indices: 820, 478, 466, 720, 784, 256, ,  / negative index: 820, 720, 784
+row384_11 / neuron592 / a&b / (Func: 241) / non_zero_indices: 294, 12, 762, 505, 839, 453, ,  / negative index: 294, 12, 505, 453
+row385_11 / neuron593 / one / non_zero_indices: 280, 387, 148, 684, 822, 571, ,  / negative index: 822, 571
+row386_11 / neuron594 / a&b&c&d&e / (Func: 303) / non_zero_indices: 1098, 1067, 962, 990, 1185, 985, ,  / negative index: 1098, 1067, 962, 990, 1185
+row387_11 / neuron595 / a&b|a&c|a&d|a&e&f|b&c&d|b&c&e&f|b&d&e&f / (Func: 447) / non_zero_indices: 1219, 1238, 304, 786, 1267, 912, ,  / negative index: 1238, 786, 1267, 912
+row388_11 / neuron596 / a&b&c|a&b&d&e|a&b&d&f|a&b&e&f|a&c&d&e|a&c&d&f|a&c&e&f / (Func: 448) / non_zero_indices: 617, 648, 1095, 608, 217, 438, ,  / negative index: 617, 648, 1095, 608
+row389_11 / neuron597 / a|b&c&d / (Func: 372) / non_zero_indices: 730, 810, 80, 569, 858, 536, ,  / negative index: 810, 80, 858
+row390_11 / neuron598 / a|b&c&d|b&c&e|b&c&f|b&d&e / (Func: 373) / non_zero_indices: 210, 1180, 908, 358, 904, 91, ,  / negative index: 1180, 908, 904
+row391_11 / neuron599 / a&b|a&c&d&e&f|b&c&d&e&f / (Func: 449) / non_zero_indices: 384, 1272, 781, 104, 715, 336, ,  / negative index: 384, 1272, 104, 336
+row392_11 / neuron600 / a&b|a&c|a&d&e / (Func: 208) / non_zero_indices: 83, 735, 35, 1170, 1087, 226, ,  / negative index: 35, 1170, 226
+row393_11 / neuron601 / a|b / (Func: 215) / non_zero_indices: 333, 343, 17, 202, 1170, 588, ,  / negative index: 343, 1170, 588
+row394_11 / neuron602 / a&b&c|a&b&d|a&b&e|a&c&d|b&c&d&e / (Func: 450) / non_zero_indices: 695, 586, 389, 1079, 1077, 247, ,  / negative index: 695, 389, 1079, 247
+row395_11 / neuron603 / a|b&c / (Func: 98) / non_zero_indices: 428, 677, 1197, 496, 400, 326, ,  / negative index: 677, 1197, 400
+row396_11 / neuron604 / a&b&c|a&b&d&e|a&b&d&f|a&c&d&e / (Func: 256) / non_zero_indices: 906, 635, 1016, 869, 1011, 274, ,  / negative index: 906, 635, 1016, 274
+row397_11 / neuron605 / a&b&c|a&b&d|a&c&d&e|a&c&d&f|b&c&d&e|b&c&d&f / (Func: 451) / non_zero_indices: 305, 339, 927, 1217, 916, 655, ,  / negative index: 305, 927, 1217
+row398_11 / neuron606 / a&b|a&c|a&d|a&e&f|b&c&d&e / (Func: 239) / non_zero_indices: 440, 1139, 1075, 691, 595, 702, ,  / negative index: 440, 1075
+row399_11 / neuron607 / a&b|a&c|a&d|b&c&d|b&c&e|b&d&e|c&d&e / (Func: 452) / non_zero_indices: 203, 566, 388, 1081, 991, 46, ,  / negative index: 566, 1081
+row400_11 / neuron608 / a|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 223) / non_zero_indices: 1121, 661, 1103, 273, 1114, 280, ,  / negative index: 661, 1103
+row401_11 / neuron609 / a&b&c|a&b&d|a&c&d&e / (Func: 357) / non_zero_indices: 1024, 571, 793, 1084, 925, 515, ,  / negative index: 1024, 571, 1084, 515
+row402_11 / neuron610 / a&b|a&c&d|a&c&e|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 453) / non_zero_indices: 964, 975, 532, 833, 874, 1003, ,  / negative index: 964, 874, 1003
+row403_11 / neuron611 / a|b|c|d&e|d&f|e&f / (Func: 349) / non_zero_indices: 1088, 566, 425, 575, 1107, 1281, ,  / negative index: 566, 1281
+row404_11 / neuron612 / a&b|a&c|a&d&e|a&d&f|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f|c&d&e|c&d&f / (Func: 454) / non_zero_indices: 378, 197, 1066, 92, 846, 15, ,  / negative index: 197, 15
+row405_11 / neuron613 / a|b&c|b&d|b&e|c&d&e|c&d&f|c&e&f / (Func: 343) / non_zero_indices: 1142, 1153, 980, 1167, 691, 202, ,  / negative index: 1142
+row406_11 / neuron614 / a&b&c / (Func: 229) / non_zero_indices: 444, 216, 497, 899, 935, 679, ,  / negative index: 444, 216, 497, 679
+row407_11 / neuron615 / a|b&c|b&d|b&e|b&f|c&d|c&e|c&f / (Func: 455) / non_zero_indices: 1208, 873, 117, 1122, 227, 668, ,  / negative index: 873, 1122, 668
+row408_11 / neuron616 / a&b|a&c&d&e&f / (Func: 224) / non_zero_indices: 1100, 158, 111, 380, 23, 325, ,  / negative index: 1100, 111, 380, 325
+row409_11 / neuron617 / a&b&c|a&b&d|a&b&e&f|a&c&d&e|a&c&d&f|a&c&e&f|b&c&d&e&f / (Func: 456) / non_zero_indices: 171, 903, 588, 494, 32, 1053, ,  / negative index: 171, 588, 494, 1053
+row410_11 / neuron618 / a&b&c|a&b&d|a&b&e / (Func: 237) / non_zero_indices: 33, 323, 319, 242, 606, 537, ,  / negative index: 33, 323, 242
+row411_11 / neuron619 / a&b|a&c|a&d|a&e|a&f|b&c&d|b&c&e|b&c&f|b&d&e&f / (Func: 318) / non_zero_indices: 294, 638, 613, 507, 305, 295, ,  / negative index: 507, 295
+row412_11 / neuron620 / a&b / (Func: 241) / non_zero_indices: 964, 738, 61, 677, 507, 1075, ,  / negative index: 964, 738, 1075
+row413_11 / neuron621 / a&b / (Func: 241) / non_zero_indices: 1061, 186, 400, 592, 978, 1018, ,  / negative index: 1061, 186
+row414_11 / neuron622 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e&f|c&d&e / (Func: 457) / non_zero_indices: 233, 978, 301, 175, 393, 1172, ,  / negative index: 978, 301, 1172
+row415_11 / neuron623 / a&b|a&c|a&d&e|a&d&f|a&e&f|b&c / (Func: 458) / non_zero_indices: 586, 509, 198, 741, 324, 591, ,  / negative index: 509, 198, 741, 324, 591
+row416_11 / neuron624 / a&b|a&c|a&d&e|a&d&f|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f|c&d&e&f / (Func: 174) / non_zero_indices: 503, 903, 329, 993, 151, 610, ,  / negative index: 503, 329, 151
+row417_11 / neuron625 / a&b|a&c|a&d|a&e|b&c|b&d|b&e|c&d|c&e / (Func: 459) / non_zero_indices: 502, 297, 604, 221, 1207, 549, ,  / negative index: 502, 221, 549
+row418_11 / neuron626 / a&b&c&d|a&b&c&e&f|a&b&d&e&f / (Func: 234) / non_zero_indices: 1072, 138, 216, 284, 740, 14, ,  / negative index: 1072, 138, 216, 284
+row419_11 / neuron627 / a&b&c&d / (Func: 268) / non_zero_indices: 847, 136, 1033, 106, 670, 1, ,  / negative index: 847, 136, 1033, 106
+row420_11 / neuron628 / a&b&c&d&e|a&b&c&d&f|a&b&c&e&f / (Func: 353) / non_zero_indices: 1205, 809, 861, 1181, 1269, 372, ,  / negative index: 1205, 809, 861, 1181, 1269
+row421_11 / neuron629 / a&b&c|a&b&d|a&b&e&f|a&c&d|a&c&e&f|a&d&e&f|b&c&d&e / (Func: 460) / non_zero_indices: 632, 1041, 1081, 409, 492, 929, ,  / negative index: 632, 1041, 1081, 492, 929
+row422_11 / neuron630 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e|a&d&e|b&c&d|b&c&e|b&d&e&f|c&d&e&f / (Func: 461) / non_zero_indices: 79, 967, 653, 794, 1046, 25, ,  / negative index: 79, 967, 1046, 25
+row423_11 / neuron631 / a|b&c|b&d&e|b&d&f|c&d&e / (Func: 427) / non_zero_indices: 750, 319, 1186, 918, 877, 1263, ,  / negative index: 319, 1186
+row424_11 / neuron632 / a|b|c&d|c&e / (Func: 434) / non_zero_indices: 888, 903, 320, 786, 653, 633, ,  / negative index: 320, 786, 633
+row425_11 / neuron633 / a&b|a&c|a&d|a&e&f|b&c|b&d|b&e&f|c&d&e|c&d&f|c&e&f / (Func: 462) / non_zero_indices: 33, 331, 524, 1187, 1149, 292, ,  / negative index: 33, 331
+row426_11 / neuron634 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e|a&b&d&f|a&c&d&e|a&c&d&f / (Func: 463) / non_zero_indices: 192, 896, 930, 921, 549, 1074, ,  / negative index: 192, 930, 921, 1074
+row427_11 / neuron635 / a|b&c|b&d / (Func: 240) / non_zero_indices: 308, 429, 736, 1194, 423, 17, ,  / negative index: 429, 736, 423
+row428_11 / neuron636 / a&b&c / (Func: 229) / non_zero_indices: 1083, 75, 103, 213, 919, 613, ,  / negative index: 1083, 75, 213, 919
+row429_11 / neuron637 / a&b&c|a&b&d|a&c&d / (Func: 464) / non_zero_indices: 323, 575, 1050, 426, 432, 824, ,  / negative index: 323, 1050, 824
+row430_11 / neuron638 / a|b&c|b&d|b&e|b&f|c&d|c&e|c&f|d&e / (Func: 465) / non_zero_indices: 450, 889, 959, 572, 1170, 1107, ,  / negative index: 959, 1170
+row431_11 / neuron639 / a&b|a&c|a&d|a&e|b&c&d|b&c&e / (Func: 466) / non_zero_indices: 683, 512, 790, 809, 178, 470, ,  / negative index: 683, 790, 470
+row432_11 / neuron640 / a|b|c / (Func: 231) / non_zero_indices: 56, 130, 561, 218, 597, 491, ,  / negative index: 218, 597
+row433_11 / neuron641 / a&b&c&d&e&f / (Func: 379) / non_zero_indices: 1001, 673, 76, 537, 841, 293, ,  / negative index: 1001, 673, 76, 537, 293
+row434_11 / neuron642 / a&b|a&c|b&c / (Func: 276) / non_zero_indices: 744, 301, 893, 1288, 801, 850, ,  / negative index: 744, 1288
+row435_11 / neuron643 / a&b&c&d&e|a&b&c&d&f / (Func: 410) / non_zero_indices: 1094, 1057, 405, 694, 591, 712, ,  / negative index: 1094, 1057, 405, 694, 712
+row436_11 / neuron644 / a|b&c|b&d|b&e|b&f|c&d&e / (Func: 467) / non_zero_indices: 794, 105, 880, 339, 63, 721, ,  / negative index: 105, 339, 63, 721
+row437_11 / neuron645 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e&f|a&c&d&e&f / (Func: 426) / non_zero_indices: 32, 314, 1006, 557, 1096, 852, ,  / negative index: 32, 314, 557, 1096, 852
+row438_11 / neuron646 / a / (Func: 281) / non_zero_indices: 402, 401, 684, 928, 825, 727, ,  / negative index: 402, 825, 727
+row439_11 / neuron647 / a&b|a&c&d|a&c&e|a&c&f|a&d&e&f / (Func: 468) / non_zero_indices: 155, 200, 873, 1199, 1281, 653, ,  / negative index: 155, 200, 1199
+row440_11 / neuron648 / a|b&c|b&d|b&e|b&f|c&d&e / (Func: 467) / non_zero_indices: 943, 1069, 560, 393, 819, 811, ,  / negative index: 560, 393, 811
+row441_11 / neuron649 / a / (Func: 281) / non_zero_indices: 1116, 869, 288, 623, 106, 95, ,  / negative index: 623, 106, 95
+row442_11 / neuron650 / a&b|a&c|a&d|a&e&f|b&c / (Func: 469) / non_zero_indices: 312, 1122, 124, 856, 130, 1022, ,  / negative index: 312, 856, 1022
+row443_11 / neuron651 / a&b|a&c&d&e|b&c&d&e&f / (Func: 470) / non_zero_indices: 674, 12, 1186, 713, 816, 259, ,  / negative index: 674, 1186, 816
+row444_11 / neuron652 / zero / non_zero_indices: 996, 1050, 775, 206, 877, 907, ,  / negative index: 996, 1050, 775, 206, 877
+row445_11 / neuron653 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e&f|a&d&e&f|b&c&d&e&f / (Func: 471) / non_zero_indices: 1155, 112, 868, 650, 55, 652, ,  / negative index: 1155, 650, 55, 652
+row446_11 / neuron654 / a|b|c / (Func: 231) / non_zero_indices: 1228, 5, 378, 1062, 662, 893, ,  / negative index: nan
+row447_11 / neuron655 / a&b&c|a&b&d&e|a&b&d&f|a&b&e&f|a&c&d&e&f|b&c&d&e&f / (Func: 472) / non_zero_indices: 1108, 1179, 539, 332, 571, 699, ,  / negative index: 1108, 1179, 539
+row448_11 / neuron656 / a&b|a&c|a&d&e|a&d&f|b&c&d|b&c&e / (Func: 356) / non_zero_indices: 1026, 773, 1212, 741, 923, 882, ,  / negative index: 773, 1212, 923, 882
+row449_11 / neuron657 / a&b&c|a&b&d|a&c&d&e&f / (Func: 473) / non_zero_indices: 623, 352, 220, 405, 119, 680, ,  / negative index: 623, 352, 405, 680
+row450_11 / neuron658 / a|b&c|b&d|b&e|c&d&e&f / (Func: 474) / non_zero_indices: 371, 622, 686, 549, 652, 211, ,  / negative index: 622, 549
+row451_11 / neuron659 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|b&c&d|b&c&e|b&d&e / (Func: 367) / non_zero_indices: 923, 442, 781, 541, 667, 258, ,  / negative index: 923, 442, 258
+row452_11 / neuron660 / a&b&c&d&e|a&b&c&d&f / (Func: 410) / non_zero_indices: 973, 1062, 854, 1107, 1079, 1246, ,  / negative index: 973, 1062, 854, 1107, 1079
+row453_11 / neuron661 / a&b&c&d|a&b&c&e / (Func: 423) / non_zero_indices: 624, 648, 885, 383, 1096, 1090, ,  / negative index: 624, 648, 885, 383, 1090
+row454_11 / neuron662 / zero / non_zero_indices: 1290, 400, 121, 996, 547, 951, ,  / negative index: 1290, 400, 996, 547, 951
+row455_11 / neuron663 / a&b&c|a&b&d / (Func: 323) / non_zero_indices: 1127, 1177, 526, 605, 787, 259, ,  / negative index: 1127, 1177, 605
+row456_11 / neuron664 / a|b&c&d|b&c&e|b&d&e|c&d&e&f / (Func: 475) / non_zero_indices: 332, 501, 694, 530, 905, 378, ,  / negative index: 694, 530, 905, 378
+row457_11 / neuron665 / a|b&c|b&d|b&e&f|c&d&e / (Func: 476) / non_zero_indices: 186, 300, 174, 184, 602, 145, ,  / negative index: 300, 184
+row458_11 / neuron666 / a|b&c&d|b&c&e|b&d&e / (Func: 477) / non_zero_indices: 1106, 1241, 167, 434, 748, 426, ,  / negative index: 1241, 434
+row459_11 / neuron667 / a&b&c&d|a&b&c&e|a&b&d&e / (Func: 211) / non_zero_indices: 365, 293, 197, 336, 60, 257, ,  / negative index: 365, 293, 197, 60, 257
+row460_11 / neuron668 / a&b&c|a&b&d|a&c&d&e|a&c&d&f|b&c&d&e|b&c&d&f / (Func: 451) / non_zero_indices: 1096, 596, 870, 836, 398, 526, ,  / negative index: 1096, 596, 836, 398
+row461_11 / neuron669 / a&b&c|a&b&d|a&b&e&f|a&c&d / (Func: 478) / non_zero_indices: 820, 173, 181, 571, 43, 393, ,  / negative index: 820, 173, 393
+row462_11 / neuron670 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e|b&c&d&e&f / (Func: 479) / non_zero_indices: 554, 1072, 658, 493, 1162, 549, ,  / negative index: 554, 1072, 658, 549
+row463_11 / neuron671 / a&b|a&c|a&d&e|b&c&d|b&c&e|b&d&e / (Func: 480) / non_zero_indices: 1175, 211, 340, 447, 738, 547, ,  / negative index: 1175, 447, 738, 547
+row464_11 / neuron672 / a&b&c|a&b&d|a&b&e&f|a&c&d&e|a&c&d&f|a&c&e&f / (Func: 430) / non_zero_indices: 620, 1165, 0, 532, 535, 18, ,  / negative index: 620, 1165, 535, 18
+row465_11 / neuron673 / a|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 223) / non_zero_indices: 1126, 1278, 421, 490, 906, 914, ,  / negative index: 1278, 421, 906, 914
+row466_11 / neuron674 / a&b&c|a&b&d|a&b&e / (Func: 237) / non_zero_indices: 752, 271, 21, 861, 264, 291, ,  / negative index: 752, 271, 21, 264
+row467_11 / neuron675 / a&b|a&c|a&d|b&c&d / (Func: 394) / non_zero_indices: 897, 1188, 125, 285, 776, 438, ,  / negative index: 897, 285
+row468_11 / neuron676 / a|b&c|b&d|b&e|c&d&e|c&d&f|c&e&f / (Func: 343) / non_zero_indices: 1031, 190, 730, 1280, 26, 1147, ,  / negative index: 730, 1280, 26
+row469_11 / neuron677 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d&e|a&c&d&f|a&c&e&f / (Func: 481) / non_zero_indices: 580, 351, 572, 495, 85, 798, ,  / negative index: 580, 351, 495, 85, 798
+row470_11 / neuron678 / a&b|a&c|a&d|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|b&e&f|c&d&e|c&d&f / (Func: 482) / non_zero_indices: 195, 1166, 573, 858, 781, 1114, ,  / negative index: 1166, 573, 858
+row471_11 / neuron679 / a&b|a&c|a&d|b&c|b&d&e|c&d&e / (Func: 483) / non_zero_indices: 125, 977, 1080, 638, 127, 139, ,  / negative index: 1080, 638, 127
+row472_11 / neuron680 / a|b|c / (Func: 231) / non_zero_indices: 227, 702, 441, 592, 1186, 852, ,  / negative index: 441, 1186
+row473_11 / neuron681 / a&b&c&d|a&b&c&e / (Func: 423) / non_zero_indices: 600, 173, 162, 574, 943, 749, ,  / negative index: 600, 173, 162, 749
+row474_11 / neuron682 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d / (Func: 213) / non_zero_indices: 1256, 186, 144, 608, 370, 244, ,  / negative index: 1256, 144, 608, 244
+row475_11 / neuron683 / a&b|a&c|a&d|a&e|b&c|b&d|c&d&e&f / (Func: 484) / non_zero_indices: 607, 935, 447, 617, 1210, 345, ,  / negative index: 935, 447
+row476_11 / neuron684 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|b&c&d|b&c&e|b&d&e&f|c&d&e&f / (Func: 485) / non_zero_indices: 174, 50, 56, 1019, 970, 482, ,  / negative index: 174, 1019, 482
+row477_11 / neuron685 / a&b&c|a&b&d / (Func: 323) / non_zero_indices: 633, 477, 1114, 1211, 195, 700, ,  / negative index: 633, 477, 1114, 700
+row478_11 / neuron686 / a&b|a&c|a&d&e|a&d&f|a&e&f|b&c|b&d&e|b&d&f|b&e&f|c&d&e&f / (Func: 486) / non_zero_indices: 281, 577, 563, 641, 3, 533, ,  / negative index: 577, 3, 533
+row479_11 / neuron687 / a&b|a&c|a&d&e|a&d&f|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f|c&d&e / (Func: 487) / non_zero_indices: 533, 1232, 129, 1277, 132, 523, ,  / negative index: 1232, 1277, 132, 523
+row480_11 / neuron688 / a&b|a&c|a&d|b&c|b&d|c&d / (Func: 488) / non_zero_indices: 890, 165, 404, 1204, 11, 59, ,  / negative index: 165, 404
+row481_11 / neuron689 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e&f|a&d&e&f / (Func: 489) / non_zero_indices: 65, 335, 1092, 595, 553, 284, ,  / negative index: 65, 595, 553, 284
+row482_11 / neuron690 / a&b|a&c|a&d|b&c&d|b&c&e|b&c&f|b&d&e&f / (Func: 490) / non_zero_indices: 75, 1251, 661, 602, 870, 364, ,  / negative index: 75, 661, 870, 364
+row483_11 / neuron691 / a&b|a&c|a&d&e&f|b&c / (Func: 491) / non_zero_indices: 212, 362, 994, 1118, 999, 853, ,  / negative index: 212, 1118, 999
+row484_11 / neuron692 / a&b|a&c|a&d|a&e|a&f|b&c&d&e|b&c&d&f|b&c&e&f / (Func: 246) / non_zero_indices: 157, 1293, 299, 786, 49, 779, ,  / negative index: 157, 786, 779
+row485_11 / neuron693 / one / non_zero_indices: 951, 1063, 546, 296, 1218, 381, ,  / negative index: 296, 381
+row486_11 / neuron694 / a&b|a&c|a&d|b&c|b&d&e&f / (Func: 492) / non_zero_indices: 1037, 848, 613, 643, 387, 1164, ,  / negative index: 1037, 643
+row487_11 / neuron695 / zero / non_zero_indices: 504, 420, 276, 674, 356, 778, ,  / negative index: 504, 420, 276, 674
+row488_11 / neuron696 / a&b|a&c&d|a&c&e|b&c&d / (Func: 493) / non_zero_indices: 1195, 626, 29, 317, 202, 1182, ,  / negative index: 626, 29, 317, 202
+row489_11 / neuron697 / a|b&c&d&e|b&c&d&f / (Func: 494) / non_zero_indices: 682, 581, 645, 278, 417, 34, ,  / negative index: 682
+row490_11 / neuron698 / a&b|a&c|a&d&e|b&c&d|b&c&e|b&d&e|c&d&e / (Func: 495) / non_zero_indices: 126, 1138, 896, 106, 419, 1070, ,  / negative index: 126, 1138
+row491_11 / neuron699 / a|b&c|b&d|c&d / (Func: 319) / non_zero_indices: 38, 99, 28, 828, 935, 958, ,  / negative index: 38, 958
+row492_11 / neuron700 / a&b|a&c|a&d&e|a&d&f|a&e&f|b&c|b&d&e&f / (Func: 496) / non_zero_indices: 265, 863, 1097, 1092, 1226, 366, ,  / negative index: 265, 1092, 1226
+row493_11 / neuron701 / a|b&c|b&d&e|b&d&f / (Func: 497) / non_zero_indices: 430, 56, 1063, 942, 156, 1066, ,  / negative index: 430, 156, 1066
+row494_11 / neuron702 / a|b|c&d|c&e / (Func: 434) / non_zero_indices: 425, 219, 468, 137, 647, 653, ,  / negative index: 219
+row495_11 / neuron703 / a|b&c|b&d|b&e|b&f|c&d&e|c&d&f|c&e&f / (Func: 498) / non_zero_indices: 119, 159, 219, 312, 814, 279, ,  / negative index: 219, 814
+row496_11 / neuron704 / a&b|a&c|a&d|a&e&f|b&c&d|b&c&e|b&c&f|b&d&e|b&d&f / (Func: 499) / non_zero_indices: 1007, 1055, 504, 441, 487, 298, ,  / negative index: 1055, 504, 441, 487
+row497_11 / neuron705 / a&b&c|a&b&d&e|a&b&d&f|a&b&e&f / (Func: 245) / non_zero_indices: 1065, 491, 178, 118, 1049, 1170, ,  / negative index: 1065, 491, 118, 1049, 1170
+row498_11 / neuron706 / a&b|a&c|a&d|a&e|a&f / (Func: 409) / non_zero_indices: 1232, 1143, 850, 634, 202, 650, ,  / negative index: 1232, 1143, 634, 650
+row499_11 / neuron707 / a|b&c|b&d&e|c&d&e&f / (Func: 500) / non_zero_indices: 16, 337, 551, 470, 922, 953, ,  / negative index: 551, 922, 953
+row500_11 / neuron708 / a&b|a&c&d&e / (Func: 501) / non_zero_indices: 879, 383, 901, 142, 1063, 657, ,  / negative index: 879, 901, 142, 657
+row501_11 / neuron709 / a&b|a&c|a&d|a&e|b&c|b&d|b&e|c&d|c&e&f / (Func: 502) / non_zero_indices: 738, 290, 216, 147, 141, 407, ,  / negative index: 147, 141, 407
+row502_11 / neuron710 / a&b|a&c&d&e|a&c&d&f / (Func: 210) / non_zero_indices: 271, 1290, 919, 317, 988, 208, ,  / negative index: 271, 919, 988, 208
+row503_11 / neuron711 / a&b&c&d|a&b&c&e&f|a&b&d&e&f / (Func: 234) / non_zero_indices: 488, 114, 1258, 694, 779, 71, ,  / negative index: 488, 114, 1258, 694, 71
+row504_11 / neuron712 / a|b&c&d|b&c&e|b&c&f|b&d&e&f / (Func: 503) / non_zero_indices: 1242, 1284, 833, 801, 603, 776, ,  / negative index: 1284, 833
+row505_11 / neuron713 / a&b&c|a&b&d|a&b&e|a&c&d&e / (Func: 172) / non_zero_indices: 555, 765, 92, 883, 881, 1227, ,  / negative index: 555, 765, 883, 881
+row506_11 / neuron714 / a&b|a&c&d&e / (Func: 501) / non_zero_indices: 1040, 901, 493, 695, 1171, 631, ,  / negative index: 1040, 493, 1171
+row507_11 / neuron715 / a&b&c&d|a&b&c&e|a&b&d&e|a&c&d&e / (Func: 285) / non_zero_indices: 488, 1066, 42, 770, 685, 667, ,  / negative index: 488, 770, 685
+row508_11 / neuron716 / zero / non_zero_indices: 72, 849, 922, 24, 900, 809, ,  / negative index: 72, 849, 922, 24, 900, 809
+row509_11 / neuron717 / a&b&c|a&b&d&e|a&b&d&f / (Func: 415) / non_zero_indices: 224, 753, 548, 612, 1173, 854, ,  / negative index: 224, 753, 548, 612
+row510_11 / neuron718 / a&b&c&d|a&b&c&e&f / (Func: 295) / non_zero_indices: 188, 286, 233, 687, 971, 390, ,  / negative index: 188, 286, 233, 687, 971
+row511_11 / neuron719 / a&b&c&d|a&b&c&e / (Func: 423) / non_zero_indices: 957, 1157, 1023, 535, 1291, 876, ,  / negative index: 957, 1157, 1023, 535, 876
+row512_11 / neuron720 / a&b|a&c&d|a&c&e&f|a&d&e&f|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 504) / non_zero_indices: 1194, 1165, 301, 861, 947, 309, ,  / negative index: 1194, 947
+row513_11 / neuron721 / a&b|a&c|a&d|a&e|b&c|b&d&e|c&d&e / (Func: 505) / non_zero_indices: 884, 168, 1159, 1021, 745, 817, ,  / negative index: 168, 745
+row514_11 / neuron722 / a&b&c&d&e|a&b&c&d&f / (Func: 410) / non_zero_indices: 1062, 1137, 289, 1029, 1090, 156, ,  / negative index: 1062, 1137, 289, 1029, 1090
+row515_11 / neuron723 / a|b|c&d|c&e|d&e / (Func: 334) / non_zero_indices: 346, 612, 109, 1262, 866, 914, ,  / negative index: 1262, 914
+row516_11 / neuron724 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f|a&e&f|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f / (Func: 401) / non_zero_indices: 833, 148, 654, 0, 744, 240, ,  / negative index: 833, 654, 0, 744
+row517_11 / neuron725 / a&b&c / (Func: 229) / non_zero_indices: 1134, 1179, 103, 1256, 826, 861, ,  / negative index: 1134, 1179, 1256, 826
+row518_11 / neuron726 / a / (Func: 281) / non_zero_indices: 1163, 1104, 796, 294, 1146, 1067, ,  / negative index: 1163, 1104, 294, 1067
+row519_11 / neuron727 / a&b|a&c|a&d|a&e|b&c|b&d|b&e|c&d&e&f / (Func: 506) / non_zero_indices: 869, 317, 1293, 412, 339, 45, ,  / negative index: 317, 1293, 45
+row520_11 / neuron728 / a|b / (Func: 215) / non_zero_indices: 810, 330, 534, 1167, 715, 113, ,  / negative index: 810, 534
+row521_11 / neuron729 / a&b|a&c|a&d&e|a&d&f|a&e&f|b&c&d&e / (Func: 507) / non_zero_indices: 828, 381, 260, 666, 85, 1111, ,  / negative index: 828, 260, 1111
+row522_11 / neuron730 / a&b / (Func: 241) / non_zero_indices: 407, 570, 563, 808, 415, 302, ,  / negative index: 407, 570, 563
+row523_11 / neuron731 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e|c&d|c&e / (Func: 398) / non_zero_indices: 426, 362, 297, 911, 503, 528, ,  / negative index: 297, 503
+row524_11 / neuron732 / a&b|a&c&d|a&c&e|a&c&f|a&d&e&f|b&c&d|b&c&e|b&c&f|b&d&e&f / (Func: 508) / non_zero_indices: 1041, 378, 917, 978, 1110, 1202, ,  / negative index: 1041, 917, 978
+row525_11 / neuron733 / a&b&c|a&b&d|a&b&e|a&c&d|b&c&d&e&f / (Func: 509) / non_zero_indices: 774, 531, 1271, 1261, 464, 1043, ,  / negative index: 774, 531, 1261
+row526_11 / neuron734 / a&b|a&c&d|a&c&e|a&c&f|a&d&e&f|b&c&d|b&c&e&f / (Func: 510) / non_zero_indices: 341, 953, 836, 1250, 746, 167, ,  / negative index: 953, 836, 1250
+row527_11 / neuron735 / a&b|a&c&d|a&c&e|a&d&e&f|b&c&d|b&c&e&f|b&d&e&f / (Func: 511) / non_zero_indices: 349, 654, 282, 1006, 1279, 777, ,  / negative index: 349, 654
+row528_11 / neuron736 / a&b|a&c|a&d|b&c|b&d|c&d&e&f / (Func: 512) / non_zero_indices: 902, 741, 646, 1131, 1105, 4, ,  / negative index: 902, 741, 4
+row529_11 / neuron737 / one / non_zero_indices: 1039, 1066, 557, 461, 876, 1050, ,  / negative index: 557, 876
+row530_11 / neuron738 / a&b&c|a&b&d|a&c&d&e / (Func: 357) / non_zero_indices: 134, 333, 809, 1189, 546, 612, ,  / negative index: 134, 333, 809, 1189, 612
+row531_11 / neuron739 / a|b&c|b&d|b&e / (Func: 339) / non_zero_indices: 515, 771, 718, 1294, 226, 431, ,  / negative index: 771, 1294, 226, 431
+row532_11 / neuron740 / a&b&c|a&b&d|a&b&e / (Func: 237) / non_zero_indices: 443, 1153, 813, 1273, 288, 375, ,  / negative index: 443, 813, 1273
+row533_11 / neuron741 / a|b&c&d|b&c&e|b&d&e&f / (Func: 274) / non_zero_indices: 1070, 1128, 128, 146, 757, 824, ,  / negative index: 1128, 128, 146, 757, 824
+row534_11 / neuron742 / a&b|a&c|b&c&d|b&c&e|b&c&f / (Func: 513) / non_zero_indices: 660, 847, 285, 62, 705, 417, ,  / negative index: 847, 285, 62
+row535_11 / neuron743 / a&b&c&d|a&b&c&e|a&b&d&e|a&c&d&e&f|b&c&d&e&f / (Func: 514) / non_zero_indices: 293, 488, 161, 1260, 895, 670, ,  / negative index: 293, 488, 161
+row536_11 / neuron744 / a&b|a&c|a&d|a&e|b&c|b&d|b&e&f|c&d&e|c&d&f|c&e&f / (Func: 515) / non_zero_indices: 1239, 1232, 1083, 604, 300, 1265, ,  / negative index: 1239, 1083
+row537_11 / neuron745 / a|b&c&d&e|b&c&d&f / (Func: 494) / non_zero_indices: 837, 818, 878, 280, 507, 989, ,  / negative index: 818, 878, 280, 507
+row538_11 / neuron746 / a&b|a&c|a&d / (Func: 221) / non_zero_indices: 1128, 393, 1165, 309, 1156, 271, ,  / negative index: 1128, 1165, 309, 1156, 271
+row539_11 / neuron747 / a&b&c|a&b&d|a&c&d|b&c&d&e&f / (Func: 218) / non_zero_indices: 1163, 215, 658, 616, 250, 247, ,  / negative index: 1163, 215, 250, 247
+row540_11 / neuron748 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e / (Func: 311) / non_zero_indices: 682, 210, 81, 1113, 348, 1264, ,  / negative index: 682, 81, 1113, 348
+row541_11 / neuron749 / a&b|a&c&d / (Func: 338) / non_zero_indices: 453, 1125, 590, 23, 826, 249, ,  / negative index: 453, 1125, 249
+row542_11 / neuron750 / a&b|a&c|a&d|a&e&f|b&c&d|b&c&e / (Func: 369) / non_zero_indices: 562, 1218, 721, 1206, 113, 561, ,  / negative index: 562, 1218, 1206, 561
+row543_11 / neuron751 / a|b&c|b&d|b&e|b&f / (Func: 516) / non_zero_indices: 595, 230, 1269, 653, 289, 1058, ,  / negative index: 230, 653, 289, 1058
+row544_11 / neuron752 / a&b|a&c|a&d&e|b&c&d|b&c&e / (Func: 517) / non_zero_indices: 1234, 756, 485, 58, 476, 465, ,  / negative index: 756, 485, 58, 465
+row545_11 / neuron753 / a&b&c&d|a&b&c&e|a&b&c&f|a&b&d&e|a&c&d&e|b&c&d&e / (Func: 518) / non_zero_indices: 480, 439, 967, 448, 1089, 390, ,  / negative index: 480, 439, 967, 1089
+row546_11 / neuron754 / a|b / (Func: 215) / non_zero_indices: 572, 471, 644, 101, 1217, 1157, ,  / negative index: 572, 471, 1217
+row547_11 / neuron755 / a&b|a&c|a&d|a&e&f|b&c|b&d&e / (Func: 251) / non_zero_indices: 965, 227, 548, 642, 490, 685, ,  / negative index: 965, 685
+row548_11 / neuron756 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|b&c&d|b&c&e|b&c&f|b&d&e&f / (Func: 385) / non_zero_indices: 847, 307, 279, 269, 1033, 1107, ,  / negative index: 847, 269
+row549_11 / neuron757 / a&b&c&d / (Func: 268) / non_zero_indices: 815, 1206, 57, 895, 598, 634, ,  / negative index: 815, 1206, 57, 895, 634
+row550_11 / neuron758 / a&b|a&c|a&d|a&e|b&c&d|b&c&e|b&d&e|c&d&e / (Func: 158) / non_zero_indices: 396, 836, 607, 867, 1122, 890, ,  / negative index: 836, 607
+row551_11 / neuron759 / a&b&c|a&b&d / (Func: 323) / non_zero_indices: 1274, 470, 946, 1015, 983, 808, ,  / negative index: 1274, 470, 946, 808
+row552_11 / neuron760 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e&f|a&d&e&f|b&c&d&e|b&c&d&f / (Func: 519) / non_zero_indices: 138, 999, 1022, 179, 139, 564, ,  / negative index: 138, 999, 564
+row553_11 / neuron761 / a&b|a&c|a&d|b&c&d|b&c&e|b&c&f|b&d&e|c&d&e&f / (Func: 520) / non_zero_indices: 536, 432, 646, 424, 373, 354, ,  / negative index: 536, 424, 373
+row554_11 / neuron762 / zero / non_zero_indices: 1044, 983, 911, 390, 1144, 394, ,  / negative index: 1044, 983, 911, 390, 1144, 394
+row555_11 / neuron763 / a&b&c|a&b&d|a&b&e&f / (Func: 266) / non_zero_indices: 14, 391, 905, 974, 1144, 259, ,  / negative index: 14, 391, 974
+row556_11 / neuron764 / a&b|a&c / (Func: 248) / non_zero_indices: 219, 851, 259, 72, 530, 817, ,  / negative index: 219, 851, 530, 817
+row557_11 / neuron765 / a&b&c&d|a&b&c&e|a&b&d&e&f / (Func: 424) / non_zero_indices: 906, 405, 1195, 114, 22, 1261, ,  / negative index: 906, 405, 114, 22, 1261
+row558_11 / neuron766 / a&b|a&c&d|a&c&e|a&c&f|a&d&e|a&d&f / (Func: 521) / non_zero_indices: 349, 592, 402, 507, 1166, 381, ,  / negative index: 349, 402, 1166
+row559_11 / neuron767 / a&b|a&c|a&d|a&e|a&f|b&c&d|b&c&e|b&d&e&f / (Func: 522) / non_zero_indices: 1128, 1041, 287, 828, 97, 958, ,  / negative index: 1128
+row560_11 / neuron768 / a|b&c&d|b&c&e|b&d&e&f|c&d&e&f / (Func: 523) / non_zero_indices: 882, 32, 967, 711, 760, 886, ,  / negative index: 32, 711, 760
+row561_11 / neuron769 / a|b&c&d|b&c&e&f / (Func: 320) / non_zero_indices: 1225, 88, 780, 301, 1192, 949, ,  / negative index: 88, 780, 1192, 949
+row562_11 / neuron770 / a&b&c|a&b&d|a&b&e|a&b&f|a&c&d|a&c&e|a&c&f|b&c&d&e&f / (Func: 524) / non_zero_indices: 695, 282, 444, 1118, 1121, 289, ,  / negative index: 695, 282, 1121
+row563_11 / neuron771 / zero / non_zero_indices: 944, 1040, 598, 236, 1262, 1083, ,  / negative index: 944, 1040, 598, 236, 1262, 1083
+row564_11 / neuron772 / a&b&c|a&b&d|a&b&e|a&c&d&e / (Func: 172) / non_zero_indices: 1153, 1292, 1111, 4, 147, 919, ,  / negative index: 1153, 1292, 147
+row565_11 / neuron773 / a&b&c&d|a&b&c&e&f|a&b&d&e&f|a&c&d&e&f / (Func: 525) / non_zero_indices: 227, 1137, 366, 469, 35, 238, ,  / negative index: 227, 1137, 469, 35
+row566_11 / neuron774 / a&b|a&c|a&d|b&c|b&d|c&d&e / (Func: 374) / non_zero_indices: 106, 78, 1036, 138, 515, 238, ,  / negative index: 78, 138
+row567_11 / neuron775 / a|b&c|b&d|b&e|b&f|c&d&e&f / (Func: 526) / non_zero_indices: 1187, 1277, 534, 541, 1053, 826, ,  / negative index: 534, 1053, 826
+row568_11 / neuron776 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e|c&d&e / (Func: 260) / non_zero_indices: 360, 747, 1153, 502, 927, 1126, ,  / negative index: 360, 502, 927
+row569_11 / neuron777 / a&b&c|a&b&d|a&c&d&e|a&c&d&f / (Func: 527) / non_zero_indices: 975, 478, 980, 88, 202, 227, ,  / negative index: 975, 980, 88, 202
+row570_11 / neuron778 / a&b|a&c|a&d|a&e / (Func: 42) / non_zero_indices: 1064, 1051, 1284, 833, 73, 972, ,  / negative index: 1064, 833, 972
+row571_11 / neuron779 / a|b|c&d / (Func: 278) / non_zero_indices: 980, 13, 367, 1049, 697, 886, ,  / negative index: 13, 697, 886
+row572_11 / neuron780 / a&b|a&c&d / (Func: 338) / non_zero_indices: 219, 15, 1019, 113, 79, 325, ,  / negative index: 219, 1019
+row573_11 / neuron781 / a|b|c|d&e / (Func: 364) / non_zero_indices: 670, 377, 734, 999, 779, 967, ,  / negative index: 734, 779
+row574_11 / neuron782 / a&b&c|a&b&d|a&c&d&e / (Func: 357) / non_zero_indices: 1068, 1175, 487, 164, 1144, 1156, ,  / negative index: 1068, 1175, 487, 1156
+row575_11 / neuron783 / a|b&c|b&d|b&e|b&f|c&d|c&e&f / (Func: 528) / non_zero_indices: 1017, 1065, 471, 250, 960, 400, ,  / negative index: 1065
+row576_11 / neuron784 / a / (Func: 281) / non_zero_indices: 335, 444, 922, 1008, 875, 596, ,  / negative index: 335, 444, 875
+row577_11 / neuron785 / a&b|a&c&d|a&c&e|b&c&d&e / (Func: 280) / non_zero_indices: 815, 431, 797, 400, 1099, 1267, ,  / negative index: 815, 797
+row578_11 / neuron786 / a&b&c&d&e / (Func: 303) / non_zero_indices: 210, 1082, 717, 861, 532, 922, ,  / negative index: 210, 1082, 717, 861, 922
+row579_11 / neuron787 / a&b|a&c|a&d|a&e|a&f|b&c&d&e&f / (Func: 529) / non_zero_indices: 1198, 642, 194, 242, 721, 560, ,  / negative index: 1198, 721
+row580_11 / neuron788 / a|b&c|b&d&e&f / (Func: 214) / non_zero_indices: 1193, 227, 1093, 550, 853, 1169, ,  / negative index: 227, 1093
+row581_11 / neuron789 / a&b&c&d|a&b&c&e|a&b&d&e / (Func: 211) / non_zero_indices: 316, 1183, 1076, 646, 8, 430, ,  / negative index: 316, 1183, 646, 8, 430
+row582_11 / neuron790 / a&b&c|a&b&d|a&c&d&e|a&c&d&f / (Func: 527) / non_zero_indices: 67, 94, 963, 205, 841, 1244, ,  / negative index: 67, 94, 963, 1244
+row583_11 / neuron791 / a&b|a&c|b&c&d|b&c&e|b&c&f / (Func: 513) / non_zero_indices: 881, 438, 90, 393, 1279, 831, ,  / negative index: 881, 438, 831
+row584_11 / neuron792 / a|b|c&d|c&e / (Func: 434) / non_zero_indices: 272, 622, 836, 1174, 409, 235, ,  / negative index: 836, 1174, 235
+row585_11 / neuron793 / a&b|a&c|a&d|a&e|a&f|b&c&d|b&c&e&f|b&d&e&f / (Func: 530) / non_zero_indices: 280, 154, 469, 807, 806, 484, ,  / negative index: 154, 469, 807
+row586_11 / neuron794 / a&b|a&c|a&d|a&e|b&c&d|b&c&e|b&c&f|b&d&e / (Func: 531) / non_zero_indices: 430, 663, 1000, 406, 904, 809, ,  / negative index: 663, 1000, 809
+row587_11 / neuron795 / a&b&c|a&b&d|a&b&e|a&c&d|a&c&e&f|a&d&e&f|b&c&d&e|b&c&d&f|b&c&e&f|b&d&e&f|c&d&e&f / (Func: 532) / non_zero_indices: 482, 89, 561, 985, 740, 192, ,  / negative index: 482, 89, 740, 192
+row588_11 / neuron796 / a&b|a&c|a&d|a&e|a&f|b&c|b&d|b&e&f|c&d&e|c&d&f|c&e&f / (Func: 377) / non_zero_indices: 532, 514, 1138, 885, 225, 23, ,  / negative index: 532, 1138, 225
+row589_11 / neuron797 / a|b&c|b&d&e|b&d&f|b&e&f / (Func: 408) / non_zero_indices: 1276, 1041, 430, 216, 954, 416, ,  / negative index: 1041, 430, 416
+row590_11 / neuron798 / a&b|a&c|a&d|a&e&f|b&c&d|b&c&e|b&d&e|c&d&e&f / (Func: 533) / non_zero_indices: 1250, 341, 1280, 296, 1111, 684, ,  / negative index: 1250, 296, 1111

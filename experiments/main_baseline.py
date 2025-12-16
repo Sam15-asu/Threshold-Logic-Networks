@@ -1,5 +1,4 @@
 import argparse
-import math
 import random
 from datetime import datetime
 from zoneinfo import ZoneInfo  # Python 3.9+
@@ -10,46 +9,23 @@ print(now_phx.strftime("%Y-%m-%d %H:%M:%S %Z"))
 import numpy as np
 import pandas as pd
 import torch
-import torchvision
 from torchvision import datasets, transforms
 from tqdm import tqdm
 import torch.nn as nn
 import csv
-import matplotlib.pyplot as plt
 import os
 os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
-import torch.nn.utils.prune as prune
-import openml
-from sklearn.model_selection import train_test_split
 from torch.optim.lr_scheduler import ReduceLROnPlateau
-
-import mnist_dataset
 from difflogic.threshold import ThresholdLayer, CustomSigmoid, CustomSigmoid2, GroupSum
 import difflogic.binarization as bin
 from difflogic.connections import Conv
-#from mainn import InferenceDebugConfig
+from pipeline import run_full_logic_pipeline
 
 torch.set_num_threads(1)
 torch.set_printoptions(threshold=float('inf'), linewidth=200)
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print("device:", device)
-import re
 
-# Your desired layer tags
-LAYER_MAP = {0: 1, 2: 3, 4: 5, 7: 7, 9: 9}
-
-def get_layer_tag(param: str):
-    """
-    Parse 'model.<idx>.(gatebank(.w)?| (effective_)?weight )' and map to your layer tag.
-    Returns None for rows you want to skip.
-    """
-    if not isinstance(param, str):
-        return None
-    m = re.search(r'model\.(\d+)\.(?:gatebank(?:\.w)?|(?:effective_)?weight)\b', param)
-    if not m:
-        return None
-    model_idx = int(m.group(1))
-    return LAYER_MAP.get(model_idx)  # None if not in map
 
 BITS_TO_TORCH_FLOATING_POINT_TYPE = {
     16: torch.float16,
@@ -58,6 +34,9 @@ BITS_TO_TORCH_FLOATING_POINT_TYPE = {
 }
     
 class CustomModel(torch.nn.Module):
+    """
+    A wrapper around the model to enable verbose output during forward passes.
+    """
     def __init__(self, model):
         super(CustomModel, self).__init__()
         self.model = model
@@ -72,6 +51,10 @@ class CustomModel(torch.nn.Module):
 
     
 def load_dataset(args):
+    """ 
+    Load the specified dataset, prepares(binarizes) the data and return DataLoaders for training, validation, 
+    and testing for further analysis.
+    """
     validation_loader = None
     transform = transforms.Compose([transforms.ToTensor(), transforms.Lambda(lambda x: torch.flatten(x))])
     
@@ -79,8 +62,7 @@ def load_dataset(args):
     if 'cifar10' in args.dataset:
 
         # 1) Load CIFAR-10 (no flatten; values in [0,1])
-        #    If you use heavy data augmentation elsewhere, fit thresholds on a plain ToTensor() view.
-        transform_plain = transforms.ToTensor()  # or use your 'transform' if it's just normalization
+        transform_plain = transforms.ToTensor()
         train_dataset = datasets.CIFAR10(root='./data', train=True, download=True, transform=transform_plain)
         test_dataset  = datasets.CIFAR10(root='./data', train=False, download=True, transform=transform_plain)
 
@@ -190,7 +172,6 @@ def load_dataset(args):
             train_dataset_bin,batch_size=args.batch_size,shuffle=True,pin_memory=True, drop_last=False,num_workers=4)
         test_loader = torch.utils.data.DataLoader(test_dataset_bin,batch_size=args.batch_size,shuffle=False,pin_memory=True,drop_last=False)
 
-
     else:
         raise NotImplementedError(f'The data set {args.dataset} is not supported!')
 
@@ -198,6 +179,22 @@ def load_dataset(args):
 
 
 def load_n(loader, n):
+    """
+    Yield exactly `n` batches from a DataLoader-like iterable.
+
+    This is a small helper to take the first `n` batches from potentially
+    infinite or long-running loaders (e.g. for a fixed number of training
+    iterations independent of dataset size).
+
+    Parameters
+    ----------
+    loader : Any iterable that yields batches (e.g. a PyTorch DataLoader).
+    n : Number of batches to yield in total across all iterations.
+
+    Yields
+    ------
+    batch: The next batch produced by `loader`, up to `n` batches in total.
+    """
     i = 0
     while i < n:
         for x in loader:
@@ -208,6 +205,9 @@ def load_n(loader, n):
 
 
 def input_dim_of_dataset(dataset):
+    """
+    Return the input dimension for the specified dataset.
+    """
     return {
         'mnist': 1568,
         'cifar10': 3 * 32 * 32 * 10,
@@ -216,6 +216,9 @@ def input_dim_of_dataset(dataset):
 
 
 def num_classes_of_dataset(dataset):
+    """
+    Return the number of classes for the specified dataset.
+    """
     return {
         'mnist': 10,
         'cifar10': 10,
@@ -223,6 +226,13 @@ def num_classes_of_dataset(dataset):
     }[dataset]
 
 def get_model(args):
+    """
+    Create and return the model, loss function, optimizer, and scheduler based on the provided arguments.
+    Model architecture is built according to the specified dataset and parameters.
+    Loss function is CrossEntropyLoss.
+    Optimizer is Adam with specified learning rate and betas.
+    Scheduler is ReduceLROnPlateau monitoring validation loss.
+    """
     in_dim = input_dim_of_dataset(args.dataset)
     class_count = num_classes_of_dataset(args.dataset)
 
@@ -233,8 +243,6 @@ def get_model(args):
     k = args.number_kernels
 
     total_num_neurons = 0
-
- ########################################################################################################################
 
 
     if arch == 'threshold_connected':
@@ -309,6 +317,11 @@ def get_model(args):
 
 
     def count_parameters(model):
+        """
+        Count the number of trainable parameters in the model.
+        Args: model (torch.nn.Module): The model to count parameters for.
+        Returns: Prints the number of parameters
+        """
         return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
 
@@ -320,24 +333,22 @@ def get_model(args):
         total_num_weights = count_parameters(model)
         print(f'total_num_weights={total_num_weights}')
 
-    def print_trainable_parameters(model):
+    """def print_trainable_parameters(model):
         for module_name, module in model.named_modules():
             params = list(module.named_parameters(recurse=False))
             if params: 
                 print(f"\nLayer: '{module_name or 'root'}'")
                 for param_name, param in params:
                     if param.requires_grad:
-                        print(f"  {param_name}: shape {tuple(param.shape)}, count {param.numel()}")
+                        print(f"  {param_name}: shape {tuple(param.shape)}, count {param.numel()}")"""
                     
             
     model = model.to(device)
-
     print(model)
     #print_trainable_parameters(model)
 
     loss_fn = torch.nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=args.learning_rate, betas=(0.75, 0.90))
-
     scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=5, threshold = 0.001, min_lr=1e-6)
 
     return model, loss_fn, optimizer, scheduler
@@ -345,6 +356,16 @@ def get_model(args):
 
 
 def train(model, x, y, loss_fn, optimizer, device):
+    """
+    Perform a single training step: forward pass, loss computation, backward pass, and optimizer step.
+    Returns the computed loss value.
+    Parameters:
+    - model: The neural network model to train.
+    - x: Input data batch.
+    - y: Target labels for the input data.
+    - loss_fn: Loss function to compute the training loss.
+    - optimizer: Optimizer to update the model parameters.
+    """
     model.train(True)  # ensure training behavior
     x = x.to(device, non_blocking=True)
     y = y.to(device, non_blocking=True)
@@ -359,6 +380,15 @@ def train(model, x, y, loss_fn, optimizer, device):
 
 
 def eval(model, loader, mode):
+    """
+    Evaluate the model on the provided data loader in either training or evaluation mode.
+    Parameters:
+    - model: The neural network model to evaluate.
+    - loader: DataLoader providing the evaluation data.
+    - mode: Boolean indicating whether to set the model to training mode (True) or evaluation mode (False).
+    Returns:
+    - res: The accuracy of the model on the provided data.
+    """
     orig_mode = model.training
     with torch.no_grad():
         model.train(mode=mode)
@@ -372,7 +402,11 @@ def eval(model, loader, mode):
     return res.item()
 
 
-if __name__ == '__main__':   
+if __name__ == '__main__':  
+    """
+    Main function to set up and run the training and evaluation of the model based on command-line arguments.
+    It handles argument parsing, dataset loading, model creation, training loop, and final evaluation.
+    """ 
     parser = argparse.ArgumentParser(description='Train logic gate network on the various datasets.')
 
     parser.add_argument('-eid', '--experiment_id', type=int, default=None)
@@ -408,9 +442,6 @@ if __name__ == '__main__':
     parser.add_argument('--grad-factor', type=float, default=1.)
 
     args = parser.parse_args()
-
-    ####################################################################################################################
-
     print(vars(args))
 
     assert args.num_iterations % args.eval_freq == 0, (
@@ -423,6 +454,7 @@ if __name__ == '__main__':
 
     train_loader, validation_loader, test_loader = load_dataset(args)
     model, loss_fn, optim, scheduler = get_model(args)
+
 
     # ─── Training loop ───────────────────────────────────────────────────────────────
     best_acc = 0 
@@ -437,26 +469,18 @@ if __name__ == '__main__':
             desc='iteration',
             total=args.num_iterations,
     ):
-        #CURRENT_EPOCH = i
         x = x.to(BITS_TO_TORCH_FLOATING_POINT_TYPE[args.training_bit_count]).to(device)
         y = y.to(device)
 
-        #print("x.shape:", x.shape)  # should be (batch_size, 1, 28, 28)
-        
         loss = train(model, x, y, loss_fn, optim, device)
 
         # Accumulate loss and increment iteration counter for averaging
         cumulative_loss+=loss
         j+=1
-
-        #if (i+1) % args.eval_freq == args.eval_freq - 1:
             
         if (i+1) % args.eval_freq == 0:
 
-            # Run a forward pass on a sample input (using the current batch 'x')
-            with torch.no_grad():
-                y_out = model(x)
-                #(f"[Iter {i+1}] Logits:\n{y_out[:3]}")
+            _ = model(x)
 
             # Calculate the average loss over the evaluation window
             avg_loss = cumulative_loss / j  # Compute average loss
@@ -507,8 +531,6 @@ if __name__ == '__main__':
                     best_acc = test_accuracy_eval_mode
                     print(f"Best Accuracy: {(best_acc * 100):.2f}%", flush=True)
                         
-            elif valid_accuracy_eval_mode > best_acc:
-                best_acc = valid_accuracy_eval_mode
                 
 
     # ─── Final evaluation on the test set ─────────────────────────────────────────────
@@ -525,6 +547,11 @@ if __name__ == '__main__':
         os.makedirs(weights_dir, exist_ok=True)
         filename = os.path.join(weights_dir, f"model_params_{args.dataset}.pth")
         torch.save(model.state_dict(), filename)
+
+        # run the logic extraction pipeline
+        original_csv, processed_csv, truth_table_csv, minimized_txt = run_full_logic_pipeline(
+        dataset_name=args.dataset, ckpt_path=filename,         # NOT model_weights_path
+        weights_dir=weights_dir, out_dir="out", do_stats=True,)
         
 
         # 2) Iterate in small batches over test_loader
@@ -558,274 +585,4 @@ if __name__ == '__main__':
     # 3) Compute & print overall accuracy
     test_acc = 100.0 * correct / total
     print(f"Test Accuracy: {test_acc:.2f}%")
-    #assert total == dataset_size, "Oops—we did not process every test sample!"
-
-
-import os, re, csv
-import numpy as np
-import pandas as pd
-import torch
-
-# ===================== Layer mapping helper =====================
-#LAYER_MAP = {0: 1, 2: 3, 4: 5, 6: 7, 8: 9}
-LAYER_MAP = {0: 1, 2: 3, 4: 5, 6: 7, 8: 9, 7: 11, 9: 13}
-def get_layer_tag(param: str):
-    """
-    Parse 'model.<idx>.(gatebank(.w)?| (effective_)?weight )' and map to your layer tag.
-    Returns None for rows you want to skip.
-    """
-    if not isinstance(param, str):
-        return None
-    m = re.search(r'model\.(\d+)\.(?:gatebank(?:\.w)?|(?:effective_)?weight)\b', param)
-    if not m:
-        return None
-    model_idx = int(m.group(1))
-    return LAYER_MAP.get(model_idx)
-
-# ===================== Exporter =====================
-FAN_IN_TARGET = 6  # keep 2^6 truth tables
-
-def build_effective_state_dict(state_dict: dict) -> dict:
-    """Make integer/dense layers 'effective' via mask multiply. Conv gatebank goes out as-is."""
-    eff = {}
-    for k, t in state_dict.items():
-        if k.endswith("weight"):
-            mkey = k.replace("weight", "mask")
-            if mkey in state_dict:
-                eff[k.replace("weight", "effective_weight")] = t * state_dict[mkey]
-            else:
-                eff[k] = t
-        else:
-            eff[k] = t
-    return eff
-
-def write_effective_params_csv(state_dict: dict, csv_filename: str):
-    eff = build_effective_state_dict(state_dict)
-    with open(csv_filename, 'w', newline='') as f:
-        wtr = csv.writer(f)
-        wtr.writerow(['parameter','row_index','row_shape','non_zero_indices','w1','w2','w3','w4','w5','w6','bias'])
-
-        for name, param in eff.items():
-            # Skip slopes/masks
-            if any(tag in name for tag in ('.s', '.s_raw', '.mask')):
-                continue
-
-            # --- Conv gatebank kernels (one row per output channel) ---
-            if name.endswith(".gatebank.w"):
-                base = name[:-2]  # strip '.w'
-                theta_key = base + ".theta"
-                idx_key   = base + ".idx"
-                if theta_key not in eff or idx_key not in eff:
-                    continue
-
-                W   = param.detach().cpu().numpy()                 # (out_dim, fan_in_actual)
-                TH  = eff[theta_key].detach().cpu().numpy()        # (out_dim,)
-                IDX = eff[idx_key].detach().cpu().numpy()          # (out_dim, fan_in_actual)
-                out_dim, fan_in_actual = W.shape
-
-                for j in range(out_dim):
-                    triples = [(abs(float(wv)), float(wv), int(ix)) for wv, ix in zip(W[j], IDX[j])]
-                    if fan_in_actual > FAN_IN_TARGET:
-                        triples.sort(key=lambda t: t[0], reverse=True)
-                        triples = triples[:FAN_IN_TARGET]
-                    weights = [t[1] for t in triples]
-                    indices = [t[2] for t in triples]
-                    while len(weights) < FAN_IN_TARGET:
-                        weights.append("")
-
-                    wtr.writerow([
-                        name,
-                        j,
-                        (len(indices),),                      # e.g., (6,)
-                        ",".join(map(str, indices)),
-                        *map(str, weights[:FAN_IN_TARGET]),
-                        TH[j],
-                    ])
-                continue  # don't fall through to generic handler
-
-            # --- Dense/FC (effective_)weight as sparse-6 per row ---
-            if name.endswith("weight") or name.endswith("effective_weight"):
-                W = param.detach().cpu().numpy()
-                bkey = name.replace("effective_weight", "bias") if name.endswith("effective_weight") else name.replace("weight", "bias")
-                B = eff.get(bkey, None)
-                Bnp = B.detach().cpu().numpy() if B is not None else None
-
-                if W.ndim == 1:
-                    row = W
-                    nz_idx = np.nonzero(row)[0]
-                    nz_val = row[nz_idx]
-                    w_vals = [str(v) for v in nz_val]
-                    while len(w_vals) < FAN_IN_TARGET: w_vals.append("")
-                    bias_val = Bnp[0] if (Bnp is not None and Bnp.size > 0) else ""
-                    wtr.writerow([name, 0, row.shape, ",".join(map(str, nz_idx))] + w_vals[:FAN_IN_TARGET] + [bias_val])
-                else:
-                    for i, row in enumerate(W):
-                        if row.ndim > 1:
-                            row = row.flatten()
-                        nz_idx = np.nonzero(row)[0]
-                        nz_val = row[nz_idx]
-                        w_vals = [str(v) for v in nz_val]
-                        while len(w_vals) < FAN_IN_TARGET: w_vals.append("")
-                        bias_val = Bnp[i] if (Bnp is not None and i < (Bnp.shape[0] if hasattr(Bnp, 'shape') else 0)) else ""
-                        wtr.writerow([name, i, row.shape, ",".join(map(str, nz_idx))] + w_vals[:FAN_IN_TARGET] + [bias_val])
-
-# ===================== CSV processing =====================
-def process_input_csv(input_csv, output_csv):
-    df = pd.read_csv(input_csv)
-
-    # Keep only rows mapped by your layer tags
-    df = df[df["parameter"].apply(lambda p: get_layer_tag(str(p)) is not None)]
-
-    # Add "negative index"
-    def add_negative_index(row):
-        indices = [item.strip() for item in str(row["non_zero_indices"]).split(",")]
-        neg = []
-        for i in range(1, 7):
-            try:
-                w = float(row[f"w{i}"])
-            except Exception:
-                w = 0.0
-            if w < 0 and i-1 < len(indices):
-                neg.append(indices[i-1])
-        return ", ".join(neg)
-    df["negative index"] = df.apply(add_negative_index, axis=1)
-
-    # Fold negatives into bias
-    def update_bias(row):
-        try:
-            b = float(row["bias"])
-        except Exception:
-            b = 0.0
-        for i in range(1, 7):
-            try:
-                w = float(row[f"w{i}"])
-            except Exception:
-                w = 0.0
-            if w < 0:
-                b += abs(w)
-        return b
-    df["bias"] = df.apply(update_bias, axis=1)
-
-    # Make weights absolute
-    def to_abs(row):
-        for i in range(1, 7):
-            try:
-                row[f"w{i}"] = abs(float(row[f"w{i}"]))
-            except Exception:
-                pass
-        return row
-    df = df.apply(to_abs, axis=1)
-
-    # Reorder by descending weight, keep indices & negative flags aligned
-    def reorder(row):
-        indices = [item.strip() for item in str(row["non_zero_indices"]).split(",")]
-        neg_set = set([s.strip() for s in str(row["negative index"]).split(",") if s.strip()])
-        pairs = []
-        for i in range(1, 7):
-            try:
-                w = float(row[f"w{i}"])
-            except Exception:
-                w = 0.0
-            idx = indices[i-1] if i-1 < len(indices) else ""
-            pairs.append((w, idx, idx in neg_set))
-        pairs.sort(key=lambda x: x[0], reverse=True)
-        for i, (w, _, _) in enumerate(pairs, start=1):
-            row[f"w{i}"] = w
-        row["non_zero_indices"] = ", ".join(idx for (_, idx, _) in pairs)
-        row["negative index"] = ", ".join(idx for (_, idx, f) in pairs if f)
-        return row
-    df = df.apply(reorder, axis=1)
-
-    df.to_csv(output_csv, index=False)
-    return output_csv
-
-# ===================== Truth table generation =====================
-def generate_truth_tables(input_csv, output_truth_csv):
-    import itertools
-
-    # 2^6 minterms for fan-in = 6
-    minterms = [''.join(bits) for bits in itertools.product('01', repeat=6)]
-
-    df = pd.read_csv(input_csv)
-
-    # Coerce numeric fields
-    for col in ['w1','w2','w3','w4','w5','w6','bias']:
-        if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0.0)
-
-    rows = []
-    counter = 0
-    for _, r in df.iterrows():
-        param = str(r.get('parameter', ''))
-        layer = get_layer_tag(param)
-        if layer is None:
-            continue
-
-        try:
-            w = [float(r[f"w{i}"]) for i in range(1, 7)]
-            b = float(r["bias"])
-        except Exception:
-            continue
-
-        # Build truth table: 1 if sum(w_i * x_i) >= bias else 0
-        truth = {}
-        for combo in itertools.product([0,1], repeat=6):
-            s = sum(wi * xi for wi, xi in zip(w, combo))
-            truth[''.join(map(str, combo))] = 1 if s >= b else 0
-
-        func_label = f"row{int(r['row_index'])}_{layer}"
-        row_data = {"Function": func_label, "neuron number": f"neuron{counter}"}
-        row_data.update({m: truth[m] for m in minterms})
-        rows.append(row_data)
-        counter += 1
-
-    if not rows:
-        raise ValueError("generate_truth_tables: no rows produced. Check parameter names and layer mapping.")
-
-    truth_df = pd.DataFrame(rows, columns=["Function","neuron number"] + minterms)
-    truth_df.to_csv(output_truth_csv, index=False)
-    return output_truth_csv
-
-# ===================== Pipeline wrapper =====================
-def run_csv_pipeline(dataset_name, ckpt_path, weights_dir="weights", out_dir="out", do_stats=False):
-    os.makedirs(weights_dir, exist_ok=True)
-    os.makedirs(out_dir, exist_ok=True)
-
-    # 1) export effective params (conv gatebank + FC) to CSV
-    original_csv = os.path.join(weights_dir, f"model_effective_params_{dataset_name}.csv")
-    state_dict = torch.load(ckpt_path, map_location='cpu')
-    write_effective_params_csv(state_dict, original_csv)
-
-    # (optional) quick stats
-    if do_stats:
-        df = pd.read_csv(original_csv)
-        wcols = ['w1','w2','w3','w4','w5','w6']
-        for c in wcols + ['bias']:
-            df[c] = pd.to_numeric(df[c], errors='coerce')
-        w_stats = (
-            df.melt(id_vars=['parameter'], value_vars=wcols, value_name='w')
-              .dropna(subset=['w'])
-              .groupby('parameter')['w']
-              .agg(weight_min='min', weight_max='max', num_weight_elements='count')
-        )
-        b_stats = (
-            df[['parameter','bias']].dropna(subset=['bias'])
-              .groupby('parameter')['bias']
-              .agg(bias_min='min', bias_max='max', num_bias_elements='count')
-        )
-        stats = w_stats.join(b_stats, how='outer').fillna({'num_weight_elements':0,'num_bias_elements':0})
-        #print(stats.head())
-
-    # 2) process → generate
-    processed_csv   = os.path.join(weights_dir, f"model_effective_params_{dataset_name}_changed.csv")
-    truth_table_csv = os.path.join(weights_dir, f"truth_tables_generated_{dataset_name}.csv")
-
-    process_input_csv(original_csv, processed_csv)
-    generate_truth_tables(processed_csv, truth_table_csv)
-
-    return original_csv, processed_csv, truth_table_csv
-
-
-# e.g., args.dataset is 'fashionMNIST'; args.ckpt is your .pth path
-original_csv, processed_csv, truth_table_csv = run_csv_pipeline(args.dataset, filename, do_stats=True)
-
+    
